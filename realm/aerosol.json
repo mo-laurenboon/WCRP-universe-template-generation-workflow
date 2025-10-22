@@ -1,0 +1,11 @@
+{
+  "id": "aerosol",
+  "validation-key": "aerosol",
+  "ui-label": "Aerosol",
+  "description": "Aerosol",
+  "@context": "@context",
+  "type": [
+    "wcrp:realm",
+    "universal"
+  ]
+}
