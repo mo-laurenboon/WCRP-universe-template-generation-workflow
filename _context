@@ -1,17 +1,16 @@
 {
-    "@context": [
-        "../_context",
-        {
-            "@base": "https://wcrp-cmip.github.io/WCRP-universe/model-family/",
-            "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/model-family/",
-            "origin": {
-                "@type": "@id",
-                "@context": "https://wcrp-cmip.github.io/WCRP-universe/organisation/_context"
-            }
-        }
-    ],
-    "@embed": "@always",
-    "@type": [
-        "universal"
-    ]
+    "@context": {
+        "@base": "https://wcrp-cmip.github.io/WCRP-universe/",
+        "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/",
+        "entries": "@none",
+        "id": "@id",
+        "type": "@type",
+        "cf": "https://wcrp-cmip.github.io/CF/",
+        "cmip6plus": "https://wcrp-cmip.github.io/CMIP6Plus_CVs/",
+        "cmip7": "https://wcrp-cmip.github.io/CMIP7-CVs/",
+        "obs4mips": "https://wolfiex.github.io/obs4MIPs-cmor-tables-ld/",
+        "universal": "https://wcrp-cmip.github.io/WCRP-universe/",
+        "variables": "https://wcrp-cmip.github.io/MIP-variables/"
+    },
+    "@embed": "@always"
 }
