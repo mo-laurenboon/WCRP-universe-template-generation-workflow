@@ -5,6 +5,6 @@
             "@base": "universal:activity/",
             "@vocab": "universal:activity/"
         }
-    ],
+    ]
 
 }
