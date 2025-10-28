@@ -1,9 +1,9 @@
 {
     "@context": [
-        "../_context",
+        "https://wcrp-cmip.github.io/WCRP-universe/_context",
         {
-            "@base": "https://wcrp-cmip.github.io/WCRP-universe/source-type/",
-            "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/source-type/"
+            "@base": "universal:source-type/",
+            "@vocab": "universal:source-type/"
         }
     ],
     "@embed": "@always",
