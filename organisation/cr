@@ -29,7 +29,7 @@
     "url": [
         "https://www.climate-resource.com"
     ],
-    "@context": "_context_",
+    "@context": "_context",
     "type": [
         "wcrp:organisation",
         "wcrp:institution",

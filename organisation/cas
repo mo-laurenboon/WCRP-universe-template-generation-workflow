@@ -27,7 +27,7 @@
     "url": [
         "http://english.cas.cn/"
     ],
-    "@context": "_context_",
+    "@context": "_context",
     "type": [
         "wcrp:organisation",
         "wcrp:institution",

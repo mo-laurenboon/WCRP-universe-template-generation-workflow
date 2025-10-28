@@ -1,6 +1,6 @@
 {
     "@context": [
-        "../_context_",
+        "../_context",
         {
             "@base": "https://wcrp-cmip.github.io/WCRP-universe/consortium/",
             "@vocab": "https://wcrp-cmip.github.io/WCRP-universe/consortium/",

@@ -23,7 +23,7 @@
     "url": [
         "http://www.bbctg.com.cn/"
     ],
-    "@context": "_context_",
+    "@context": "_context",
     "type": [
         "wcrp:organisation",
         "wcrp:institution",

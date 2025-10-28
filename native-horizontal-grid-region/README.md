@@ -82,7 +82,7 @@ cmipld.get( "universal:native-horizontal-grid-region/antarctica")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-horizontal-grid-region/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-horizontal-grid-region/_context",
             "@type": "wcrp:native-horizontal-grid-region",
             "keys we want": "",
             "@explicit": True

@@ -72,7 +72,7 @@ cmipld.get( "universal:source-type/aer")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/source-type/_context",
             "@type": "wcrp:source-type",
             "keys we want": "",
             "@explicit": True

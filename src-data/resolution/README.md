@@ -78,7 +78,7 @@ cmipld.get( "universal:resolution/0.5km")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/resolution/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/resolution/_context",
             "@type": "wcrp:resolution",
             "keys we want": "",
             "@explicit": True

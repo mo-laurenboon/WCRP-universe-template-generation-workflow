@@ -30,7 +30,7 @@
   "url": [
     "http://global.jaxa.jp/"
   ],
-  "@context": "_context_",
+  "@context": "_context",
   "type": [
     "universal",
     "wcrp:institution",

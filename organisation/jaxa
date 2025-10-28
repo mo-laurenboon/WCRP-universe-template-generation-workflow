@@ -30,7 +30,7 @@
     "url": [
         "https://www.jaxa.jp"
     ],
-    "@context": "_context_",
+    "@context": "_context",
     "type": [
         "wcrp:organisation",
         "wcrp:institution",

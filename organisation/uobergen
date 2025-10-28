@@ -29,7 +29,7 @@
     "url": [
         "http://www.uib.no/"
     ],
-    "@context": "_context_",
+    "@context": "_context",
     "type": [
         "wcrp:organisation",
         "wcrp:institution",

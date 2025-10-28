@@ -82,7 +82,7 @@ cmipld.get( "universal:native-horizontal-grid-type/cubed-sphere")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-horizontal-grid-type/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-horizontal-grid-type/_context",
             "@type": "wcrp:native-horizontal-grid-type",
             "keys we want": "",
             "@explicit": True

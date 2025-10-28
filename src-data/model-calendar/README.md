@@ -82,7 +82,7 @@ cmipld.get( "universal:model-calendar/360-day")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/model-calendar/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/model-calendar/_context",
             "@type": "wcrp:model-calendar",
             "keys we want": "",
             "@explicit": True

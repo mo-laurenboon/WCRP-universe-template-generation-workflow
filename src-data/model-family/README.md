@@ -40,10 +40,10 @@ Groups related climate models into families that share similar code bases or mod
 - **origin** → `@type: @id`
  </section>
 
-- - Context: [https://wcrp-cmip.github.io/WCRP-universe/organisation/\_context\_](https://wcrp-cmip.github.io/WCRP-universe/organisation/_context_)
+- - Context: [https://wcrp-cmip.github.io/WCRP-universe/organisation/\_context\_](https://wcrp-cmip.github.io/WCRP-universe/organisation/_context)
  </section>
 
-- - Source: `WCRP-universe/organisation/_context_`
+- - Source: `WCRP-universe/organisation/_context`
 
  </section>
 
@@ -117,7 +117,7 @@ cmipld.get( "universal:model-family/acce")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/model-family/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/model-family/_context",
             "@type": "wcrp:model-family",
             "keys we want": "",
             "@explicit": True

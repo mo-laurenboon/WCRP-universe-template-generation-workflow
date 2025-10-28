@@ -82,7 +82,7 @@ cmipld.get( "universal:native-vertical-grid-units/k")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-vertical-grid-units/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/native-vertical-grid-units/_context",
             "@type": "wcrp:native-vertical-grid-units",
             "keys we want": "",
             "@explicit": True

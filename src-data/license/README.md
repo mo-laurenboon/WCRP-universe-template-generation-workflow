@@ -76,7 +76,7 @@ cmipld.get( "universal:license/cc-by-4.0")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/license/_context",
             "@type": "wcrp:license",
             "keys we want": "",
             "@explicit": True

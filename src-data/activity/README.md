@@ -76,7 +76,7 @@ cmipld.get( "universal:activity/aera-mip")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context_",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/activity/_context",
             "@type": "wcrp:activity",
             "keys we want": "",
             "@explicit": True

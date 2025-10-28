@@ -3,7 +3,7 @@
     "properties": {
         "@context": {
             "type": "string",
-            "description": "Context identifier, typically set to '_context_'"
+            "description": "Context identifier, typically set to '_context'"
         },
         "changes": {
             "type": "string",
