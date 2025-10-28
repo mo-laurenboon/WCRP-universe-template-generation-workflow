@@ -20,7 +20,7 @@
       "description": "",
       "url": "https://creativecommons.org/licenses/by/4.0/",
       "type": [
-        "wcrp:license",
+        "esgf:license",
         "universal"
       ]
     },
@@ -31,7 +31,7 @@
       "description": "",
       "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "type": [
-        "wcrp:license",
+        "esgf:license",
         "universal"
       ]
     },
@@ -42,7 +42,7 @@
       "description": "",
       "url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "type": [
-        "wcrp:license",
+        "esgf:license",
         "universal"
       ]
     },
@@ -53,7 +53,7 @@
       "description": "",
       "url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "type": [
-        "wcrp:license",
+        "esgf:license",
         "universal"
       ]
     }

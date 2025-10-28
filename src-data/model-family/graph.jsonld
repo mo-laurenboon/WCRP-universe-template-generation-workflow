@@ -24,7 +24,7 @@
       "description": "Australian Community Climate and Earth System Simulator",
       "origin": "BoM/CSIRO (Bureau of Meteorology/Commonwealth Scientific and Industrial Research Organisation)",
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -34,7 +34,7 @@
       "description": "Beijing Climate Center Climate System Model",
       "origin": "BCC (Beijing Climate Center)",
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -47,7 +47,7 @@
         "atmos"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -63,7 +63,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -80,7 +80,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -95,7 +95,7 @@
         "ocean"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -111,7 +111,7 @@
         "seaice"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -121,7 +121,7 @@
       "description": "Flexible Global Ocean-Atmosphere-Land System Model",
       "origin": "IAP (Institute of Atmospheric Physics)",
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -135,7 +135,7 @@
         "land"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -151,7 +151,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -166,7 +166,7 @@
         "ocean"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -182,7 +182,7 @@
         "seaice"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -198,7 +198,7 @@
         "seaice"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -211,7 +211,7 @@
         "atmos"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -227,7 +227,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -243,7 +243,7 @@
         "seaice"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -259,7 +259,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -269,7 +269,7 @@
       "description": "Nonhydrostatic Icosahedral Atmospheric Model",
       "origin": "JAMSTEC (Japan Agency for Marine-Earth Science and Technology)",
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     },
     {
@@ -285,7 +285,7 @@
         "ocnbgchem"
       ],
       "type": [
-        "wcrp:model-family"
+        "esgf:model-family"
       ]
     }
   ]

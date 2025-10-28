@@ -19,7 +19,7 @@
       "ui-label": "Aerosol",
       "description": "Aerosol",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -29,7 +29,7 @@
       "ui-label": "Atmosphere",
       "description": "Atmosphere",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -39,7 +39,7 @@
       "ui-label": "Atmospheric Chemistry",
       "description": "Atmospheric Chemistry",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -50,7 +50,7 @@
       "description": "Land Surface and Subsurface",
       "type": [
         "universal",
-        "wcrp:realm"
+        "esgf:realm"
       ]
     },
     {
@@ -59,7 +59,7 @@
       "ui-label": "Land Ice",
       "description": "Land Ice",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -69,7 +69,7 @@
       "ui-label": "Ocean",
       "description": "Ocean",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -79,7 +79,7 @@
       "ui-label": "Ocean Biogeochemistry",
       "description": "Ocean Biogeochemistry",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     },
@@ -89,7 +89,7 @@
       "ui-label": "Sea Ice",
       "description": "Sea Ice",
       "type": [
-        "wcrp:realm",
+        "esgf:realm",
         "universal"
       ]
     }

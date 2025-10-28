@@ -4,9 +4,9 @@
   "ui-label": "Land-Use Model Intercomparison Project",
   "description": "",
   "url": "https://www.cesm.ucar.edu/projects/cmip6/lumip",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:activity",
+    "esgf:activity",
     "universal"
   ]
 }

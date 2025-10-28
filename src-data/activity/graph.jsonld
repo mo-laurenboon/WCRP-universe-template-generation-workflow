@@ -20,7 +20,7 @@
       "description": "",
       "url": "",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -31,7 +31,7 @@
       "description": "AerChemMIP experiments focus on the role of atmospheric chemistry and aerosols in climate, including piClim and hist-piSLCF simulations.",
       "url": "https://gmd.copernicus.org/articles/10/585/2017/gmd-10-585-2017.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -42,7 +42,7 @@
       "description": "",
       "url": "https://wiki.met.no/aerocom/aerchemmip/start",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -53,7 +53,7 @@
       "description": "C4MIP experiments focus on carbon cycle feedbacks and interactions, including 1pctCO2-bgc and esm-flat10-cdr experiments.",
       "url": "https://gmd.copernicus.org/articles/9/2853/2016/gmd-9-2853-2016.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -64,7 +64,7 @@
       "description": "",
       "url": "https://cdrmip.carbondioxide-removal.eu/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -75,7 +75,7 @@
       "description": "",
       "url": "https://data.giss.nasa.gov/CERESMIP",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -86,7 +86,7 @@
       "description": "CFMIP experiments focus on cloud feedbacks and their role in climate, including abrupt-0p5CO2 and amip-piForcing simulations.",
       "url": "https://gmd.copernicus.org/articles/10/359/2017/gmd-10-359-2017.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -97,7 +97,7 @@
       "description": "CMIP DECK: 1pctCO2, abrupt-4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
       "url": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -108,7 +108,7 @@
       "description": "",
       "url": "https://cordex.org",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -119,7 +119,7 @@
       "description": "DAMIP focuses on detection and attribution of climate change, covering experiments like hist-aer and hist-nat.",
       "url": "https://gmd.copernicus.org/articles/13/7947/2020/gmd-13-7947-2020.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -130,7 +130,7 @@
       "description": "DCPP focuses on decadal climate predictions and initialized experiments like prediction for 2025-2036.",
       "url": "https://gmd.copernicus.org/articles/9/3751/2016/gmd-9-3751-2016.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -141,7 +141,7 @@
       "description": "",
       "url": "https://www.senckenberg.de/en/institutes/sbik-f/quantitative-biogeography/qb-projects/firemip/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -152,7 +152,7 @@
       "description": "",
       "url": "https://fishmip.org/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -163,7 +163,7 @@
       "description": "GeoMIP explores the potential impacts and side-effects of geoengineering, including experiments like G7-1.5K-SAI.",
       "url": "https://gmd.copernicus.org/articles/8/989/2015/gmd-8-989-2015.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -174,7 +174,7 @@
       "description": "",
       "url": "https://www.highresmip.org",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -185,7 +185,7 @@
       "description": "",
       "url": "https://hydr.vub.be/projects/irrmip",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -196,7 +196,7 @@
       "description": "",
       "url": "https://theghub.org/groups/ismip6/wiki",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -207,7 +207,7 @@
       "description": "The Large Ensemble Single Forcing Model Intercomparison Project",
       "url": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -218,7 +218,7 @@
       "description": "LMIP explores land-atmosphere interactions and processes, with experiments like land-hist.",
       "url": "https://gmd.copernicus.org/articles/10/3977/2017/gmd-10-3977-2017.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -229,7 +229,7 @@
       "description": "",
       "url": "https://www.longrunmip.org/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -240,7 +240,7 @@
       "description": "",
       "url": "https://www.cesm.ucar.edu/projects/cmip6/lumip",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -251,7 +251,7 @@
       "description": "",
       "url": "tba",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -262,7 +262,7 @@
       "description": "",
       "url": "https://misomip.github.io/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -273,7 +273,7 @@
       "description": "",
       "url": "https://mumip.web.ox.ac.uk",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -284,7 +284,7 @@
       "description": "",
       "url": "https://www.tipes.dk/na-hosing-mip/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -295,7 +295,7 @@
       "description": "'none' entry permissable only for the experiment parent id. ",
       "url": "",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -306,7 +306,7 @@
       "description": "",
       "url": "https://OceanMIP.github.io",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -317,7 +317,7 @@
       "description": "PMIP focuses on past climate variability, with experiments like LIGabrupt.",
       "url": "https://gmd.copernicus.org/articles/9/3461/2016/gmd-9-3461-2016.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -328,7 +328,7 @@
       "description": "",
       "url": "To",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -339,7 +339,7 @@
       "description": "",
       "url": "https://ramip.uk/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -350,7 +350,7 @@
       "description": "Regional Aerosol Model Intercomparison Project",
       "url": "https://ramip.ncas.ac.uk",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -361,7 +361,7 @@
       "description": "RFMIP assesses the radiative forcing of climate change with experiments such as piClim-aer, piClim-histaer, and piClim-histall.",
       "url": "https://gmd.copernicus.org/articles/13/169/2020/gmd-13-169-2020.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -372,7 +372,7 @@
       "description": "ScenarioMIP focuses on future climate projections based on different socio-economic pathways, including High, Medium, and Very Low scenarios.",
       "url": "https://gmd.copernicus.org/articles/12/1443/2019/gmd-12-1443-2019.pdf",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -383,7 +383,7 @@
       "description": "",
       "url": "https://climate-cryosphere.org/simip-about/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -394,7 +394,7 @@
       "description": "",
       "url": "https://sofiamip.github.io/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -405,7 +405,7 @@
       "description": "",
       "url": "",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -416,7 +416,7 @@
       "description": "",
       "url": "https://www.clivar.org/research-foci/basin-interaction",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -427,7 +427,7 @@
       "description": "TIPMIP is an international model intercomparison project that aims to systematically advance our understanding of tipping dynamics in various Earth system components, and assess the associated uncertainties. By connecting and evaluating various models, TIPMIP will fill critical knowledge gaps in Earth system and climate modelling by improving the assessment of overall anthropogenic forcing and long-term commitments (irreversibilities). It will furthermore foster interdisciplinary knowledge transfer and shed light on critical processes currently underrepresented in Earth-system models and analysis. In doing so, it will inform relevant policy- and decision makers regarding tipping boundaries in the Earth system.",
       "url": "https://tipmip.pik-potsdam.de/",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -438,7 +438,7 @@
       "description": "",
       "url": "www.volmip.org",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     },
@@ -449,7 +449,7 @@
       "description": "",
       "url": "In",
       "type": [
-        "wcrp:activity",
+        "esgf:activity",
         "universal"
       ]
     }

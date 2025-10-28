@@ -29,10 +29,10 @@
   "url": [
     "http://www.snu.ac.kr/index.html"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
     "universal",
-    "wcrp:institution",
-    "wcrp:organisation"
+    "esgf:institution",
+    "esgf:organisation"
   ]
 }

@@ -4,8 +4,8 @@
   "ui-label": "",
   "description": "Nonhydrostatic Icosahedral Atmospheric Model",
   "origin": "JAMSTEC (Japan Agency for Marine-Earth Science and Technology)",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:model-family"
+    "esgf:model-family"
   ]
 }

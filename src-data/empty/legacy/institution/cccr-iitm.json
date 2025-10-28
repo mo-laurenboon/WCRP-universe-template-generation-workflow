@@ -27,10 +27,10 @@
   "url": [
     "http://www.tropmet.res.in/"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
     "universal",
-    "wcrp:institution",
-    "wcrp:organisation"
+    "esgf:institution",
+    "esgf:organisation"
   ]
 }

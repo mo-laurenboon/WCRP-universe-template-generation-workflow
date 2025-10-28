@@ -3,9 +3,9 @@
   "validation-key": "ocean-double-sigma-coordinate",
   "ui-label": "Ocean double sigma coordinate",
   "description": "Parametric ocean double sigma coordinate",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:native-vertical-grid-coordinate",
+    "esgf:native-vertical-grid-coordinate",
     "universal"
   ]
 }

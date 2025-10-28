@@ -27,10 +27,10 @@
   "url": [
     "https://www.canada.ca/en/environment-climate-change.html"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
     "universal",
-    "wcrp:institution",
-    "wcrp:organisation"
+    "esgf:institution",
+    "esgf:organisation"
   ]
 }

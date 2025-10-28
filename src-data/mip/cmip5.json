@@ -6,9 +6,9 @@
   "end": 2020,
   "start": 2006,
   "url": "https://wcrp-cmip.org/CMIP5",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:mip",
+    "esgf:mip",
     "universal"
   ]
 }

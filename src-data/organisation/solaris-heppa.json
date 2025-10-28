@@ -95,10 +95,10 @@
     }
   },
   "url": "https://solarisheppa.geomar.de",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:consortium",
+    "esgf:consortium",
     "universal",
-    "wcrp:organisation"
+    "esgf:organisation"
   ]
 }

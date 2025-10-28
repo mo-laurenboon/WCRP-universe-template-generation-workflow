@@ -3,9 +3,9 @@
   "validation-key": "atmosphere-hybrid-sigma-pressure-coordinate",
   "ui-label": "Atmosphere hybrid sigma pressure coordinate",
   "description": "Parametric atmosphere hybrid sigma pressure coordinate",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:native-vertical-grid-coordinate",
+    "esgf:native-vertical-grid-coordinate",
     "universal"
   ]
 }

@@ -3,9 +3,9 @@
   "validation-key": "ocean",
   "ui-label": "Ocean",
   "description": "Ocean",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:realm",
+    "esgf:realm",
     "universal"
   ]
 }

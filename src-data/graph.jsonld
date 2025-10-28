@@ -20,7 +20,7 @@
         "ui-label": "Adaptive",
         "description": "the total number of grid points varies during the model run",
         "type": [
-          "wcrp:native-horizontal-grid-temporal-refinement",
+          "esgf:native-horizontal-grid-temporal-refinement",
           "universal"
         ]
       },
@@ -30,7 +30,7 @@
         "ui-label": "Dynamically stretched",
         "description": "the total number of grid points stays constant, but grid points can be dynamically relocated",
         "type": [
-          "wcrp:native-horizontal-grid-temporal-refinement",
+          "esgf:native-horizontal-grid-temporal-refinement",
           "universal"
         ]
       },
@@ -40,7 +40,7 @@
         "ui-label": "Static",
         "description": "the total number of grid points stays constant during the model run and there is no grid refinement, i",
         "type": [
-          "wcrp:native-horizontal-grid-temporal-refinement",
+          "esgf:native-horizontal-grid-temporal-refinement",
           "universal"
         ]
       }
@@ -68,7 +68,7 @@
         "description": "",
         "url": "https://creativecommons.org/licenses/by/4.0/",
         "type": [
-          "wcrp:license",
+          "esgf:license",
           "universal"
         ]
       },
@@ -79,7 +79,7 @@
         "description": "",
         "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
         "type": [
-          "wcrp:license",
+          "esgf:license",
           "universal"
         ]
       },
@@ -90,7 +90,7 @@
         "description": "",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
         "type": [
-          "wcrp:license",
+          "esgf:license",
           "universal"
         ]
       },
@@ -101,7 +101,7 @@
         "description": "",
         "url": "https://creativecommons.org/publicdomain/zero/1.0/",
         "type": [
-          "wcrp:license",
+          "esgf:license",
           "universal"
         ]
       }
@@ -130,7 +130,7 @@
         "long_name": "1 Hourly Frequency",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -142,7 +142,7 @@
         "long_name": "1 Hour Climatology Monthly",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -154,7 +154,7 @@
         "long_name": "1 Hour Point",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -166,7 +166,7 @@
         "long_name": "3 Hourly Frequency",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -178,7 +178,7 @@
         "long_name": "3 Hour Point",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -190,7 +190,7 @@
         "long_name": "6 Hourly Frequency",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -202,7 +202,7 @@
         "long_name": "6 Hour Point",
         "unit": "hour",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -214,7 +214,7 @@
         "long_name": "Daily Frequency",
         "unit": "day",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -226,7 +226,7 @@
         "long_name": "Decadal Frequency",
         "unit": "decade",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -238,7 +238,7 @@
         "long_name": "Fixed Frequency",
         "unit": "none",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -250,7 +250,7 @@
         "long_name": "Monthly Frequency",
         "unit": "month",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -262,7 +262,7 @@
         "long_name": "Monthly Climatology",
         "unit": "month",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -274,7 +274,7 @@
         "long_name": "Monthly Point",
         "unit": "month",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -286,7 +286,7 @@
         "long_name": "Sub-Hourly Point",
         "unit": "minute",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -298,7 +298,7 @@
         "long_name": "Yearly Frequency",
         "unit": "year",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       },
@@ -310,7 +310,7 @@
         "long_name": "Yearly Point",
         "unit": "year",
         "type": [
-          "wcrp:frequency",
+          "esgf:frequency",
           "universal"
         ]
       }
@@ -339,7 +339,7 @@
         "unit": "km",
         "value": "0.5",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -351,7 +351,7 @@
         "unit": "km",
         "value": "10000",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -363,7 +363,7 @@
         "unit": "km",
         "value": "1000",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -375,7 +375,7 @@
         "unit": "km",
         "value": "100",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -387,7 +387,7 @@
         "unit": "km",
         "value": "10",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -399,7 +399,7 @@
         "unit": "km",
         "value": "1",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -411,7 +411,7 @@
         "unit": "degree",
         "value": "1x1",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -423,7 +423,7 @@
         "unit": "km",
         "value": "2.5",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -435,7 +435,7 @@
         "unit": "km",
         "value": "2500",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -447,7 +447,7 @@
         "unit": "km",
         "value": "250",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -459,7 +459,7 @@
         "unit": "km",
         "value": "25",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -471,7 +471,7 @@
         "unit": "km",
         "value": "5000",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -483,7 +483,7 @@
         "unit": "km",
         "value": "500",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -495,7 +495,7 @@
         "unit": "km",
         "value": "50",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       },
@@ -507,7 +507,7 @@
         "unit": "km",
         "value": "5",
         "type": [
-          "wcrp:resolution",
+          "esgf:resolution",
           "universal"
         ]
       }
@@ -534,7 +534,7 @@
         "ui-label": "Antarctica",
         "description": "the geographical region of Antarctica, as defined by the CF standardised regions",
         "type": [
-          "wcrp:native-horizontal-grid-region",
+          "esgf:native-horizontal-grid-region",
           "universal"
         ]
       },
@@ -544,7 +544,7 @@
         "ui-label": "Global",
         "description": "the geographical region of the whole of the Earth’s surface, as defined by the CF standardised regions",
         "type": [
-          "wcrp:native-horizontal-grid-region",
+          "esgf:native-horizontal-grid-region",
           "universal"
         ]
       },
@@ -554,7 +554,7 @@
         "ui-label": "Greenland",
         "description": "the geographical region of Greenland, as defined by the CF standardised regions",
         "type": [
-          "wcrp:native-horizontal-grid-region",
+          "esgf:native-horizontal-grid-region",
           "universal"
         ]
       },
@@ -564,7 +564,7 @@
         "ui-label": "Limited area",
         "description": "any contiguous subregion of the Earth’s surface, used to indicate a limited area model that may be placed over different geographical regions independently of the model formulation",
         "type": [
-          "wcrp:native-horizontal-grid-region",
+          "esgf:native-horizontal-grid-region",
           "universal"
         ]
       }
@@ -591,7 +591,7 @@
         "ui-label": "360 day",
         "description": "a calendar in which all years are 360 days, and divided into 30 day months",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -601,7 +601,7 @@
         "ui-label": "365 day",
         "description": "a calendar with no leap years, i",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -611,7 +611,7 @@
         "ui-label": "366 day",
         "description": "a calendar in which every year is a leap year, i",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -621,7 +621,7 @@
         "ui-label": "Julian",
         "description": "the Julian calendar, in which a year is a leap year if it is divisible by 4, even if it is also divisible by 100",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -631,7 +631,7 @@
         "ui-label": "None",
         "description": "no calendar",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -641,7 +641,7 @@
         "ui-label": "Proleptic gregorian",
         "description": "a calendar with the Gregorian rules for leap-years extended to dates before 1582-10-15",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       },
@@ -651,7 +651,7 @@
         "ui-label": "Standard",
         "description": "mixed Gregorian/Julian calendar which is Gregorian after 1582-10-15, and Julian before",
         "type": [
-          "wcrp:model-calendar",
+          "esgf:model-calendar",
           "universal"
         ]
       }
@@ -686,7 +686,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/04cg70g73",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 42.44732,
           "lon": -71.2245,
           "city": "Lexington",
@@ -700,8 +700,8 @@
           "http://www.aer.com/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -722,7 +722,7 @@
         ],
         "location": {
           "id": "universal:location/02hnp4676",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 41.89193,
           "lon": 12.51133,
           "city": "Rome",
@@ -736,8 +736,8 @@
           "https://www.oa-roma.inaf.it"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -757,7 +757,7 @@
         ],
         "location": {
           "id": "universal:location/050qpg053",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 25.05306,
           "lon": 121.52639,
           "city": "Taipei",
@@ -771,8 +771,8 @@
           "http://www.rcec.sinica.edu.tw/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -793,7 +793,7 @@
         ],
         "location": {
           "id": "universal:location/02j61yw88",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 40.64361,
           "lon": 22.93086,
           "city": "Thessaloniki",
@@ -807,8 +807,8 @@
           "https://www.auth.gr"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -829,7 +829,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/032e6b942",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.53615,
           "lon": 8.59298,
           "city": "Bremerhaven",
@@ -843,8 +843,8 @@
           "https://www.awi.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -862,7 +862,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01rhff309",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 52.2,
           "lon": 0.11667,
           "city": "Cambridge",
@@ -876,8 +876,8 @@
           "https://www.bas.ac.uk/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -893,7 +893,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01spyyb53",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.9075,
           "lon": 116.39723,
           "city": "Beijing",
@@ -907,8 +907,8 @@
           "http://www.bbctg.com.cn/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -928,7 +928,7 @@
         ],
         "location": {
           "id": "universal:location/034b53w38",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.9075,
           "lon": 116.39723,
           "city": "Beijing",
@@ -942,8 +942,8 @@
           "http://www.camscma.cn/en.html"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -963,7 +963,7 @@
         ],
         "location": {
           "id": "universal:location/034t30j35",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.9075,
           "lon": 116.39723,
           "city": "Beijing",
@@ -977,8 +977,8 @@
           "http://english.cas.cn/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -998,7 +998,7 @@
         ],
         "location": {
           "id": "universal:location/026ny0e17",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 45.41117,
           "lon": -75.69812,
           "city": "Ottawa",
@@ -1012,8 +1012,8 @@
           "https://www.canada.ca/en/environment-climate-change.html"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1033,7 +1033,7 @@
         ],
         "location": {
           "id": "universal:location/03jf2m686",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 18.51957,
           "lon": 73.85535,
           "city": "Pune",
@@ -1047,8 +1047,8 @@
           "http://www.tropmet.res.in/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1066,7 +1066,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/04j4kad11",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.41667,
           "lon": -0.96667,
           "city": "Harwell",
@@ -1080,8 +1080,8 @@
           "https://www.ceda.ac.uk/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1103,7 +1103,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01tf11a61",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 40.35481,
           "lon": 18.17244,
           "city": "Lecce",
@@ -1117,8 +1117,8 @@
           "https://www.cmcc.it"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1138,7 +1138,7 @@
         ],
         "location": {
           "id": "universal:location/04h1h0y33",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 48.85341,
           "lon": 2.3488,
           "city": "Paris",
@@ -1152,8 +1152,8 @@
           "https://www.cnes.fr"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1175,7 +1175,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01kk86953",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -37.814,
           "lon": 144.96332,
           "city": "Melbourne",
@@ -1189,8 +1189,8 @@
           "https://www.climate-resource.com"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1208,7 +1208,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/03qn8fb07",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -35.28346,
           "lon": 149.12807,
           "city": "Canberra",
@@ -1222,8 +1222,8 @@
           "http://www.csiro.au/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1243,7 +1243,7 @@
         ],
         "location": {
           "id": "universal:location/03ztgj037",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.55073,
           "lon": 9.99302,
           "city": "Hamburg",
@@ -1257,8 +1257,8 @@
           "https://www.dkrz.de/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1278,7 +1278,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/02nrqs528",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 50.10061,
           "lon": 8.76647,
           "city": "Offenbach",
@@ -1292,8 +1292,8 @@
           "https://www.dwd.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1314,7 +1314,7 @@
         ],
         "location": {
           "id": "universal:location/00pc48d59",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 47.39724,
           "lon": 8.61872,
           "city": "Dübendorf",
@@ -1328,8 +1328,8 @@
           "https://www.eawag.ch"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1347,7 +1347,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/014w0fd65",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 51.45625,
           "lon": -0.97113,
           "city": "Reading",
@@ -1361,8 +1361,8 @@
           "http://www.ecmwf.int/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1380,7 +1380,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/04xbqmj23",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 17.38405,
           "lon": 78.45636,
           "city": "Hyderabad",
@@ -1394,8 +1394,8 @@
           "http://www.incois.gov.in/portal/index.jsp"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1416,7 +1416,7 @@
         ],
         "location": {
           "id": "universal:location/05hppb561",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 60.16952,
           "lon": 24.93545,
           "city": "Helsinki",
@@ -1430,8 +1430,8 @@
           "http://en.ilmatieteenlaitos.fi/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1452,7 +1452,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/046ak2485",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 52.52437,
           "lon": 13.41053,
           "city": "Berlin",
@@ -1466,8 +1466,8 @@
           "https://www.fu-berlin.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1487,7 +1487,7 @@
         ],
         "location": {
           "id": "universal:location/02nv7yv05",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 50.92149,
           "lon": 6.36267,
           "city": "Jülich",
@@ -1501,8 +1501,8 @@
           "https://www.fz-juelich.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1520,7 +1520,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/00q4vv597",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 22.27832,
           "lon": 114.17469,
           "city": "Hong Kong",
@@ -1534,8 +1534,8 @@
           "https://hkust.edu.hk"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1559,7 +1559,7 @@
         ],
         "location": {
           "id": "universal:location/05a28rw58",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 47.36667,
           "lon": 8.55,
           "city": "Zurich",
@@ -1573,8 +1573,8 @@
           "https://ethz.ch"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1596,7 +1596,7 @@
         ],
         "location": {
           "id": "universal:location/0424h4e32",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.9075,
           "lon": 116.39723,
           "city": "Beijing",
@@ -1610,8 +1610,8 @@
           "http://english.iap.cas.cn/au"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1633,7 +1633,7 @@
         ],
         "location": {
           "id": "universal:location/02h2x0161",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 54.32133,
           "lon": 10.13489,
           "city": "Kiel",
@@ -1647,8 +1647,8 @@
           "https://www.geomar.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1668,7 +1668,7 @@
         ],
         "location": {
           "id": "universal:location/041kmwe10",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 51.50853,
           "lon": -0.12574,
           "city": "London",
@@ -1682,8 +1682,8 @@
           "https://www.imperial.ac.uk"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1703,7 +1703,7 @@
         ],
         "location": {
           "id": "universal:location/00520ey40",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 55.75222,
           "lon": 37.61556,
           "city": "Moscow",
@@ -1717,8 +1717,8 @@
           "http://www.inm.ras.ru/inm_en_ver/index.htm"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1738,7 +1738,7 @@
         ],
         "location": {
           "id": "universal:location/04xbn6x09",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -23.17944,
           "lon": -45.88694,
           "city": "São José dos Campos",
@@ -1752,8 +1752,8 @@
           "http://www.inpe.br/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1771,7 +1771,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/02haar591",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 48.85341,
           "lon": 2.3488,
           "city": "Paris",
@@ -1785,8 +1785,8 @@
           "https://www.ipsl.fr/en/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1804,7 +1804,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01xm30661",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 46.94809,
           "lon": 7.44744,
           "city": "Bern",
@@ -1818,8 +1818,8 @@
           "http://www.issibern.ch/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1842,7 +1842,7 @@
         ],
         "location": {
           "id": "universal:location/059yhyy33",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 35.6895,
           "lon": 139.69171,
           "city": "Tokyo",
@@ -1856,8 +1856,8 @@
           "https://www.jaxa.jp"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1877,7 +1877,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/032m55064",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 35.10168,
           "lon": 129.03004,
           "city": "Busan",
@@ -1891,8 +1891,8 @@
           "http://eng.kiost.ac/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1915,7 +1915,7 @@
         ],
         "location": {
           "id": "universal:location/04t3en479",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 49.00937,
           "lon": 8.40444,
           "city": "Karlsruhe",
@@ -1929,8 +1929,8 @@
           "https://www.kit.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1956,7 +1956,7 @@
         ],
         "location": {
           "id": "universal:location/041nk4h53",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 37.68187,
           "lon": -121.76801,
           "city": "Livermore",
@@ -1970,8 +1970,8 @@
           "https://www.llnl.gov"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -1990,7 +1990,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/049k66y27",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 47.90289,
           "lon": 1.90389,
           "city": "Orléans",
@@ -2004,8 +2004,8 @@
           "https://www.lpc2e.cnrs.fr"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2036,9 +2036,9 @@
         "status": "active",
         "url": "",
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ]
       },
       {
@@ -2055,7 +2055,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01ch2yn61",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 50.7236,
           "lon": -3.52751,
           "city": "Exeter",
@@ -2069,8 +2069,8 @@
           "http://www.metoffice.gov.uk/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2092,7 +2092,7 @@
         ],
         "location": {
           "id": "universal:location/051yxp643",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 50.92878,
           "lon": 11.5899,
           "city": "Jena",
@@ -2106,8 +2106,8 @@
           "https://www.bgc-jena.mpg.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2127,7 +2127,7 @@
         ],
         "location": {
           "id": "universal:location/05esem239",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.55073,
           "lon": 9.99302,
           "city": "Hamburg",
@@ -2141,8 +2141,8 @@
           "http://www.mpimet.mpg.de/en/home.html"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2162,7 +2162,7 @@
         ],
         "location": {
           "id": "universal:location/02j6gm739",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 51.53443,
           "lon": 9.93228,
           "city": "Göttingen",
@@ -2176,8 +2176,8 @@
           "http://www.mps.mpg.de/en"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2199,7 +2199,7 @@
         ],
         "location": {
           "id": "universal:location/02772kk97",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 35.6895,
           "lon": 139.69171,
           "city": "Tokyo",
@@ -2213,8 +2213,8 @@
           "http://www.jma.go.jp/jma/indexe.html"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2234,7 +2234,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/0036rpn28",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 47.12187,
           "lon": -88.56901,
           "city": "Houghton",
@@ -2248,8 +2248,8 @@
           "https://www.mtu.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2267,7 +2267,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01cyfxe35",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 40.71427,
           "lon": -74.00597,
           "city": "New York",
@@ -2281,8 +2281,8 @@
           "http://www.giss.nasa.gov/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2302,7 +2302,7 @@
         ],
         "location": {
           "id": "universal:location/0171mag52",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.00455,
           "lon": -76.87553,
           "city": "Greenbelt",
@@ -2316,8 +2316,8 @@
           "https://www.nasa.gov/centers/goddard/home/index.html"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2340,7 +2340,7 @@
         ],
         "location": {
           "id": "universal:location/027k65916",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 34.19917,
           "lon": -118.18785,
           "city": "La Cañada Flintridge",
@@ -2354,8 +2354,8 @@
           "http://www.jpl.nasa.gov/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2373,7 +2373,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/0399mhs52",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 37.02987,
           "lon": -76.34522,
           "city": "Hampton",
@@ -2387,8 +2387,8 @@
           "http://www.nasa.gov/langley"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2410,7 +2410,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/027ka1x80",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 38.89511,
           "lon": -77.03637,
           "city": "Washington",
@@ -2424,8 +2424,8 @@
           "http://www.nasa.gov"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2446,7 +2446,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/05cvfcr44",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 40.01499,
           "lon": -105.27055,
           "city": "Boulder",
@@ -2460,8 +2460,8 @@
           "https://ncar.ucar.edu/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2477,7 +2477,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/03q36cn05",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 33.72148,
           "lon": 73.04329,
           "city": "Islamabad",
@@ -2491,8 +2491,8 @@
           "http://www.uksresearch.com/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2535,9 +2535,9 @@
         "status": "active",
         "url": "",
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ]
       },
       {
@@ -2554,7 +2554,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/02b5d8509",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 51.55797,
           "lon": -1.78116,
           "city": "Swindon",
@@ -2568,8 +2568,8 @@
           "https://www.ukri.org/councils/nerc/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2589,7 +2589,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/04hxcaz34",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -36.84853,
           "lon": 174.76349,
           "city": "Auckland",
@@ -2603,8 +2603,8 @@
           "https://www.niwa.co.nz/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2629,7 +2629,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/04r0wrp59",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 35.60095,
           "lon": -82.55402,
           "city": "Asheville",
@@ -2643,8 +2643,8 @@
           "https://www.ncei.noaa.gov"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2662,7 +2662,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/05bqach95",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 25.05306,
           "lon": 121.52639,
           "city": "Taipei",
@@ -2676,8 +2676,8 @@
           "http://www.ntu.edu.tw/english/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2700,7 +2700,7 @@
         ],
         "location": {
           "id": "universal:location/01rxvg760",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 32.06167,
           "lon": 118.77778,
           "city": "Nanjing",
@@ -2714,8 +2714,8 @@
           "http://www.nju.edu.cn/english/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2736,7 +2736,7 @@
         ],
         "location": {
           "id": "universal:location/00ysfqy60",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 44.56457,
           "lon": -123.26204,
           "city": "Corvallis",
@@ -2750,8 +2750,8 @@
           "https://oregonstate.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2769,7 +2769,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/02k3nmd98",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 37.68187,
           "lon": -121.76801,
           "city": "Livermore",
@@ -2783,8 +2783,8 @@
           "https://pcmdi.llnl.gov"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2804,7 +2804,7 @@
         ],
         "location": {
           "id": "universal:location/03e8s1d88",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 52.39886,
           "lon": 13.06566,
           "city": "Potsdam",
@@ -2818,8 +2818,8 @@
           "https://www.pik-potsdam.de/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2837,7 +2837,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/02gtrqv93",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 46.80429,
           "lon": 9.83723,
           "city": "Davos",
@@ -2851,8 +2851,8 @@
           "https://www.pmodwrc.ch/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2870,7 +2870,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/058cmd703",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 38.96344,
           "lon": -76.93164,
           "city": "Riverdale Park",
@@ -2884,8 +2884,8 @@
           "https://www.pnnl.gov/projects/jgcri"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2906,7 +2906,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/05h992307",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 46.28569,
           "lon": -119.28446,
           "city": "Richland",
@@ -2920,8 +2920,8 @@
           "http://www.pnnl.gov/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2939,7 +2939,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01vp8h012",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 38.44047,
           "lon": -122.71443,
           "city": "Santa Rosa",
@@ -2953,8 +2953,8 @@
           "http://www.remss.com/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -2976,7 +2976,7 @@
         ],
         "location": {
           "id": "universal:location/04h9pn542",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 37.566,
           "lon": 126.9784,
           "city": "Seoul",
@@ -2990,8 +2990,8 @@
           "https://www.snu.ac.kr"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3093,9 +3093,9 @@
         },
         "url": "https://solarisheppa.geomar.de",
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ]
       },
       {
@@ -3114,7 +3114,7 @@
         ],
         "location": {
           "id": "universal:location/03cve4549",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 39.9075,
           "lon": 116.39723,
           "city": "Beijing",
@@ -3128,8 +3128,8 @@
           "https://www.tsinghua.edu.cn"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3149,7 +3149,7 @@
         ],
         "location": {
           "id": "universal:location/03m2x1q45",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 32.22174,
           "lon": -110.92648,
           "city": "Tucson",
@@ -3163,8 +3163,8 @@
           "http://www.arizona.edu/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3187,7 +3187,7 @@
         ],
         "location": {
           "id": "universal:location/04gyf1771",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 33.66946,
           "lon": -117.82311,
           "city": "Irvine",
@@ -3201,8 +3201,8 @@
           "http://uci.edu/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3227,7 +3227,7 @@
         ],
         "location": {
           "id": "universal:location/046rm7j60",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 34.05223,
           "lon": -118.24368,
           "city": "Los Angeles",
@@ -3241,8 +3241,8 @@
           "https://www.ucla.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3263,7 +3263,7 @@
         ],
         "location": {
           "id": "universal:location/00jc20583",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 40.01499,
           "lon": -105.27055,
           "city": "Boulder",
@@ -3277,8 +3277,8 @@
           "http://www.cu.edu/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3301,7 +3301,7 @@
         ],
         "location": {
           "id": "universal:location/02t274463",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 34.42083,
           "lon": -119.69819,
           "city": "Santa Barbara",
@@ -3315,8 +3315,8 @@
           "https://www.ucsb.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3338,7 +3338,7 @@
         ],
         "location": {
           "id": "universal:location/00g30e956",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.55073,
           "lon": 9.99302,
           "city": "Hamburg",
@@ -3352,8 +3352,8 @@
           "http://www.uni-hamburg.de"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3375,7 +3375,7 @@
         ],
         "location": {
           "id": "universal:location/03zga2b32",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 60.39299,
           "lon": 5.32415,
           "city": "Bergen",
@@ -3389,8 +3389,8 @@
           "http://www.uib.no/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3411,7 +3411,7 @@
         ],
         "location": {
           "id": "universal:location/047s2c258",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 38.98067,
           "lon": -76.93692,
           "city": "College Park",
@@ -3425,8 +3425,8 @@
           "https://umd.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3444,7 +3444,7 @@
         ],
         "location": {
           "id": "universal:location/024mrxd33",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 53.79648,
           "lon": -1.54785,
           "city": "Leeds",
@@ -3458,8 +3458,8 @@
           "https://www.leeds.ac.uk"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3478,7 +3478,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01ej9dk98",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -37.814,
           "lon": 144.96332,
           "city": "Melbourne",
@@ -3492,8 +3492,8 @@
           "https://www.unimelb.edu.au"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3513,7 +3513,7 @@
         ],
         "location": {
           "id": "universal:location/0161xgx34",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 45.50884,
           "lon": -73.58781,
           "city": "Montreal",
@@ -3527,8 +3527,8 @@
           "https://www.umontreal.ca"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3544,7 +3544,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/01jmxt844",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": -45.87416,
           "lon": 170.50361,
           "city": "Dunedin",
@@ -3558,8 +3558,8 @@
           "http://www.otago.ac.nz/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3577,7 +3577,7 @@
         ],
         "location": {
           "id": "universal:location/03yj89h83",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 65.01236,
           "lon": 25.46816,
           "city": "Oulu",
@@ -3591,8 +3591,8 @@
           "https://www.oulu.fi"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3612,7 +3612,7 @@
         ],
         "location": {
           "id": "universal:location/010x8gc63",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 52.13238,
           "lon": -106.66892,
           "city": "Saskatoon",
@@ -3626,8 +3626,8 @@
           "https://www.usask.ca/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3643,7 +3643,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/05v62cm79",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 51.45625,
           "lon": -0.97113,
           "city": "Reading",
@@ -3657,8 +3657,8 @@
           "https://www.reading.ac.uk"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3679,7 +3679,7 @@
         ],
         "location": {
           "id": "universal:location/00cvxb145",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 47.60621,
           "lon": -122.33207,
           "city": "Seattle",
@@ -3693,8 +3693,8 @@
           "https://www.washington.edu"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       },
@@ -3714,7 +3714,7 @@
         "labels": [],
         "location": {
           "id": "universal:location/008xxew50",
-          "type": "wcrp:location",
+          "type": "esgf:location",
           "lat": 52.37403,
           "lon": 4.88969,
           "city": "Amsterdam",
@@ -3728,8 +3728,8 @@
           "https://vu.nl/"
         ],
         "type": [
-          "wcrp:organisation",
-          "wcrp:institution",
+          "esgf:organisation",
+          "esgf:institution",
           "universal"
         ]
       }
@@ -3779,8 +3779,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Atmospheric and Environmental Research",
         "label": "AER"
@@ -3811,8 +3811,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Astronomical Observatory of Rome",
         "label": "AoR"
@@ -3845,8 +3845,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Research Center for Environmental Changes, Academia Sinica",
         "label": "AS-RCEC"
@@ -3879,8 +3879,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Aristotle University of Thessaloniki",
         "label": "AUoT"
@@ -3913,8 +3913,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Alfred Wegener Institute for Polar and Marine Research",
         "label": "AWI"
@@ -3947,8 +3947,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "British Antarctic Survey",
         "label": "BAS"
@@ -3979,8 +3979,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Beijing Biocytogen (China)",
         "label": "BCC"
@@ -4013,8 +4013,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Chinese Academy of Meteorological Sciences",
         "label": "CAMS"
@@ -4047,8 +4047,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Chinese Academy of Sciences",
         "label": "CAS"
@@ -4081,8 +4081,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Environment and Climate Change Canada",
         "label": "CCCma"
@@ -4115,8 +4115,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Indian Institute of Tropical Meteorology",
         "label": "CCCR-IITM"
@@ -4149,8 +4149,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Centre for Environmental Data Analysis",
         "label": "CEDA"
@@ -4183,8 +4183,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Euro-Mediterranean Center for Climate Change",
         "label": "CMCC"
@@ -4217,8 +4217,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Centre National d'Études Spatiales",
         "label": "CNES"
@@ -4251,8 +4251,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Commonwealth Scientific and Industrial Research Organisation",
         "label": "CSIRO"
@@ -4285,8 +4285,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "German Climate Computing Centre",
         "label": "DKRZ"
@@ -4319,8 +4319,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "German Meteorological Service",
         "label": "DWD"
@@ -4353,8 +4353,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Swiss Federal Institute of Aquatic Science and Technology",
         "label": "EAWAG"
@@ -4387,8 +4387,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "European Centre for Medium-Range Weather Forecasts",
         "label": "ECMWF"
@@ -4421,8 +4421,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Indian National Centre for Ocean Information Services",
         "label": "ESSO"
@@ -4455,8 +4455,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Finnish Meteorological Institute",
         "label": "FMI"
@@ -4492,8 +4492,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Freie Universität Berlin",
         "label": "FUBerlin"
@@ -4529,8 +4529,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "ETH Zurich",
         "label": "IACETH"
@@ -4565,8 +4565,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "GEOMAR Helmholtz Centre for Ocean Research Kiel",
         "label": "IFM-GEOMAR"
@@ -4597,8 +4597,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Imperial College London",
         "label": "ImperialCollege"
@@ -4631,8 +4631,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Institute of Numerical Mathematics",
         "label": "INM"
@@ -4665,8 +4665,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Institut Pierre-Simon Laplace",
         "label": "IPSL"
@@ -4699,8 +4699,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "International Space Science Institute",
         "label": "ISSI"
@@ -4736,8 +4736,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Japan Aerospace Exploration Agency",
         "label": "JAXA"
@@ -4772,8 +4772,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Korea Institute of Ocean Science and Technology",
         "label": "KIOST"
@@ -4809,8 +4809,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Karlsruhe Institute of Technology",
         "label": "KIT"
@@ -4849,8 +4849,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Lawrence Livermore National Laboratory",
         "label": "LLNL"
@@ -4883,8 +4883,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Laboratoire de Physique et Chimie de l’Environnement et de l’Espace",
         "label": "LPC2E"
@@ -4917,8 +4917,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Met Office",
         "label": "MOHC"
@@ -4949,8 +4949,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Max Planck Institute for Biogeochemistry",
         "label": "MPI-B"
@@ -4983,8 +4983,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Max Planck Institute for Meteorology",
         "label": "MPI-M"
@@ -5017,8 +5017,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Max Planck Institute for Solar System Research",
         "label": "MPS"
@@ -5053,8 +5053,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Japan Meteorological Agency",
         "label": "MRI"
@@ -5087,8 +5087,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Goddard Institute for Space Studies",
         "label": "NASA-GISS"
@@ -5121,8 +5121,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Goddard Space Flight Center",
         "label": "NASA-GSFC"
@@ -5158,8 +5158,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Jet Propulsion Laboratory",
         "label": "NASA-JPL"
@@ -5192,8 +5192,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Langley Research Center",
         "label": "NASA-LaRC"
@@ -5226,8 +5226,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "National Center for Atmospheric Research",
         "label": "NCAR"
@@ -5258,8 +5258,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Uks",
         "label": "NCAS"
@@ -5292,8 +5292,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Natural Environment Research Council",
         "label": "NERC"
@@ -5328,8 +5328,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "National Institute of Water and Atmospheric Research",
         "label": "NIWA"
@@ -5369,8 +5369,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "NOAA National Centers for Environmental Information",
         "label": "NOAA-NCEI"
@@ -5403,8 +5403,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "National Taiwan University",
         "label": "NTU"
@@ -5440,8 +5440,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Nanjing University",
         "label": "NUIST"
@@ -5474,8 +5474,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Oregon State University",
         "label": "OSU"
@@ -5514,8 +5514,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Lawrence Livermore National Laboratory",
         "label": "PCMDI"
@@ -5548,8 +5548,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Physikalisch-Meteorologisches Observatorium Davos",
         "label": "PMOD"
@@ -5582,8 +5582,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Joint Global Change Research Institute",
         "label": "PNNL-JGCRI"
@@ -5616,8 +5616,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Pacific Northwest National Laboratory",
         "label": "PNNL-WACCEM"
@@ -5650,8 +5650,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Remote Sensing Systems (United States)",
         "label": "RSS"
@@ -5686,8 +5686,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Seoul National University",
         "label": "SNU"
@@ -5720,8 +5720,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Tsinghua University",
         "label": "THU"
@@ -5754,8 +5754,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Arizona",
         "label": "UA"
@@ -5790,8 +5790,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of California, Irvine",
         "label": "UCI"
@@ -5824,8 +5824,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Colorado System",
         "label": "UColorado"
@@ -5860,8 +5860,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of California, Santa Barbara",
         "label": "UCSB"
@@ -5896,8 +5896,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Universität Hamburg",
         "label": "UHH"
@@ -5930,8 +5930,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Bergen",
         "label": "UoBergen"
@@ -5964,8 +5964,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Maryland, College Park",
         "label": "UofMD"
@@ -5996,8 +5996,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Leeds",
         "label": "UoLeeds"
@@ -6030,8 +6030,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Melbourne",
         "label": "UoM"
@@ -6064,8 +6064,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Université de Montréal",
         "label": "UoMontreal"
@@ -6096,8 +6096,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Otago",
         "label": "UoOtago"
@@ -6128,8 +6128,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Oulu",
         "label": "UoOulu"
@@ -6160,8 +6160,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Reading",
         "label": "UReading"
@@ -6194,8 +6194,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "University of Washington",
         "label": "UW"
@@ -6230,8 +6230,8 @@
         ],
         "type": [
           "universal",
-          "wcrp:institution",
-          "wcrp:organisation"
+          "esgf:institution",
+          "esgf:organisation"
         ],
         "long_label": "Vrije Universiteit Amsterdam",
         "label": "VUA"
@@ -6293,9 +6293,9 @@
         },
         "status": "active",
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ],
         "url": "",
         "long_label": "MIROC Consortium",
@@ -6364,9 +6364,9 @@
         },
         "status": "active",
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ],
         "url": "",
         "long_label": "NCC Consortium",
@@ -6554,9 +6554,9 @@
           }
         },
         "type": [
-          "wcrp:consortium",
+          "esgf:consortium",
           "universal",
-          "wcrp:organisation"
+          "esgf:organisation"
         ],
         "url": "https://solarisheppa.geomar.de",
         "long_label": "SOLARIS HEPPA Consortium",
@@ -6585,7 +6585,7 @@
         "ui-label": "Air potential temperature",
         "description": "Air potential temperature is the temperature a parcel of air would have if moved dry adiabatically to a standard pressure",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6595,7 +6595,7 @@
         "ui-label": "Air pressure",
         "description": "Air pressure is the pressure that exists in the medium of air",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6605,7 +6605,7 @@
         "ui-label": "Atmosphere hybrid height coordinate",
         "description": "Parametric atmosphere hybrid height coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6615,7 +6615,7 @@
         "ui-label": "Atmosphere hybrid sigma pressure coordinate",
         "description": "Parametric atmosphere hybrid sigma pressure coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6625,7 +6625,7 @@
         "ui-label": "Atmosphere ln pressure coordinate",
         "description": "Parametric atmosphere natural log pressure coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6635,7 +6635,7 @@
         "ui-label": "Atmosphere sigma coordinate",
         "description": "Parametric atmosphere sigma coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6645,7 +6645,7 @@
         "ui-label": "Atmosphere sleve coordinate",
         "description": "Parametric atmosphere smooth vertical level coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6655,7 +6655,7 @@
         "ui-label": "Depth",
         "description": "Depth is the vertical distance below the earth’s surface",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6665,7 +6665,7 @@
         "ui-label": "Geopotential height",
         "description": "Geopotential height is the geopotential divided by the standard acceleration due to gravity",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6675,7 +6675,7 @@
         "ui-label": "Height",
         "description": "Height is the vertical distance above the earth’s surface",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6685,7 +6685,7 @@
         "ui-label": "Ocean double sigma coordinate",
         "description": "Parametric ocean double sigma coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6695,7 +6695,7 @@
         "ui-label": "Ocean s coordinate g1",
         "description": "Parametric ocean s-coordinate, generic form 1",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6705,7 +6705,7 @@
         "ui-label": "Ocean s coordinate g2",
         "description": "Parametric ocean s-coordinate, generic form 2",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6715,7 +6715,7 @@
         "ui-label": "Ocean s coordinate",
         "description": "Parametric ocean s-coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6725,7 +6725,7 @@
         "ui-label": "Ocean sigma coordinate",
         "description": "Parametric ocean sigma coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6735,7 +6735,7 @@
         "ui-label": "Ocean sigma z coordinate",
         "description": "Parametric ocean sigma over z coordinate",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6745,7 +6745,7 @@
         "ui-label": "Sea water potential temperature",
         "description": "Sea water potential temperature is the temperature a parcel of sea water would have if moved adiabatically to sea level pressure",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       },
@@ -6755,7 +6755,7 @@
         "ui-label": "Sea water pressure",
         "description": "Sea water pressure is the pressure that exists in the medium of sea water",
         "type": [
-          "wcrp:native-vertical-grid-coordinate",
+          "esgf:native-vertical-grid-coordinate",
           "universal"
         ]
       }
@@ -6782,7 +6782,7 @@
         "ui-label": "kelvin",
         "description": "unit for temperature",
         "type": [
-          "wcrp:native-vertical-grid-units",
+          "esgf:native-vertical-grid-units",
           "universal"
         ]
       },
@@ -6792,7 +6792,7 @@
         "ui-label": "metre",
         "description": "unit for length",
         "type": [
-          "wcrp:native-vertical-grid-units",
+          "esgf:native-vertical-grid-units",
           "universal"
         ]
       },
@@ -6802,7 +6802,7 @@
         "ui-label": "pascal",
         "description": "unit for pressure",
         "type": [
-          "wcrp:native-vertical-grid-units",
+          "esgf:native-vertical-grid-units",
           "universal"
         ]
       }
@@ -6832,7 +6832,7 @@
         "start": 2006,
         "url": "https://wcrp-cmip.org/CMIP5",
         "type": [
-          "wcrp:mip",
+          "esgf:mip",
           "universal"
         ]
       },
@@ -6845,7 +6845,7 @@
         "start": 2013,
         "url": "https://wcrp-cmip.org/CMIP6",
         "type": [
-          "wcrp:mip",
+          "esgf:mip",
           "universal"
         ]
       },
@@ -6858,7 +6858,7 @@
         "start": 2023,
         "url": "https://wcrp-cmip.org/CMIP6Plus",
         "type": [
-          "wcrp:mip",
+          "esgf:mip",
           "universal"
         ]
       },
@@ -6871,7 +6871,7 @@
         "start": 2025,
         "url": "https://wcrp-cmip.org/CMIP7",
         "type": [
-          "wcrp:mip",
+          "esgf:mip",
           "universal"
         ]
       }
@@ -6898,7 +6898,7 @@
         "ui-label": "",
         "description": "Data that has been processed or transformed from raw model output. Derived data includes value-added products such as anomalies, indices, or other statistics that are computed from the original model outputs.",
         "type": [
-          "wcrp:product",
+          "esgf:product",
           "universal"
         ]
       },
@@ -6908,7 +6908,7 @@
         "ui-label": "",
         "description": "Data sets used to drive model simulations. These include external factors like greenhouse gas concentrations, solar radiation, and land use changes that influence the climate model outputs.",
         "type": [
-          "wcrp:product",
+          "esgf:product",
           "universal"
         ]
       },
@@ -6918,7 +6918,7 @@
         "ui-label": "",
         "description": "Output produced from a model simulation. This includes the various data points and metrics generated as a result of running climate models, which simulate physical, chemical, and biological processes affecting the climate system.",
         "type": [
-          "wcrp:product",
+          "esgf:product",
           "universal"
         ]
       },
@@ -6928,7 +6928,7 @@
         "ui-label": "",
         "description": "Data collected from direct measurements of the climate system. This includes data from ground stations, satellites, buoys, and other observational platforms, which serve as a reference for validating and comparing model outputs.",
         "type": [
-          "wcrp:product",
+          "esgf:product",
           "universal"
         ]
       }
@@ -6956,8 +6956,8 @@
         "description": "global mean data",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -6967,8 +6967,8 @@
         "description": "data reported on a model's native grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -6978,8 +6978,8 @@
         "description": "data reported on a native grid in the region of Antarctica",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -6989,8 +6989,8 @@
         "description": "data reported on a native grid in the region of Greenland",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7000,8 +7000,8 @@
         "description": "zonal mean data reported on a model's native latitude grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7011,8 +7011,8 @@
         "description": "regridded data reported on the data provider's preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7022,8 +7022,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7033,8 +7033,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7044,8 +7044,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7055,8 +7055,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7066,8 +7066,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7077,8 +7077,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7088,8 +7088,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7099,8 +7099,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7110,8 +7110,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7121,8 +7121,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7132,8 +7132,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7143,8 +7143,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7154,8 +7154,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7165,8 +7165,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7176,8 +7176,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7187,8 +7187,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7198,8 +7198,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7209,8 +7209,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7220,8 +7220,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7231,8 +7231,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7242,8 +7242,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7253,8 +7253,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7264,8 +7264,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7275,8 +7275,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7286,8 +7286,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7297,8 +7297,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7308,8 +7308,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7319,8 +7319,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7330,8 +7330,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7341,8 +7341,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7352,8 +7352,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7363,8 +7363,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7374,8 +7374,8 @@
         "description": "regridded data reported on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7385,8 +7385,8 @@
         "description": "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7396,8 +7396,8 @@
         "description": "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7407,8 +7407,8 @@
         "description": "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7418,8 +7418,8 @@
         "description": "regridded data in the region of Antarctica reported on the data provider's preferred target grid",
         "region": "antarctica",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7429,8 +7429,8 @@
         "description": "regridded data in the region of Greenland reported on the data provider's preferred target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       },
       {
@@ -7440,8 +7440,8 @@
         "description": "regridded zonal mean data reported on the data provider's preferred latitude target grid",
         "region": "greenland",
         "type": [
-          "wcrp:grid-label:['wcrp:grid_label', 'universal']",
-          "wcrp:grid-label"
+          "esgf:grid-label:['esgf:grid_label', 'universal']",
+          "esgf:grid-label"
         ]
       }
     ]
@@ -7468,7 +7468,7 @@
         "description": "",
         "url": "",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7479,7 +7479,7 @@
         "description": "AerChemMIP experiments focus on the role of atmospheric chemistry and aerosols in climate, including piClim and hist-piSLCF simulations.",
         "url": "https://gmd.copernicus.org/articles/10/585/2017/gmd-10-585-2017.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7490,7 +7490,7 @@
         "description": "",
         "url": "https://wiki.met.no/aerocom/aerchemmip/start",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7501,7 +7501,7 @@
         "description": "C4MIP experiments focus on carbon cycle feedbacks and interactions, including 1pctCO2-bgc and esm-flat10-cdr experiments.",
         "url": "https://gmd.copernicus.org/articles/9/2853/2016/gmd-9-2853-2016.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7512,7 +7512,7 @@
         "description": "",
         "url": "https://cdrmip.carbondioxide-removal.eu/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7523,7 +7523,7 @@
         "description": "",
         "url": "https://data.giss.nasa.gov/CERESMIP",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7534,7 +7534,7 @@
         "description": "CFMIP experiments focus on cloud feedbacks and their role in climate, including abrupt-0p5CO2 and amip-piForcing simulations.",
         "url": "https://gmd.copernicus.org/articles/10/359/2017/gmd-10-359-2017.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7545,7 +7545,7 @@
         "description": "CMIP DECK: 1pctCO2, abrupt-4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
         "url": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7556,7 +7556,7 @@
         "description": "",
         "url": "https://cordex.org",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7567,7 +7567,7 @@
         "description": "DAMIP focuses on detection and attribution of climate change, covering experiments like hist-aer and hist-nat.",
         "url": "https://gmd.copernicus.org/articles/13/7947/2020/gmd-13-7947-2020.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7578,7 +7578,7 @@
         "description": "DCPP focuses on decadal climate predictions and initialized experiments like prediction for 2025-2036.",
         "url": "https://gmd.copernicus.org/articles/9/3751/2016/gmd-9-3751-2016.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7589,7 +7589,7 @@
         "description": "",
         "url": "https://www.senckenberg.de/en/institutes/sbik-f/quantitative-biogeography/qb-projects/firemip/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7600,7 +7600,7 @@
         "description": "",
         "url": "https://fishmip.org/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7611,7 +7611,7 @@
         "description": "GeoMIP explores the potential impacts and side-effects of geoengineering, including experiments like G7-1.5K-SAI.",
         "url": "https://gmd.copernicus.org/articles/8/989/2015/gmd-8-989-2015.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7622,7 +7622,7 @@
         "description": "",
         "url": "https://www.highresmip.org",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7633,7 +7633,7 @@
         "description": "",
         "url": "https://hydr.vub.be/projects/irrmip",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7644,7 +7644,7 @@
         "description": "",
         "url": "https://theghub.org/groups/ismip6/wiki",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7655,7 +7655,7 @@
         "description": "The Large Ensemble Single Forcing Model Intercomparison Project",
         "url": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7666,7 +7666,7 @@
         "description": "LMIP explores land-atmosphere interactions and processes, with experiments like land-hist.",
         "url": "https://gmd.copernicus.org/articles/10/3977/2017/gmd-10-3977-2017.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7677,7 +7677,7 @@
         "description": "",
         "url": "https://www.longrunmip.org/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7688,7 +7688,7 @@
         "description": "",
         "url": "https://www.cesm.ucar.edu/projects/cmip6/lumip",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7699,7 +7699,7 @@
         "description": "",
         "url": "tba",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7710,7 +7710,7 @@
         "description": "",
         "url": "https://misomip.github.io/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7721,7 +7721,7 @@
         "description": "",
         "url": "https://mumip.web.ox.ac.uk",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7732,7 +7732,7 @@
         "description": "",
         "url": "https://www.tipes.dk/na-hosing-mip/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7743,7 +7743,7 @@
         "description": "'none' entry permissable only for the experiment parent id. ",
         "url": "",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7754,7 +7754,7 @@
         "description": "",
         "url": "https://OceanMIP.github.io",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7765,7 +7765,7 @@
         "description": "PMIP focuses on past climate variability, with experiments like LIGabrupt.",
         "url": "https://gmd.copernicus.org/articles/9/3461/2016/gmd-9-3461-2016.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7776,7 +7776,7 @@
         "description": "",
         "url": "To",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7787,7 +7787,7 @@
         "description": "",
         "url": "https://ramip.uk/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7798,7 +7798,7 @@
         "description": "Regional Aerosol Model Intercomparison Project",
         "url": "https://ramip.ncas.ac.uk",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7809,7 +7809,7 @@
         "description": "RFMIP assesses the radiative forcing of climate change with experiments such as piClim-aer, piClim-histaer, and piClim-histall.",
         "url": "https://gmd.copernicus.org/articles/13/169/2020/gmd-13-169-2020.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7820,7 +7820,7 @@
         "description": "ScenarioMIP focuses on future climate projections based on different socio-economic pathways, including High, Medium, and Very Low scenarios.",
         "url": "https://gmd.copernicus.org/articles/12/1443/2019/gmd-12-1443-2019.pdf",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7831,7 +7831,7 @@
         "description": "",
         "url": "https://climate-cryosphere.org/simip-about/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7842,7 +7842,7 @@
         "description": "",
         "url": "https://sofiamip.github.io/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7853,7 +7853,7 @@
         "description": "",
         "url": "",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7864,7 +7864,7 @@
         "description": "",
         "url": "https://www.clivar.org/research-foci/basin-interaction",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7875,7 +7875,7 @@
         "description": "TIPMIP is an international model intercomparison project that aims to systematically advance our understanding of tipping dynamics in various Earth system components, and assess the associated uncertainties. By connecting and evaluating various models, TIPMIP will fill critical knowledge gaps in Earth system and climate modelling by improving the assessment of overall anthropogenic forcing and long-term commitments (irreversibilities). It will furthermore foster interdisciplinary knowledge transfer and shed light on critical processes currently underrepresented in Earth-system models and analysis. In doing so, it will inform relevant policy- and decision makers regarding tipping boundaries in the Earth system.",
         "url": "https://tipmip.pik-potsdam.de/",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7886,7 +7886,7 @@
         "description": "",
         "url": "www.volmip.org",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       },
@@ -7897,7 +7897,7 @@
         "description": "",
         "url": "In",
         "type": [
-          "wcrp:activity",
+          "esgf:activity",
           "universal"
         ]
       }
@@ -7924,7 +7924,7 @@
         "ui-label": "Aerosol",
         "description": "the behaviour and evolution of aerosols suspended in the atmosphere",
         "type": [
-          "wcrp:model-component-type",
+          "esgf:model-component-type",
           "universal"
         ]
       },
@@ -7934,7 +7934,7 @@
         "ui-label": "Atmosphere",
         "description": "dynamical, thermodynamical, and physical processes in the atmosphere",
         "type": [
-          "wcrp:model-component-type",
+          "esgf:model-component-type",
           "universal"
         ]
       },
@@ -7944,7 +7944,7 @@
         "ui-label": "Ocean",
         "description": "dynamical, thermodynamical, and physical processes in the ocean",
         "type": [
-          "wcrp:model-component-type",
+          "esgf:model-component-type",
           "universal"
         ]
       }
@@ -7971,7 +7971,7 @@
         "ui-label": "",
         "description": "aerosol treatment in an atmospheric model where concentrations are calculated based on emissions, transformation, and removal processes (rather than being prescribed or omitted entirely)",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -7981,7 +7981,7 @@
         "ui-label": "",
         "description": "atmospheric general circulation model run with prescribed ocean surface conditions and usually a model of the land surface",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -7991,7 +7991,7 @@
         "ui-label": "",
         "description": "coupled atmosphere-ocean global climate model, additionally including explicit representation of at least the land and sea ice",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8001,7 +8001,7 @@
         "ui-label": "",
         "description": "biogeochemistry model component that at the very least accounts for carbon reservoirs and fluxes in the atmosphere, terrestrial biosphere, and ocean",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8011,7 +8011,7 @@
         "ui-label": "",
         "description": "chemistry treatment in an atmospheric model that calculates atmospheric oxidant concentrations (including at least ozone), rather than prescribing them",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8021,7 +8021,7 @@
         "ui-label": "",
         "description": "gridded product based on measurements collected from in-situ instruments",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8031,7 +8031,7 @@
         "ui-label": "",
         "description": "ice-sheet model that includes ice-flow",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8041,7 +8041,7 @@
         "ui-label": "",
         "description": "land model run uncoupled from the atmosphere",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8051,7 +8051,7 @@
         "ui-label": "",
         "description": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8061,7 +8061,7 @@
         "ui-label": "",
         "description": "radiation component of an atmospheric model run 'offline'",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8071,7 +8071,7 @@
         "ui-label": "",
         "description": "gridded product generated from a model reanalysis based on in-situ instruments and possibly satellite measurements",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8081,7 +8081,7 @@
         "ui-label": "",
         "description": "gridded product based on both in-situ instruments and satellite measurements",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8091,7 +8091,7 @@
         "ui-label": "",
         "description": "gridded product based on satellite measurements",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       },
@@ -8101,7 +8101,7 @@
         "ui-label": "",
         "description": "slab-ocean used with an AGCM in representing the atmosphere-ocean coupled system",
         "type": [
-          "wcrp:source-type",
+          "esgf:source-type",
           "universal"
         ]
       }
@@ -8133,7 +8133,7 @@
         "description": "Australian Community Climate and Earth System Simulator",
         "origin": "BoM/CSIRO (Bureau of Meteorology/Commonwealth Scientific and Industrial Research Organisation)",
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8143,7 +8143,7 @@
         "description": "Beijing Climate Center Climate System Model",
         "origin": "BCC (Beijing Climate Center)",
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8156,7 +8156,7 @@
           "atmos"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8172,7 +8172,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8189,7 +8189,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8204,7 +8204,7 @@
           "ocean"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8220,7 +8220,7 @@
           "seaice"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8230,7 +8230,7 @@
         "description": "Flexible Global Ocean-Atmosphere-Land System Model",
         "origin": "IAP (Institute of Atmospheric Physics)",
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8244,7 +8244,7 @@
           "land"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8260,7 +8260,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8275,7 +8275,7 @@
           "ocean"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8291,7 +8291,7 @@
           "seaice"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8307,7 +8307,7 @@
           "seaice"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8320,7 +8320,7 @@
           "atmos"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8336,7 +8336,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8352,7 +8352,7 @@
           "seaice"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8368,7 +8368,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8378,7 +8378,7 @@
         "description": "Nonhydrostatic Icosahedral Atmospheric Model",
         "origin": "JAMSTEC (Japan Agency for Marine-Earth Science and Technology)",
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       },
       {
@@ -8394,7 +8394,7 @@
           "ocnbgchem"
         ],
         "type": [
-          "wcrp:model-family"
+          "esgf:model-family"
         ]
       }
     ]
@@ -8420,7 +8420,7 @@
         "ui-label": "Aerosol",
         "description": "Aerosol",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8430,7 +8430,7 @@
         "ui-label": "Atmosphere",
         "description": "Atmosphere",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8440,7 +8440,7 @@
         "ui-label": "Atmospheric Chemistry",
         "description": "Atmospheric Chemistry",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8451,7 +8451,7 @@
         "description": "Land Surface and Subsurface",
         "type": [
           "universal",
-          "wcrp:realm"
+          "esgf:realm"
         ]
       },
       {
@@ -8460,7 +8460,7 @@
         "ui-label": "Land Ice",
         "description": "Land Ice",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8470,7 +8470,7 @@
         "ui-label": "Ocean",
         "description": "Ocean",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8480,7 +8480,7 @@
         "ui-label": "Ocean Biogeochemistry",
         "description": "Ocean Biogeochemistry",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       },
@@ -8490,7 +8490,7 @@
         "ui-label": "Sea Ice",
         "description": "Sea Ice",
         "type": [
-          "wcrp:realm",
+          "esgf:realm",
           "universal"
         ]
       }
@@ -8517,7 +8517,7 @@
         "ui-label": "Cubed sphere",
         "description": "the spherical surface is defined as six coupled “logically square” regions",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8527,7 +8527,7 @@
         "ui-label": "Cubic octahedral spectral reduced gaussian",
         "description": "a spectral reduced Gaussian grid for which the smallest spectral wavelength is represented by 4 grid points, and which uses an octahedron-based method to reduce the number of grid points towards the poles",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8537,7 +8537,7 @@
         "ui-label": "Displaced pole",
         "description": "an ocean grid whose poles are not antipodean, typically with the northern pole displaced to lie over land",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8547,7 +8547,7 @@
         "ui-label": "Icosahedral geodesic dual",
         "description": "a grid that uses hexagonal and pentagonal tiles and is the dual of an icosahedral_geodesic grid",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8557,7 +8557,7 @@
         "ui-label": "Icosahedral geodesic",
         "description": "a grid that uses triangular tiles based on the subdivision of an icosahedron",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8567,7 +8567,7 @@
         "ui-label": "Linear spectral gaussian",
         "description": "a spectral Gaussian grid for which the smallest spectral wavelength is represented by 2 grid points",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8577,7 +8577,7 @@
         "ui-label": "No grid",
         "description": "there is no horizontal grid",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8587,7 +8587,7 @@
         "ui-label": "Plane projection",
         "description": "any transformation employed to represent the spherical surface of the globe on a plane",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8597,7 +8597,7 @@
         "ui-label": "Quadratic spectral gaussian",
         "description": "a spectral Gaussian grid for which the smallest spectral wavelength is represented by 3 grid points",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8607,7 +8607,7 @@
         "ui-label": "Reduced gaussian",
         "description": "a Gaussian grid for which the number of longitudinal points is reduced as the poles are approached",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8617,7 +8617,7 @@
         "ui-label": "Regular gaussian",
         "description": "a Gaussian grid for which the number of longitudinal points is constant for each latitude",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8627,7 +8627,7 @@
         "ui-label": "Regular latitude longitude",
         "description": "a rectilinear latitude-longitude grid with evenly spaced latitude points and evenly spaced longitude points",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8637,7 +8637,7 @@
         "ui-label": "Rotated pole",
         "description": "a regular latitude-longitude grid that is rotated to define a different north pole location",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8647,7 +8647,7 @@
         "ui-label": "Spectral gaussian",
         "description": "a grid based on the transformation from spectral space to a reduced or nonreduced Gaussian grid",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8657,7 +8657,7 @@
         "ui-label": "Spectral reduced gaussian",
         "description": "a grid based on the transformation from spectral space to a reduced Gaussian grid",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8667,7 +8667,7 @@
         "ui-label": "Stretched",
         "description": "a grid with higher resolution concentrated over an area of interest, at the expense of lower resolution elsewhere",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8677,7 +8677,7 @@
         "ui-label": "Tripolar",
         "description": "a global curvilinear ocean grid with a southern pole and two northern poles all placed over land",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8687,7 +8687,7 @@
         "ui-label": "Unstructured polygonal",
         "description": "an unstructured mesh consisting of arbitrary polygons",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8697,7 +8697,7 @@
         "ui-label": "Unstructured triangular",
         "description": "an unstructured mesh consisting solely of triangles",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       },
@@ -8707,7 +8707,7 @@
         "ui-label": "Yin yang",
         "description": "two overlapping grid patches",
         "type": [
-          "wcrp:native-horizontal-grid-type",
+          "esgf:native-horizontal-grid-type",
           "universal"
         ]
       }

@@ -27,10 +27,10 @@
   "url": [
     "http://www.eawag.ch/en/"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
     "universal",
-    "wcrp:institution",
-    "wcrp:organisation"
+    "esgf:institution",
+    "esgf:organisation"
   ]
 }

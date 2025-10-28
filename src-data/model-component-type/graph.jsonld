@@ -19,7 +19,7 @@
       "ui-label": "Aerosol",
       "description": "the behaviour and evolution of aerosols suspended in the atmosphere",
       "type": [
-        "wcrp:model-component-type",
+        "esgf:model-component-type",
         "universal"
       ]
     },
@@ -29,7 +29,7 @@
       "ui-label": "Atmosphere",
       "description": "dynamical, thermodynamical, and physical processes in the atmosphere",
       "type": [
-        "wcrp:model-component-type",
+        "esgf:model-component-type",
         "universal"
       ]
     },
@@ -39,7 +39,7 @@
       "ui-label": "Ocean",
       "description": "dynamical, thermodynamical, and physical processes in the ocean",
       "type": [
-        "wcrp:model-component-type",
+        "esgf:model-component-type",
         "universal"
       ]
     }

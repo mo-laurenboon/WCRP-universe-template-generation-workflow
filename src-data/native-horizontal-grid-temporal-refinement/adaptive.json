@@ -3,9 +3,9 @@
   "validation-key": "adaptive",
   "ui-label": "Adaptive",
   "description": "the total number of grid points varies during the model run",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:native-horizontal-grid-temporal-refinement",
+    "esgf:native-horizontal-grid-temporal-refinement",
     "universal"
   ]
 }

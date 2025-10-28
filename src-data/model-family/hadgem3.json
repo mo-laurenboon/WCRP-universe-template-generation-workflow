@@ -10,8 +10,8 @@
     "ocean",
     "seaice"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:model-family"
+    "esgf:model-family"
   ]
 }

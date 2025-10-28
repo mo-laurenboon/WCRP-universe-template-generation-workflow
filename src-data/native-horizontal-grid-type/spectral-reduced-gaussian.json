@@ -3,9 +3,9 @@
   "validation-key": "spectral-reduced-gaussian",
   "ui-label": "Spectral reduced gaussian",
   "description": "a grid based on the transformation from spectral space to a reduced Gaussian grid",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:native-horizontal-grid-type",
+    "esgf:native-horizontal-grid-type",
     "universal"
   ]
 }

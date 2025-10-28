@@ -19,7 +19,7 @@
       "ui-label": "Adaptive",
       "description": "the total number of grid points varies during the model run",
       "type": [
-        "wcrp:native-horizontal-grid-temporal-refinement",
+        "esgf:native-horizontal-grid-temporal-refinement",
         "universal"
       ]
     },
@@ -29,7 +29,7 @@
       "ui-label": "Dynamically stretched",
       "description": "the total number of grid points stays constant, but grid points can be dynamically relocated",
       "type": [
-        "wcrp:native-horizontal-grid-temporal-refinement",
+        "esgf:native-horizontal-grid-temporal-refinement",
         "universal"
       ]
     },
@@ -39,7 +39,7 @@
       "ui-label": "Static",
       "description": "the total number of grid points stays constant during the model run and there is no grid refinement, i",
       "type": [
-        "wcrp:native-horizontal-grid-temporal-refinement",
+        "esgf:native-horizontal-grid-temporal-refinement",
         "universal"
       ]
     }

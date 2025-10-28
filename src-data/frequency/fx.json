@@ -5,9 +5,9 @@
   "description": "fixed (time invariant) field",
   "long_name": "Fixed Frequency",
   "unit": "none",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:frequency",
+    "esgf:frequency",
     "universal"
   ]
 }

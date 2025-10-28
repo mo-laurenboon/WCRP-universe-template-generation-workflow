@@ -21,7 +21,7 @@
       "unit": "km",
       "value": "0.5",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -33,7 +33,7 @@
       "unit": "km",
       "value": "10000",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -45,7 +45,7 @@
       "unit": "km",
       "value": "1000",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -57,7 +57,7 @@
       "unit": "km",
       "value": "100",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -69,7 +69,7 @@
       "unit": "km",
       "value": "10",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -81,7 +81,7 @@
       "unit": "km",
       "value": "1",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -93,7 +93,7 @@
       "unit": "degree",
       "value": "1x1",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -105,7 +105,7 @@
       "unit": "km",
       "value": "2.5",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -117,7 +117,7 @@
       "unit": "km",
       "value": "2500",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -129,7 +129,7 @@
       "unit": "km",
       "value": "250",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -141,7 +141,7 @@
       "unit": "km",
       "value": "25",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -153,7 +153,7 @@
       "unit": "km",
       "value": "5000",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -165,7 +165,7 @@
       "unit": "km",
       "value": "500",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -177,7 +177,7 @@
       "unit": "km",
       "value": "50",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     },
@@ -189,7 +189,7 @@
       "unit": "km",
       "value": "5",
       "type": [
-        "wcrp:resolution",
+        "esgf:resolution",
         "universal"
       ]
     }

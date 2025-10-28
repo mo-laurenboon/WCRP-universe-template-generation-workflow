@@ -5,9 +5,9 @@
   "description": "Resolution of 500 km",
   "unit": "km",
   "value": "500",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:resolution",
+    "esgf:resolution",
     "universal"
   ]
 }

@@ -19,7 +19,7 @@
       "ui-label": "kelvin",
       "description": "unit for temperature",
       "type": [
-        "wcrp:native-vertical-grid-units",
+        "esgf:native-vertical-grid-units",
         "universal"
       ]
     },
@@ -29,7 +29,7 @@
       "ui-label": "metre",
       "description": "unit for length",
       "type": [
-        "wcrp:native-vertical-grid-units",
+        "esgf:native-vertical-grid-units",
         "universal"
       ]
     },
@@ -39,7 +39,7 @@
       "ui-label": "pascal",
       "description": "unit for pressure",
       "type": [
-        "wcrp:native-vertical-grid-units",
+        "esgf:native-vertical-grid-units",
         "universal"
       ]
     }

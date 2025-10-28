@@ -29,10 +29,10 @@
   "url": [
     "http://www.jma.go.jp/jma/indexe.html"
   ],
-  "@context": "@context",
+  "@context": "_context",
   "type": [
     "universal",
-    "wcrp:institution",
-    "wcrp:organisation"
+    "esgf:institution",
+    "esgf:organisation"
   ]
 }

@@ -3,9 +3,9 @@
   "validation-key": "height",
   "ui-label": "Height",
   "description": "Height is the vertical distance above the earth’s surface",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:native-vertical-grid-coordinate",
+    "esgf:native-vertical-grid-coordinate",
     "universal"
   ]
 }

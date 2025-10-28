@@ -3,9 +3,9 @@
   "validation-key": "ocnBgchem",
   "ui-label": "Ocean Biogeochemistry",
   "description": "Ocean Biogeochemistry",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:realm",
+    "esgf:realm",
     "universal"
   ]
 }

@@ -3,9 +3,9 @@
   "validation-key": "satellite_retrieval",
   "ui-label": "",
   "description": "gridded product based on satellite measurements",
-  "@context": "@context",
+  "@context": "_context",
   "type": [
-    "wcrp:source-type",
+    "esgf:source-type",
     "universal"
   ]
 }
