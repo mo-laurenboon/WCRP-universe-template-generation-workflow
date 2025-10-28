@@ -1,7 +1,7 @@
 {
     "@context": 
         {
-            "universal":"https://wcrp-cmip.github.io/WCRP-universe/_context",
+            "universal":"https://wcrp-cmip.github.io/WCRP-universe/",
             "@base": "universal:source-type/",
             "@vocab": "universal:source-type/"
         }
