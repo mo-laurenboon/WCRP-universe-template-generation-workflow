@@ -1,7 +1,6 @@
 {
-    "id": "nasa-gsfc",
-    "validation-key": "NASA-GSFC",
-    "ui-label": "Goddard Space Flight Center",
+    "validation_key": "NASA-GSFC",
+    "ui_label": "Goddard Space Flight Center",
     "description": "",
     "acronyms": [
         "GSFC"
@@ -13,8 +12,8 @@
         "Centro de Vuelo Espacial Goddard"
     ],
     "location": {
-        "id": "universal:location/0171mag52",
-        "type": "wcrp:location",
+        "@id": "universal:location/0171mag52",
+        "@type": "esgf:location",
         "lat": 39.00455,
         "lon": -76.87553,
         "city": "Greenbelt",
@@ -27,10 +26,11 @@
     "url": [
         "https://www.nasa.gov/centers/goddard/home/index.html"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "nasa-gsfc"
 }

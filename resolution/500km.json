@@ -1,13 +1,14 @@
 {
-  "id": "500km",
-  "validation-key": "500 km",
-  "ui-label": "",
-  "description": "Resolution of 500 km",
-  "unit": "km",
-  "value": "500",
-  "@context": "@context",
-  "type": [
-    "wcrp:resolution",
-    "universal"
-  ]
+    "validation_key": "500 km",
+    "ui_label": "",
+    "description": "Resolution of 500 km",
+    "unit": "km",
+    "value": "500",
+    "@context": "_context",
+    "@type": [
+        "wcrp:resolution",
+        "esgvoc:Resolution",
+        "universal"
+    ],
+    "@id": "500km"
 }

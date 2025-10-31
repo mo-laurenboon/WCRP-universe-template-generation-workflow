@@ -1,7 +1,6 @@
 {
-    "id": "nerc",
-    "validation-key": "NERC",
-    "ui-label": "Natural Environment Research Council",
+    "validation_key": "NERC",
+    "ui_label": "Natural Environment Research Council",
     "description": "",
     "acronyms": [
         "NERC"
@@ -11,8 +10,8 @@
     "kind": "Government",
     "labels": [],
     "location": {
-        "id": "universal:location/02b5d8509",
-        "type": "wcrp:location",
+        "@id": "universal:location/02b5d8509",
+        "@type": "esgf:location",
         "lat": 51.55797,
         "lon": -1.78116,
         "city": "Swindon",
@@ -25,10 +24,11 @@
     "url": [
         "https://www.ukri.org/councils/nerc/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "nerc"
 }

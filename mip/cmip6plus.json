@@ -1,14 +1,15 @@
 {
-  "id": "cmip6plus",
-  "validation-key": "CMIP6Plus",
-  "ui-label": "",
-  "description": "",
-  "end": 2999,
-  "start": 2023,
-  "url": "https://wcrp-cmip.org/CMIP6Plus",
-  "@context": "@context",
-  "type": [
-    "wcrp:mip",
-    "universal"
-  ]
+    "validation_key": "CMIP6Plus",
+    "ui_label": "",
+    "description": "",
+    "end": 2999,
+    "start": 2023,
+    "url": "https://wcrp-cmip.org/CMIP6Plus",
+    "@context": "_context",
+    "@type": [
+        "wcrp:mip",
+        "esgvoc:Mip",
+        "universal"
+    ],
+    "@id": "cmip6plus"
 }

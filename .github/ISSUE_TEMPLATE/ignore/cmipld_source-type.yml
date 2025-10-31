@@ -1,0 +1,32 @@
+name: 'Add/Modify: Source-type'
+description: Defines a CMIP source-type, including descriptive information about different
+    model runs, such as those uncoupled from the atmosphere.
+title: 'Add/Modify: Source-type: <enter item name>'
+labels:
+- delta
+- source-type
+body:
+-   type: markdown
+    attributes:
+        value: Please fill in the form below.
+-   id: '@context'
+    attributes:
+        label: '@Context'
+        description: URI for the JSON-LD context describing source-type descriptors
+    validations:
+        required: true
+    type: input
+-   id: description
+    attributes:
+        label: Description
+        description: Detailed description of the source type
+    validations:
+        required: true
+    type: input
+-   id: name
+    attributes:
+        label: Name
+        description: Name or label for the source type
+    validations:
+        required: true
+    type: input

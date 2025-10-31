@@ -1,7 +1,6 @@
 {
-    "id": "nasa",
-    "validation-key": "NASA",
-    "ui-label": "National Aeronautics and Space Administration",
+    "validation_key": "NASA",
+    "ui_label": "National Aeronautics and Space Administration",
     "description": "",
     "acronyms": [
         "NASA",
@@ -15,8 +14,8 @@
     "kind": "Funder",
     "labels": [],
     "location": {
-        "id": "universal:location/027ka1x80",
-        "type": "wcrp:location",
+        "@id": "universal:location/027ka1x80",
+        "@type": "esgf:location",
         "lat": 38.89511,
         "lon": -77.03637,
         "city": "Washington",
@@ -29,10 +28,11 @@
     "url": [
         "http://www.nasa.gov"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "nasa"
 }

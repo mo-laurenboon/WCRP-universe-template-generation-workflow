@@ -1,7 +1,6 @@
 {
-    "id": "iaceth",
-    "validation-key": "IACETH",
-    "ui-label": "ETH Zurich",
+    "validation_key": "IACETH",
+    "ui_label": "ETH Zurich",
     "description": "",
     "acronyms": [],
     "aliases": [
@@ -17,8 +16,8 @@
         "ETH di Zurigo"
     ],
     "location": {
-        "id": "universal:location/05a28rw58",
-        "type": "wcrp:location",
+        "@id": "universal:location/05a28rw58",
+        "@type": "esgf:location",
         "lat": 47.36667,
         "lon": 8.55,
         "city": "Zurich",
@@ -31,10 +30,11 @@
     "url": [
         "https://ethz.ch"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "iaceth"
 }

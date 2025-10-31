@@ -1,11 +1,12 @@
 {
-  "id": "model-output",
-  "validation-key": "model-output",
-  "ui-label": "",
-  "description": "Output produced from a model simulation. This includes the various data points and metrics generated as a result of running climate models, which simulate physical, chemical, and biological processes affecting the climate system.",
-  "@context": "@context",
-  "type": [
-    "wcrp:product",
-    "universal"
-  ]
+    "validation_key": "model-output",
+    "ui_label": "",
+    "description": "Output produced from a model simulation. This includes the various data points and metrics generated as a result of running climate models, which simulate physical, chemical, and biological processes affecting the climate system.",
+    "@context": "_context",
+    "@type": [
+        "wcrp:product",
+        "esgvoc:Product",
+        "universal"
+    ],
+    "@id": "model-output"
 }

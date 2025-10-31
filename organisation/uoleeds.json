@@ -1,7 +1,6 @@
 {
-    "id": "uoleeds",
-    "validation-key": "UoLeeds",
-    "ui-label": "University of Leeds",
+    "validation_key": "UoLeeds",
+    "ui_label": "University of Leeds",
     "description": "",
     "acronyms": [],
     "aliases": [],
@@ -11,8 +10,8 @@
         "Prifysgol Leeds"
     ],
     "location": {
-        "id": "universal:location/024mrxd33",
-        "type": "wcrp:location",
+        "@id": "universal:location/024mrxd33",
+        "@type": "esgf:location",
         "lat": 53.79648,
         "lon": -1.54785,
         "city": "Leeds",
@@ -25,10 +24,11 @@
     "url": [
         "https://www.leeds.ac.uk"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "uoleeds"
 }

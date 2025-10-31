@@ -1,7 +1,6 @@
 {
-    "id": "fmi",
-    "validation-key": "FMI",
-    "ui-label": "Finnish Meteorological Institute",
+    "validation_key": "FMI",
+    "ui_label": "Finnish Meteorological Institute",
     "description": "",
     "acronyms": [
         "FMI"
@@ -14,8 +13,8 @@
         "Meteorologiska Institutet"
     ],
     "location": {
-        "id": "universal:location/05hppb561",
-        "type": "wcrp:location",
+        "@id": "universal:location/05hppb561",
+        "@type": "esgf:location",
         "lat": 60.16952,
         "lon": 24.93545,
         "city": "Helsinki",
@@ -28,10 +27,11 @@
     "url": [
         "http://en.ilmatieteenlaitos.fi/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "fmi"
 }

@@ -74,7 +74,7 @@ cmipld.get( "universal:product/derived")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/product/_context",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/product/_context_",
             "@type": "wcrp:product",
             "keys we want": "",
             "@explicit": True

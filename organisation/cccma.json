@@ -1,7 +1,6 @@
 {
-    "id": "cccma",
-    "validation-key": "CCCma",
-    "ui-label": "Environment and Climate Change Canada",
+    "validation_key": "CCCma",
+    "ui_label": "Environment and Climate Change Canada",
     "description": "",
     "acronyms": [
         "ECCC"
@@ -13,8 +12,8 @@
         "Environnement et Changement Climatique Canada"
     ],
     "location": {
-        "id": "universal:location/026ny0e17",
-        "type": "wcrp:location",
+        "@id": "universal:location/026ny0e17",
+        "@type": "esgf:location",
         "lat": 45.41117,
         "lon": -75.69812,
         "city": "Ottawa",
@@ -27,10 +26,11 @@
     "url": [
         "https://www.canada.ca/en/environment-climate-change.html"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "cccma"
 }

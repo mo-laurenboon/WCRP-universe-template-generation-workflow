@@ -1,7 +1,6 @@
 {
-    "id": "jaxa",
-    "validation-key": "JAXA",
-    "ui-label": "Japan Aerospace Exploration Agency",
+    "validation_key": "JAXA",
+    "ui_label": "Japan Aerospace Exploration Agency",
     "description": "",
     "acronyms": [
         "JAXA"
@@ -16,8 +15,8 @@
         "宇宙航空研究開発機構"
     ],
     "location": {
-        "id": "universal:location/059yhyy33",
-        "type": "wcrp:location",
+        "@id": "universal:location/059yhyy33",
+        "@type": "esgf:location",
         "lat": 35.6895,
         "lon": 139.69171,
         "city": "Tokyo",
@@ -30,10 +29,11 @@
     "url": [
         "https://www.jaxa.jp"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "jaxa"
 }

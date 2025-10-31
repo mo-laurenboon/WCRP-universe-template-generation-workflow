@@ -1,7 +1,6 @@
 {
-    "id": "mohc",
-    "validation-key": "MOHC",
-    "ui-label": "Met Office",
+    "validation_key": "MOHC",
+    "ui_label": "Met Office",
     "description": "",
     "acronyms": [],
     "aliases": [
@@ -11,8 +10,8 @@
     "kind": "Funder",
     "labels": [],
     "location": {
-        "id": "universal:location/01ch2yn61",
-        "type": "wcrp:location",
+        "@id": "universal:location/01ch2yn61",
+        "@type": "esgf:location",
         "lat": 50.7236,
         "lon": -3.52751,
         "city": "Exeter",
@@ -25,10 +24,11 @@
     "url": [
         "http://www.metoffice.gov.uk/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "mohc"
 }

@@ -1,11 +1,12 @@
 {
-  "id": "atmoschem",
-  "validation-key": "atmosChem",
-  "ui-label": "Atmospheric Chemistry",
-  "description": "Atmospheric Chemistry",
-  "@context": "@context",
-  "type": [
-    "wcrp:realm",
-    "universal"
-  ]
+    "validation_key": "atmosChem",
+    "ui_label": "Atmospheric Chemistry",
+    "description": "Atmospheric Chemistry",
+    "@context": "_context",
+    "@type": [
+        "wcrp:realm",
+        "esgvoc:Realm",
+        "universal"
+    ],
+    "@id": "atmoschem"
 }

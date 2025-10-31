@@ -1,7 +1,6 @@
 {
-    "id": "uw",
-    "validation-key": "UW",
-    "ui-label": "University of Washington",
+    "validation_key": "UW",
+    "ui_label": "University of Washington",
     "description": "",
     "acronyms": [
         "UW"
@@ -14,8 +13,8 @@
         "Université de Washington"
     ],
     "location": {
-        "id": "universal:location/00cvxb145",
-        "type": "wcrp:location",
+        "@id": "universal:location/00cvxb145",
+        "@type": "esgf:location",
         "lat": 47.60621,
         "lon": -122.33207,
         "city": "Seattle",
@@ -28,10 +27,11 @@
     "url": [
         "https://www.washington.edu"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "uw"
 }

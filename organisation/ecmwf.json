@@ -1,7 +1,6 @@
 {
-    "id": "ecmwf",
-    "validation-key": "ECMWF",
-    "ui-label": "European Centre for Medium-Range Weather Forecasts",
+    "validation_key": "ECMWF",
+    "ui_label": "European Centre for Medium-Range Weather Forecasts",
     "description": "",
     "acronyms": [
         "ECMWF"
@@ -11,8 +10,8 @@
     "kind": "Other",
     "labels": [],
     "location": {
-        "id": "universal:location/014w0fd65",
-        "type": "wcrp:location",
+        "@id": "universal:location/014w0fd65",
+        "@type": "esgf:location",
         "lat": 51.45625,
         "lon": -0.97113,
         "city": "Reading",
@@ -25,10 +24,11 @@
     "url": [
         "http://www.ecmwf.int/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "ecmwf"
 }

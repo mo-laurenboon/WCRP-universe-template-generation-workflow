@@ -1,11 +1,12 @@
 {
-  "id": "atmos",
-  "validation-key": "atmos",
-  "ui-label": "Atmosphere",
-  "description": "Atmosphere",
-  "@context": "@context",
-  "type": [
-    "wcrp:realm",
-    "universal"
-  ]
+    "validation_key": "atmos",
+    "ui_label": "Atmosphere",
+    "description": "Atmosphere",
+    "@context": "_context",
+    "@type": [
+        "wcrp:realm",
+        "esgvoc:Realm",
+        "universal"
+    ],
+    "@id": "atmos"
 }

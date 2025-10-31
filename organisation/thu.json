@@ -1,7 +1,6 @@
 {
-    "id": "thu",
-    "validation-key": "THU",
-    "ui-label": "Tsinghua University",
+    "validation_key": "THU",
+    "ui_label": "Tsinghua University",
     "description": "",
     "acronyms": [
         "THU"
@@ -13,8 +12,8 @@
         "清华大学"
     ],
     "location": {
-        "id": "universal:location/03cve4549",
-        "type": "wcrp:location",
+        "@id": "universal:location/03cve4549",
+        "@type": "esgf:location",
         "lat": 39.9075,
         "lon": 116.39723,
         "city": "Beijing",
@@ -27,10 +26,11 @@
     "url": [
         "https://www.tsinghua.edu.cn"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "thu"
 }

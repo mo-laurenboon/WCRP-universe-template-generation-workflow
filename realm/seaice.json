@@ -1,11 +1,12 @@
 {
-  "id": "seaice",
-  "validation-key": "seaIce",
-  "ui-label": "Sea Ice",
-  "description": "Sea Ice",
-  "@context": "@context",
-  "type": [
-    "wcrp:realm",
-    "universal"
-  ]
+    "validation_key": "seaIce",
+    "ui_label": "Sea Ice",
+    "description": "Sea Ice",
+    "@context": "_context",
+    "@type": [
+        "wcrp:realm",
+        "esgvoc:Realm",
+        "universal"
+    ],
+    "@id": "seaice"
 }

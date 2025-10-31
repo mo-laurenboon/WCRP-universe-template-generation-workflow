@@ -1,7 +1,6 @@
 {
-    "id": "mps",
-    "validation-key": "MPS",
-    "ui-label": "Max Planck Institute for Solar System Research",
+    "validation_key": "MPS",
+    "ui_label": "Max Planck Institute for Solar System Research",
     "description": "",
     "acronyms": [
         "MPS"
@@ -13,8 +12,8 @@
         "Max-Planck-Institut für Sonnensystemforschung"
     ],
     "location": {
-        "id": "universal:location/02j6gm739",
-        "type": "wcrp:location",
+        "@id": "universal:location/02j6gm739",
+        "@type": "esgf:location",
         "lat": 51.53443,
         "lon": 9.93228,
         "city": "Göttingen",
@@ -27,10 +26,11 @@
     "url": [
         "http://www.mps.mpg.de/en"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "mps"
 }

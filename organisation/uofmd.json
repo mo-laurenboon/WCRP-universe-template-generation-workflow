@@ -1,7 +1,6 @@
 {
-    "id": "uofmd",
-    "validation-key": "UofMD",
-    "ui-label": "University of Maryland, College Park",
+    "validation_key": "UofMD",
+    "ui_label": "University of Maryland, College Park",
     "description": "",
     "acronyms": [
         "UMD"
@@ -14,8 +13,8 @@
         "Université du Maryland"
     ],
     "location": {
-        "id": "universal:location/047s2c258",
-        "type": "wcrp:location",
+        "@id": "universal:location/047s2c258",
+        "@type": "esgf:location",
         "lat": 38.98067,
         "lon": -76.93692,
         "city": "College Park",
@@ -28,10 +27,11 @@
     "url": [
         "https://umd.edu"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "uofmd"
 }

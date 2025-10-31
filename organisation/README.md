@@ -70,7 +70,7 @@ cmipld.get( "universal:organisation/aer")
 Framing is a way we can filter the downloaded data to match what we want. 
 ```js
 frame = {
-            "@context": "https://wcrp-cmip.github.io/WCRP-universe/organisation/_context",
+            "@context": "https://wcrp-cmip.github.io/WCRP-universe/organisation/_context_",
             "@type": "wcrp:organisation",
             "keys we want": "",
             "@explicit": True

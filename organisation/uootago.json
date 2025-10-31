@@ -1,7 +1,6 @@
 {
-    "id": "uootago",
-    "validation-key": "UoOtago",
-    "ui-label": "University of Otago",
+    "validation_key": "UoOtago",
+    "ui_label": "University of Otago",
     "description": "",
     "acronyms": [],
     "aliases": [],
@@ -9,8 +8,8 @@
     "kind": "Education",
     "labels": [],
     "location": {
-        "id": "universal:location/01jmxt844",
-        "type": "wcrp:location",
+        "@id": "universal:location/01jmxt844",
+        "@type": "esgf:location",
         "lat": -45.87416,
         "lon": 170.50361,
         "city": "Dunedin",
@@ -23,10 +22,11 @@
     "url": [
         "http://www.otago.ac.nz/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "uootago"
 }

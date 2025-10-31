@@ -1,13 +1,14 @@
 {
-  "id": "10km",
-  "validation-key": "10 km",
-  "ui-label": "",
-  "description": "Resolution of 10 km",
-  "unit": "km",
-  "value": "10",
-  "@context": "@context",
-  "type": [
-    "wcrp:resolution",
-    "universal"
-  ]
+    "validation_key": "10 km",
+    "ui_label": "",
+    "description": "Resolution of 10 km",
+    "unit": "km",
+    "value": "10",
+    "@context": "_context",
+    "@type": [
+        "wcrp:resolution",
+        "esgvoc:Resolution",
+        "universal"
+    ],
+    "@id": "10km"
 }

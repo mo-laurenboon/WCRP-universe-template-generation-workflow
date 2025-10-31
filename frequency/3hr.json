@@ -1,13 +1,14 @@
 {
-  "id": "3hr",
-  "validation-key": "3hr",
-  "ui-label": "",
-  "description": "3 hourly mean samples",
-  "long_name": "3 Hourly Frequency",
-  "unit": "hour",
-  "@context": "@context",
-  "type": [
-    "wcrp:frequency",
-    "universal"
-  ]
+    "validation_key": "3hr",
+    "ui_label": "",
+    "description": "3 hourly mean samples",
+    "long_name": "3 Hourly Frequency",
+    "unit": "hour",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "3hr"
 }

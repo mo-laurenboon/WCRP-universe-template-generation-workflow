@@ -1,7 +1,6 @@
 {
-    "id": "inpe",
-    "validation-key": "INPE",
-    "ui-label": "National Institute for Space Research",
+    "validation_key": "INPE",
+    "ui_label": "National Institute for Space Research",
     "description": "",
     "acronyms": [
         "INPE"
@@ -13,8 +12,8 @@
         "Instituto Nacional de Pesquisas Espaciais"
     ],
     "location": {
-        "id": "universal:location/04xbn6x09",
-        "type": "wcrp:location",
+        "@id": "universal:location/04xbn6x09",
+        "@type": "esgf:location",
         "lat": -23.17944,
         "lon": -45.88694,
         "city": "São José dos Campos",
@@ -27,10 +26,11 @@
     "url": [
         "http://www.inpe.br/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "inpe"
 }

@@ -1,7 +1,6 @@
 {
-    "id": "ucla",
-    "validation-key": "UCLA",
-    "ui-label": "University of California, Los Angeles",
+    "validation_key": "UCLA",
+    "ui_label": "University of California, Los Angeles",
     "description": "",
     "acronyms": [
         "UCLA"
@@ -18,8 +17,8 @@
         "Université de Californie à Los Angeles"
     ],
     "location": {
-        "id": "universal:location/046rm7j60",
-        "type": "wcrp:location",
+        "@id": "universal:location/046rm7j60",
+        "@type": "esgf:location",
         "lat": 34.05223,
         "lon": -118.24368,
         "city": "Los Angeles",
@@ -32,10 +31,11 @@
     "url": [
         "https://www.ucla.edu"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "ucla"
 }

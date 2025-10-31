@@ -1,7 +1,6 @@
 {
-    "id": "aer",
-    "validation-key": "AER",
-    "ui-label": "Atmospheric and Environmental Research",
+    "validation_key": "AER",
+    "ui_label": "Atmospheric and Environmental Research",
     "description": "",
     "acronyms": [
         "AER"
@@ -11,8 +10,8 @@
     "kind": "Facility",
     "labels": [],
     "location": {
-        "id": "universal:location/04cg70g73",
-        "type": "wcrp:location",
+        "@id": "universal:location/04cg70g73",
+        "@type": "esgf:location",
         "lat": 42.44732,
         "lon": -71.2245,
         "city": "Lexington",
@@ -25,10 +24,11 @@
     "url": [
         "http://www.aer.com/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "aer"
 }

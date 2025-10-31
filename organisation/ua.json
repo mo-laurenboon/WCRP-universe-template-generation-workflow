@@ -1,7 +1,6 @@
 {
-    "id": "ua",
-    "validation-key": "UA",
-    "ui-label": "University of Arizona",
+    "validation_key": "UA",
+    "ui_label": "University of Arizona",
     "description": "",
     "acronyms": [
         "UA"
@@ -13,8 +12,8 @@
         "Universidad de Arizona"
     ],
     "location": {
-        "id": "universal:location/03m2x1q45",
-        "type": "wcrp:location",
+        "@id": "universal:location/03m2x1q45",
+        "@type": "esgf:location",
         "lat": 32.22174,
         "lon": -110.92648,
         "city": "Tucson",
@@ -27,10 +26,11 @@
     "url": [
         "http://www.arizona.edu/"
     ],
-    "@context": "@context",
-    "type": [
+    "@context": "_context",
+    "@type": [
         "wcrp:organisation",
-        "wcrp:institution",
+        "esgvoc:Organisation",
         "universal"
-    ]
+    ],
+    "@id": "ua"
 }
