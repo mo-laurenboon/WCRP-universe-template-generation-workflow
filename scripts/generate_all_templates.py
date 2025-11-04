@@ -117,6 +117,13 @@ def main():
                         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
                         "universal": {"id": "universal", "label": "universal"}
                     }
+                    "realms": {
+                        "atmos": {"id": "atmos", "label": "atmos"},
+                        "land": {"id": "land", "label": "land"},
+                        "ocean": {"id": "ocean", "label": "ocean"},
+                        "ocnbgchem": {"id": "ocnbgchem", "label": "ocnbgchem"},
+                        "seaice": {"id": "seaice", "label": "seaice"}
+                    }
                 }
                 """
             )

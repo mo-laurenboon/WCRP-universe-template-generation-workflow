@@ -11,7 +11,7 @@ input,region,Region,"A short human-readable location identifier",none,true,e.g. 
 input,start,Start,"The starting year",none,true,e.g. 2023,"",""
 input,end,End,"The ending year",none,true,e.g. 2023,"",""
 input,origin,Origin,"The origin of the model family",none,true,e.g. NCAR (National Center for Atmospheric Research),"",""
-multi-select,permissible_realms,Permissible realms,"Available schemes for data production",none,true,e.g. atmos, seaice, land ect,list,""
+multi-select,permissible_realms,Permissible realms,"Available schemes for data production",realms,true,"",dict_multiple,""
 input,acronyms,Acronyms,"Organisation acronyms",none,false,e.g. AER,"",""
 textarea,aliases,Aliases,"Organisation aliases",none,false,"","",""
 input,established,Established,"Year that organisation was established",none,true,e.g. 1977,"",""
