@@ -1,0 +1,92 @@
+name: Experiment Submission
+description: Submit a new experiment definition
+title: "[EXPERIMENT] New Submission"
+labels: ['experiment', 'cv-submission']
+body:
+  - type: input
+    id: validation_key
+    attributes:
+      label: Validation key
+      description: CMIP code name
+    validations:
+      required: true
+
+  - type: input
+    id: ui_label
+    attributes:
+      label: Label
+      description: Human-readable name
+      placeholder: "e.g. Historical"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed scientific description
+      placeholder: "Provide comprehensive description"
+    validations:
+      required: true
+
+  - type: textarea
+    id: url
+    attributes:
+      label: URL
+      description: A link to the associated research paper
+      placeholder: "e.g. https://wcrp-cmip.org/"
+
+  - type: input
+    id: acronyms
+    attributes:
+      label: Acronyms
+      description: Organisation acronyms
+      placeholder: "e.g. AER"
+
+  - type: input
+    id: aliases
+    attributes:
+      label: Aliases
+      description: Organisation aliases
+
+  - type: input
+    id: established
+    attributes:
+      label: Established
+      description: Year that organisation was established
+      placeholder: "e.g. 1977"
+    validations:
+      required: true
+
+  - type: input
+    id: kind
+    attributes:
+      label: Kind
+      description: The kind of organisation
+      placeholder: "e.g. Facility"
+    validations:
+      required: true
+
+  - type: input
+    id: labels
+    attributes:
+      label: Labels
+      description: Organisation labels
+      placeholder: "e.g. Osservatorio Astronomico di Roma"
+
+  - type: multiple fields
+    id: location
+    attributes:
+      label: Location
+      description: Organisation location
+    validations:
+      required: true
+
+  - type: input
+    id: ror
+    attributes:
+      label: ROR
+      description: Research organisation registry
+      placeholder: "e.g. 02hnp4676"
+    validations:
+      required: true
