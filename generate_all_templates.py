@@ -59,6 +59,22 @@ def record_instances_of_keys(categories, keys):
         filename.clear()
 
 
+def flatten_nested_dictionaries(dictionary, parent_key='', sep='_'):
+    """
+    """
+    items = []
+    for k, v in dictionary.items():
+        new_key = f"{parent_key}{sep}{k}" if parent_key else k
+        if isinstance(v, dict):
+            items.extend(flatten_nested_dictionaries(v, new_key, sep=sep).items())
+        elif isinstance(v, list):
+            items.append((new_key, ', '.join(map(str, v))))
+        else:
+            items.append((new_key, v))
+            
+    return dict(items)
+
+
 def create_csv(files, out_directory):
     """
     """
@@ -71,8 +87,9 @@ def create_csv(files, out_directory):
         output_csv = out_directory / output_csv_filename
         with file.open("r", encoding="utf-8") as f:
             #read the data
-            data = json.load(f)
+            dictionary = json.load(f)
             #list the keys
+            data = flatten_nested_dictionaries(dictionary, parent_key='', sep='_')
             for key, _ in data.items():
                 if key not in keys:
                     keys.append(key)
@@ -88,7 +105,6 @@ def create_csv(files, out_directory):
                         data[i].insert(0, i)          
                     for row in data:
                         writer.writerow(row)
-
 
 
 def main():

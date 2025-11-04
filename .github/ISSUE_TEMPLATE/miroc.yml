@@ -42,12 +42,6 @@ body:
       label: Changes
       description: Organisation changes
 
-  - type: multiple fields
-    id: members
-    attributes:
-      label: Members
-      description: Organisation members
-
   - type: input
     id: status
     attributes:

@@ -4,5 +4,4 @@ field_order,field_type,field_id,label,description,data_source,required,placehold
 3,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
 4,textarea,url,URL,A link to the associated research paper,none,false,e.g. https://wcrp-cmip.org/,,
 5,textarea,changes,Changes,Organisation changes,none,false,,,
-6,multiple fields,members,Members,Organisation members,none,false,,list,
-7,input,status,Status,Organisation status,none,false,e.g. active,,
+6,input,status,Status,Organisation status,none,false,e.g. active,,

@@ -74,11 +74,35 @@ body:
       description: Organisation labels
       placeholder: "e.g. Osservatorio Astronomico di Roma"
 
-  - type: multiple fields
-    id: location
+  - type: input
+    id: location_lat
     attributes:
-      label: Location
-      description: Organisation location
+      label: Latitude
+      description: Location latitude in degrees
+    validations:
+      required: true
+
+  - type: input
+    id: location_lon
+    attributes:
+      label: Longitude
+      description: Location longitude in degrees
+    validations:
+      required: true
+
+  - type: input
+    id: location_city
+    attributes:
+      label: City
+      description: City
+    validations:
+      required: true
+
+  - type: input
+    id: location_country
+    attributes:
+      label: Country
+      description: Country
     validations:
       required: true
 
