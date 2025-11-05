@@ -1,0 +1,34 @@
+name: Validate json files
+description: Action to validate all JSONs
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: "src-data"
+    - name: run validation check
+      run: |
+        set -uo pipefail
+        failures=""
+        count=0
+        while IFS= read -r -d '' f; do
+          echo "validating $f"
+          if ! error=$(jq . "$f" 2>&1 >/dev/null); then
+            echo "WARNING: Invalid file detected for $f"
+            failures="$failures $f is not valid due to $error \n"
+            count=$((count + 1))
+          else
+            echo "$f validated"
+          fi
+        done < <(find src-data -type f -name '*.json' -print0)
+
+        if [ -n "$failures" ]; then
+          echo "$count invalid files found..."
+          echo -e "$failures"
+          exit 1
+        else
+          echo "All files successfully validated"
+        fi
+      shell: bash
