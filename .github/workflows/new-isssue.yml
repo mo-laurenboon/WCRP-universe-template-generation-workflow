@@ -1,12 +1,14 @@
 name: Process New Issue
 on:
-  issue:
+  issues:
     types: [opened, edited]
+  schedule:
+    - cron: 30 17 * * 5
 
 permissions:
   issues: write
   contents: write
-  pull-request: write
+  pull-requests: write
 
 jobs:
   process-issue:
@@ -19,3 +21,45 @@ jobs:
 
       - name: Parse and process issue
         uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
+
+      - name: Trigger issue handler
+        run: |
+          python .github/ISSUE_SCRIPT/${{ steps.run_python.outputs.ISSUE_TITLE}}.py
+
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add *.json
+          git commit -m "New JSON file added from issue form."
+          git push --set-upstream origin src-data
+      
+      - name: Generate all csv and py files
+        run: |
+          python generate_all_templates.py
+          
+          git add .
+          git commit -m "CSV and py templates updated."
+          git push --set-upstream origin src-data
+
+      - name: Generate issue templates
+        run: |
+          python template_generator.py
+
+          git add .
+          git commit -m "Issue form templates updated."
+          git push --set-upstream origin src-data
+
+      - name: Generate issue form handler scripts
+        run: |
+          python .github/ISSUE_SCRIPT/generate_handlers.py
+
+          git add .
+          git commit -m "Handler files updated."
+          git push --set-upstream origin src-data
+
+
+
+
+      
+
+
+      
