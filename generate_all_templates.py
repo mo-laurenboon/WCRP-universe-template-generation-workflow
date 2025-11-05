@@ -1,21 +1,8 @@
 from pathlib import Path
 import json
 import csv
-from tqdm import tqdm 
+from tqdm import tqdm
 
-def get_test_files(): #DELETE ME LATER -----------------------------------------------------------------------------------------------!!!!!
-    #test files representative of all unique keys DELETE ME LATER --------------------------------------------------------------------
-    a = Path("activity") / "c4mip.json"
-    b = Path("frequency") / "1hr.json"
-    c = Path("grid_label") / "gm.json"
-    d = Path("mip") / "cmip5.json"
-    e = Path("model_family") / "cam.json"
-    f = Path("organisation") / "cmcc.json"
-    g = Path("organisation") / "miroc.json"
-    h = Path("resolution") / "1km.json"
-    files = [a,b,c,d,e,f,g,h]
-
-    return files
 
 def scan_directories():
     """
@@ -79,7 +66,7 @@ def record_instances_of_keys(categories, keys): # may require removal if not use
     Prints a list of keys found within the JSON files of a given subdirectory 
     (category).
 
-        :param categories: A list of all subdirectories found in the repository.
+        :param categories: A list of subdirectories found in the repository.
         :param keys: A list of all unique keys within the found JSON files.
     """
     for cat in categories:
@@ -138,51 +125,50 @@ def create_csv(files, out_directory):
                "default_value"]
     
     #open progress bar loop
-    for i in tqdm(range(len(files)), desc="Creating csv files...", unit="file",
-                  leave=False, dynamic_ncols=True):
-        for file in files:
-            keys = []
-            output_csv_filename = f"{file.stem}.csv"
-            output_csv = out_directory / output_csv_filename
-            with file.open("r", encoding="utf-8") as f:
-                dictionary = json.load(f)
-                data = flatten_nested_dictionaries(dictionary, parent_key='',
+    for file in tqdm(files, desc="Creating csv files...", unit="file", 
+                     dynamic_ncols=True):
+        keys = []
+        output_csv_filename = f"{file.stem}.csv"
+        output_csv = out_directory / output_csv_filename
+        with file.open("r", encoding="utf-8") as f:
+            dictionary = json.load(f)
+            data = flatten_nested_dictionaries(dictionary, parent_key='',
                                                     sep='_')
-                for key, _ in data.items():
-                    #get a list of the keys within the json file
-                    if key not in keys:
-                        keys.append(key)
-                with open("master_csv_template.csv", mode="r", newline="") as infile:
-                    reader = csv.reader(infile)
-                    with open(output_csv, mode='w', newline='') as outfile:
-                        writer = csv.writer(outfile)
-                        #copy data with matching keys from the master csv
-                        data = [row for row in reader if row[1] in keys] 
-                        #copy column headers to the csv data                         
-                        data.insert(0, headers)  
-                        for i in range(1, len(data)):
-                            data[i].insert(0, i)          
-                        for row in data:
-                            writer.writerow(row)
+            for key, _ in data.items():
+                #get a list of the keys within the json file
+                if key not in keys:
+                    keys.append(key)
+            with open("master_csv_template.csv", mode="r", newline="") as infile:
+                reader = csv.reader(infile)
+                with open(output_csv, mode='w', newline='') as outfile:
+                    writer = csv.writer(outfile)
+                    #copy data with matching keys from the master csv
+                    data = [row for row in reader if row[1] in keys] 
+                    #copy column headers to the csv data                         
+                    data.insert(0, headers)  
+                    for i in range(1, len(data)):
+                        data[i].insert(0, i)          
+                    for row in data:
+                        writer.writerow(row)
 
 
-def create_python_files(files, out_directory):
+def create_hardcoded_python_files(files, out_directory):
     """
-    Creates a unique python for each json file based off of its structure.
+    Creates a hard coded unique python for each json file based off of its 
+    structure.
 
         :param files: A list of the paths for all json files in the repository.
         :param out_directory: The directory to output the created python files.
     """
     #open progress bar loop
-    for i in tqdm(range(len(files)), desc="Creating python files...", unit="file",
-                  leave=False, dynamic_ncols=True):
-        for file in files:
-            output_python_filename = f"{file.stem}.py"
-            output_python = out_directory / output_python_filename
-            #write uniquely named python file for each json file
-            with open(output_python, "w") as outfile:
-                #created hardcoded python structure, swap for cmipld at a later date
-                outfile.write(
+    for file in tqdm(files, desc="Creating python files...", unit="file", 
+                     dynamic_ncols=True):
+        output_python_filename = f"{file.stem}.py"
+        output_python = out_directory / output_python_filename
+        #write uniquely named python file for each json file
+        with open(output_python, "w") as outfile:
+            #created hardcoded python structure, swap for cmipld at a later date
+            outfile.write(
 """
 TEMPLATE_CONFIG = {
     "name": "Experiment Submission",
@@ -207,22 +193,80 @@ DATA = {
     }
 }
 """
-                )
+            )
+
+
+def create_dynamic_python_files(files, out_directory): #may not be used, reveiw before final submission ==================================
+    """
+    Dynamically creates a unique python for each json file based off of its 
+    structure using the cmip-ld library.
+
+        :param files: A list of the paths for all json files in the repository.
+        :param out_directory: The directory to output the created python files.
+    """
+    #open progress bar loop
+    for file in tqdm(files, desc="Creating python files...", unit="file",
+                  leave=False, dynamic_ncols=True):
+        output_python_filename = f"{file.stem}.py"
+        output_python = out_directory / output_python_filename
+        #write uniquely named python file for each json file
+        with open(output_python, "w") as outfile:
+            #created hardcoded python structure, swap for cmipld at a later date
+            outfile.write(
+"""
+import cmipld
+from cmipld.utils.ldparse import name_multikey_extract
+
+TEMPLATE_CONFIG = {
+    "name": "Experiment Submission",
+    "description": "Submit a new experiment definition",
+    "title": "[EXPERIMENT] New Submission",
+    "labels": ["experiment", "cv-submission"]
+}
+
+DATA = {
+    "issue_types": ["new", "modify", "delete"],
+    "activities": name_multikey_extract(
+        cmipld.get("universal:activity/graph.jsonld")["@graph"],
+        ["id", "validation-key", "ui-label"],
+        "validation-key"
+    ),
+    "experiments": name_multikey_extract(
+        cmipld.get("universal:experiment/graph.jsonld")["@graph"],
+        ["id", "validation-key", "ui-label"],
+        "validation-key"
+    ),
+    "types": {
+        "wcrp": {"id": "wcrp", "label": "wcrp"},
+        "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
+        "universal": {"id": "universal", "label": "universal"}
+    },
+    "realms": {
+        "atmos": {"id": "atmos", "label": "atmos"},
+        "land": {"id": "land", "label": "land"},
+        "ocean": {"id": "ocean", "label": "ocean"},
+        "ocnbgchem": {"id": "ocnbgchem", "label": "ocnbgchem"},
+        "seaice": {"id": "seaice", "label": "seaice"}
+    }
+}
+"""
+            )
 
 
 def main():
     """
     Holds the main body of the script.
     """
-    
-    files = get_test_files()
-    #files = scan_directories()
+    #Get information on repository and JSON file structure
+    categories, files = scan_directories()
+    keys = get_all_json_keys(files)
+    record_instances_of_keys(categories, keys)
 
+    #Create required files
     out_directory = Path(".github") / "GEN_ISSUE_TEMPLATE"
     out_directory.mkdir(parents=True, exist_ok=True)
-
     create_csv(files, out_directory)
-    create_python_files(files, out_directory)
+    create_hardcoded_python_files(files, out_directory)
     
 
 if __name__ == "__main__":
