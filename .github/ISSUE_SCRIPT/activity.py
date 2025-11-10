@@ -6,6 +6,11 @@ Handler for activity submissions.
 import json
 from pathlib import Path
 
+
+import os #DELETE ME +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
 def validate_activity(data):
     """
     Validate activity submission.
@@ -57,6 +62,7 @@ def run(parsed_data, issue_data):
         :param issue_data: The issue form as structured data.
         :returns: Output file status, name, category and ID as a dictionary.
     """
+    print("Current working directory:", os.getcwd()) #DELETE ME =======================================================
     print("processing activity submission...")
 
     #Validate
@@ -80,6 +86,8 @@ def run(parsed_data, issue_data):
     with open(output_file, "w") as f:
         json.dump(entry, f, indent=2, ensure_ascii=False)
     print(f"Created: {output_file}")
+
+    print("Output file path:", os.path.abspath(output_file)) #DELETE ME ===========================================
 
     return {
         "success": True,
