@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Parse and process issue
-        uses: actions/new-issue@main
+        uses: mo-laurenboon/WCRP-universe-template-generation-workflow/actions/new-issue@main
         
       - name: Checkout Repository
         uses: actions/checkout@v3
