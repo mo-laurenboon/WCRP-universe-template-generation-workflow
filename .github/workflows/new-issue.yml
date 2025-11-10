@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Parse and process issue
-        uses: actions/new-issue@main
+        uses: mo-laurenboon/WCRP-universe-template-generation-workflow/actions/new-issue@main
         
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -26,21 +26,21 @@ jobs:
           
       - name: Switch to src-data branch
         run: git checkout src-data
-
-      - name: Trigger issue handler
-        run: |
-          ISSUE_TITLE="${{ github.event.issue.title }}"
-          echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
-          SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
-          echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
-          python .github/ISSUE_SCRIPT/$SCRIPT
-
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git add **/*.json
-          ls -l .github/ISSUE_SCRIPT/*.json
-          git commit -m "New JSON file added from issue form." || echo "No changes to commit."
-          git push origin src-data
+      
+#      - name: Trigger issue handler
+#        run: |
+#          ISSUE_TITLE="${{ github.event.issue.title }}"
+#          echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
+#          SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
+#          echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
+#          python .github/ISSUE_SCRIPT/$SCRIPT
+#
+#          git config user.name "github-actions"
+#          git config user.email "github-actions@users.noreply.github.com"
+#          git add **/*.json
+#          ls -l .github/ISSUE_SCRIPT/*.json
+#          git commit -m "New JSON file added from issue form." || echo "No changes to commit."
+#          git push origin src-data
       
       - name: Generate all csv and py files
         run: |
