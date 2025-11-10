@@ -38,6 +38,8 @@ jobs:
           echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
           SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
           echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
+          ls -l .github/ISSUE_SCRIPT/
+          
           python .github/ISSUE_SCRIPT/$SCRIPT
 
           git config user.name "github-actions"
