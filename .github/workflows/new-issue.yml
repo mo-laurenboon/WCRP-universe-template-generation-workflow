@@ -40,7 +40,7 @@ jobs:
           echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
           ls -l .github/ISSUE_SCRIPT/
           
-          python .github/ISSUE_SCRIPT/$SCRIPT
+          python .github/ISSUE_SCRIPT/$SCRIPT "${{ github.event.issue.body }}"
 
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
