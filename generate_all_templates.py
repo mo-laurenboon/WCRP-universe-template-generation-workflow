@@ -184,7 +184,8 @@ DATA = {
         "ocean": {"id": "ocean", "label": "ocean"},
         "ocnbgchem": {"id": "ocnbgchem", "label": "ocnbgchem"},
         "seaice": {"id": "seaice", "label": "seaice"}
-    }
+    },
+    "modifiers": ["new","modify"]
 }
 """
             )
