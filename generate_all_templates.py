@@ -168,11 +168,11 @@ TEMPLATE_CONFIG = {
     "name": "Experiment Submission",
     "description": "Submit a new experiment definition",
     "title": "[EXPERIMENT] New Submission",
-    "labels": ["experiment", "cv-submission"]
+    "labels": ["cv-submission"]
 }
 
 DATA = {
-    "issue_types": ["new", "modify", "delete"],
+    "issue_types": ["new", "modify"],
     "types": {
         "wcrp": {"id": "wcrp", "label": "wcrp"},
         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
@@ -185,6 +185,7 @@ DATA = {
         "ocnbgchem": {"id": "ocnbgchem", "label": "ocnbgchem"},
         "seaice": {"id": "seaice", "label": "seaice"}
     }
+    "modifiers": ["new","modify"]
 }
 """
             )
