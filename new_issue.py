@@ -61,6 +61,7 @@ def main():
 
     # Define the path to the script based on the issue_type
     script_path = f"{path}{script_name}.py"
+    print(script_path)
 
     # Check if the script exists
     if os.path.exists(script_path):
