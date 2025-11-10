@@ -32,7 +32,7 @@ jobs:
           ISSUE_TITLE="${{ github.event.issue.title }}"
           echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
           SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
-          echo "SCRIPT DEFINED SUCCESSFULLY"
+          echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
           python .github/ISSUE_SCRIPT/$SCRIPT
 
           git config user.name "github-actions"
