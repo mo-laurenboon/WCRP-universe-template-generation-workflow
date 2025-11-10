@@ -21,14 +21,12 @@ jobs:
           fetch-depth: 0
           ref: src-data
 
-      - name: Checkout branch
-        run: git checkout src-data
-
       - name: Parse and process issue
         uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
 
       - name: Trigger issue handler
         run: |
+          git checkout src-data
           ISSUE_TITLE="${{ github.event.issue.title }}"
           echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
           SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
