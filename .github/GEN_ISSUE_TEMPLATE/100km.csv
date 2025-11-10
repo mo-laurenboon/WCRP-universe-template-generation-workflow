@@ -1,6 +1,0 @@
-field_order,field_type,field_id,label,description,data_source,required,placeholder,options_type,default_value
-1,input,validation_key,Validation key,CMIP code name,none,true,,,
-2,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
-3,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
-4,input,unit,Unit,The unit of measurement,none,true,e.g. hour,,
-5,input,value,Value,Resolution value in the context of the provided units,none,true,e.g. 25,,
