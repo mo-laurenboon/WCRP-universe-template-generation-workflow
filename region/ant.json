@@ -5,6 +5,7 @@
     "@context": "_context",
     "@type": [
         "wcrp:region",
+        "esgvoc:Region",
         "universal"
     ],
     "@id": "ant"

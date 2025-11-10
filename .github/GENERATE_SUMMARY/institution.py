@@ -4,20 +4,13 @@ from cmipld.utils.checksum import version
 
 me = __file__.split('/')[-1].replace('.py','')
 
-def run(localhost,whoami,repopath,reponame):
-
-    url = f'{localhost}/{whoami}/organisation/graph.jsonld'
-    ctx = f'{localhost}/{whoami}/organisation/_context_'
+def run(whoami, path, name, url, io):
     
-    frame = {
-        "@context": ctx,
-        "@type": "wcrp:institution"
-    }
+    url = f'{whoami}:organisation/graph.jsonld'
     
-    data = cmipld.jsonld.frame(url,frame)["@graph"]
+    data = cmipld.get(url,depth=1)['@graph']
     
     summary = name_extract(data,['acronyms', 'ui-label','url','ror'])
     
-    location = f'{repopath}/{reponame}_{me}.json'
-    summary = version(summary, me, location.split("/")[-1])
-    cmipld.utils.io.wjsn(summary,location)
+    location = f'{path}/{name}_{me}.json'
+    return location, me, summary
