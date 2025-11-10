@@ -1,0 +1,11 @@
+{
+    "validation_key": "ant",
+    "ui_label": "Antarctica",
+    "description": "located around the South Pole, separated from other land masses by the Southern Ocean, and almost entirely south of 60 degrees South latitude",
+    "@context": "_context",
+    "@type": [
+        "wcrp:region",
+        "universal"
+    ],
+    "@id": "ant"
+}
