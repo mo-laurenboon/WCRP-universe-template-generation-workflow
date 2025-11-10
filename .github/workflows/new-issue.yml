@@ -15,6 +15,9 @@ jobs:
   process-issue:
     runs-on: ubuntu-latest
     steps:
+      - name: Parse and process issue
+        uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
+        
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
@@ -23,9 +26,6 @@ jobs:
           
       - name: Switch to src-data branch
         run: git checkout src-data
-
-      - name: Parse and process issue
-        uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
 
       - name: Trigger issue handler
         run: |
