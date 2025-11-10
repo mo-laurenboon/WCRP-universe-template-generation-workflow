@@ -87,3 +87,6 @@ def run(parsed_data, issue_data):
         "category": "activity",
         "id": entry_id
     }
+
+if __name__ == "__main__":
+    run(parsed_data, issue_data)
