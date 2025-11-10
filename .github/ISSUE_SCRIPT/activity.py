@@ -3,8 +3,23 @@
 Handler for activity submissions.
 """
 
+import argparse
 import json
 from pathlib import Path
+import os
+
+def set_arg_parser():
+    """
+    Creates an argument parser to take the submitted issue body as an argument.
+
+        :returns: Argument parser.
+    """
+    parser = argparse.ArgumentParser(description="Run arguments")
+    parser.add_argument("parsed_data", help="The field content parsed from the issue body.")
+    parser.add_argument("issue_data", help="The issue form as structured data.")
+    args = parser.parse_args()
+  
+    return args
 
 def validate_activity(data):
     """
@@ -57,6 +72,7 @@ def run(parsed_data, issue_data):
         :param issue_data: The issue form as structured data.
         :returns: Output file status, name, category and ID as a dictionary.
     """
+    print("Current working directory:", os.getcwd()) #DELETE ME =======================================================
     print("processing activity submission...")
 
     #Validate
@@ -81,6 +97,8 @@ def run(parsed_data, issue_data):
         json.dump(entry, f, indent=2, ensure_ascii=False)
     print(f"Created: {output_file}")
 
+    print("Output file path:", os.path.abspath(output_file)) #DELETE ME ===========================================
+
     return {
         "success": True,
         "file": str(output_file),
@@ -89,4 +107,5 @@ def run(parsed_data, issue_data):
     }
 
 if __name__ == "__main__":
-    run(parsed_data, issue_data)
+     args = set_arg_parser()
+     run(args.parsed_data, args.issue_data)
