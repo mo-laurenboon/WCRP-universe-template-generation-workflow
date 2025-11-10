@@ -25,7 +25,7 @@ jobs:
         uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
 
       - name: Checkout branch
-        run: git checkout src-data
+        run: git checkout origin/src-data
 
       - name: Trigger issue handler
         run: |
