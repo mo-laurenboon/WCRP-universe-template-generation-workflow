@@ -45,6 +45,12 @@ def parse_issue_body(issue_body):
 
 def main():
     issue = get_issue()
+    issue_title = issue['title']
+    
+    parts = issue_title.split(":")
+    if len(parts) > 2:
+        script_name = parts[2].strip().lower() + ".py"
+
     parsed_issue = parse_issue_body(issue['body'])
     issue_type = parsed_issue.get('issue-type', '')
     # print(json.dumps(parsed_issue,indent=4))
@@ -54,7 +60,7 @@ def main():
         sys.exit('No issue type selected. Exiting')
 
     # Define the path to the script based on the issue_type
-    script_path = f"{path}{issue_type}.py"
+    script_path = f"{path}{script_name}.py"
 
     # Check if the script exists
     if os.path.exists(script_path):
