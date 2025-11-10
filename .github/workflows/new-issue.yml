@@ -38,7 +38,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add *.json
-          git commit -m "New JSON file added from issue form."
+          git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
       
       - name: Generate all csv and py files
@@ -47,7 +47,7 @@ jobs:
           
           git add *.csv
           git add *.py
-          git commit -m "CSV and py templates updated."
+          git commit -m "CSV and py templates updated." || echo "No changes to commit."
           git push --set-upstream origin src-data
 
       - name: Generate issue templates
@@ -55,7 +55,7 @@ jobs:
           python template_generator.py
 
           git add .
-          git commit -m "Issue form templates updated."
+          git commit -m "Issue form templates updated." || echo "No changes to commit."
           git push --set-upstream origin src-data
 
       - name: Generate issue form handler scripts
@@ -63,21 +63,18 @@ jobs:
           python .github/ISSUE_SCRIPT/generate_handlers.py
 
           git add .
-          git commit -m "Handler files updated."
+          git commit -m "Handler files updated." || echo "No changes to commit."
           git push --set-upstream origin src-data
       
       - name: Checkout main
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
-          git checkout main
+        run: git checkout main
 
       - name: Commit templates back to main
         run: |
           cp .github/ISSUE_TEMPLATE/*.py .
 
           git add *.py
-          git commit -m "Issue form templates updated."
+          git commit -m "Issue form templates updated." || echo "No changes to commit."
           git push --set-upstream origin main
 
 
