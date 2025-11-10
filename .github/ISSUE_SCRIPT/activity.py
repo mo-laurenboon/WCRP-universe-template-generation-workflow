@@ -6,6 +6,7 @@ Handler for activity submissions.
 import argparse
 import json
 from pathlib import Path
+import os
 
 def set_arg_parser():
     """
