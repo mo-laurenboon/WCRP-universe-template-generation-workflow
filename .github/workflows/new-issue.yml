@@ -4,6 +4,7 @@ on:
     types: [opened, edited]
   schedule:
     - cron: 30 17 * * 5
+  workflow_dispatch:
 
 permissions:
   issues: write
@@ -37,7 +38,8 @@ jobs:
         run: |
           python generate_all_templates.py
           
-          git add .
+          git add *.csv
+          git add *.py
           git commit -m "CSV and py templates updated."
           git push --set-upstream origin src-data
 
@@ -56,6 +58,21 @@ jobs:
           git add .
           git commit -m "Handler files updated."
           git push --set-upstream origin src-data
+      
+      - name: Checkout main
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout main
+
+      - name: Commit templates back to main
+        run: |
+          cp .github/ISSUE_TEMPLATE/*.py .
+
+          git add *.py
+          git commit -m "Issue form templates updated."
+          git push --set-upstream origin main
+
 
 
 
