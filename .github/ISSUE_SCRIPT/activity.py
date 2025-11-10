@@ -16,7 +16,6 @@ def set_arg_parser():
     """
     parser = argparse.ArgumentParser(description="Run arguments")
     parser.add_argument("parsed_data", help="The field content parsed from the issue body.")
-    parser.add_argument("issue_data", help="The issue form as structured data.")
     args = parser.parse_args()
   
     return args
@@ -64,12 +63,11 @@ def create_activity_json(data):
 
     return result
 
-def run(parsed_data, issue_data):
+def run(parsed_data):
     """
     Main handler function.
 
         :param parsed_data: The field content parsed from the issue body.
-        :param issue_data: The issue form as structured data.
         :returns: Output file status, name, category and ID as a dictionary.
     """
     print("Current working directory:", os.getcwd()) #DELETE ME =======================================================
@@ -108,4 +106,4 @@ def run(parsed_data, issue_data):
 
 if __name__ == "__main__":
      args = set_arg_parser()
-     run(args.parsed_data, args.issue_data)
+     run(args.parsed_data)
