@@ -21,7 +21,7 @@ jobs:
           python-version: 3.11
       
       - name: Parse and process issue
-        uses: WCRP-CMIP/CMIPLD/actions/new-issue@main
+        uses: mo-laurenboon/WCRP-universe-template-generation-workflow/new-issue@main
         
       - name: Checkout Repository
         uses: actions/checkout@v3
