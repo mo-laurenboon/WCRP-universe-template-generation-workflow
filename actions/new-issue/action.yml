@@ -38,7 +38,7 @@ runs:
           GITHUB_TOKEN: ${{ github.token }} # We need this to update the issue
 
         run: |
-          new_issue
+          python new_issue.py
 
         shell: bash
         continue-on-error: false
