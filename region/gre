@@ -1,0 +1,11 @@
+{
+    "validation_key": "gre",
+    "ui_label": "Greenland",
+    "description": "located in the Northern Atlantic Ocean, separated from other land masses by the Labrador Sea and Straits, and almost entirely north of 60 degrees North latitude",
+    "@context": "_context",
+    "@type": [
+        "wcrp:region",
+        "universal"
+    ],
+    "@id": "gre"
+}
