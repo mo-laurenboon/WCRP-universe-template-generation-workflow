@@ -5,7 +5,7 @@ import sys
 
 import json,os
 from cmipld.utils import git
-from  cmipld.tests import jsonld as tests
+from cmipld.tests import jsonld as tests
 from cmipld.utils.json import sorted_json
 from collections import OrderedDict
 
