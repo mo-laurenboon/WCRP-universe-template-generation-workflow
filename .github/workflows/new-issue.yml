@@ -26,7 +26,7 @@ jobs:
 
       - name: Trigger issue handler
         run: |
-          python .github/ISSUE_SCRIPT/${{ steps.run_python.outputs.ISSUE_TITLE}}.py
+          python .github/ISSUE_SCRIPT/${{ github.event.issue.title }}.py
 
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
