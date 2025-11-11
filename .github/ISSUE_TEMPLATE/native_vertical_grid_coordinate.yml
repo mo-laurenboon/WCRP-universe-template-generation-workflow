@@ -6,7 +6,7 @@ body:
   - type: dropdown
     id: modification
     attributes:
-      label: Modify
+      label: Issue Type
       description: Create new or modify existing issue
       options:
         - "New"
