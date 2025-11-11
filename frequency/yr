@@ -1,0 +1,14 @@
+{
+    "validation_key": "yr",
+    "ui_label": "",
+    "description": "annual mean samples",
+    "long_name": "Yearly Frequency",
+    "unit": "year",
+    "@context": "_context",
+    "@type": [
+        "wcrp:frequency",
+        "esgvoc:Frequency",
+        "universal"
+    ],
+    "@id": "yr"
+}
