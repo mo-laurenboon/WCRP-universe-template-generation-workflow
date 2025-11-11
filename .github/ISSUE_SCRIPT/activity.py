@@ -30,7 +30,7 @@ def validate_activity(data):
     errors = []
 
     #Required fields
-    required = ["validation_key", "ui_label", "description", "id"]
+    required = ["validation_key", "label", "description"]
     for field in required:
         if not data.get(field):
             errors.append(f"Missing required field: {field}")
