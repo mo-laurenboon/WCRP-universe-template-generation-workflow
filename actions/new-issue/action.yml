@@ -45,10 +45,10 @@ runs:
 
         run: |
           python new_issue.py
-          
-          cd "$GITHUB_WORKSPACE"
-          OUTPUT=$(find . -type f -name "*/*.json"| head -n 1)
+
+          OUTPUT=$(find . -type f -name "*.json"| paste -sd "," -)
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
+          echo "THE OUTPUT JSON FILES PRESENT ARE $OUTPUT"
 
         shell: bash
         continue-on-error: false
