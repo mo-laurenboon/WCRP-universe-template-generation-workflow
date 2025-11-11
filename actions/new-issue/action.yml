@@ -46,8 +46,9 @@ runs:
         run: |
           python new_issue.py
           
-          OUTPUT=$(find . -type f -name "*.json"| head -n 1)
-          echo "file_path=$OUTPUT" >> $GITHUB_OUTPUT
+          cd "$GITHUB_WORKSPACE"
+          OUTPUT=$(find . -type f -name "*/*.json"| head -n 1)
+          echo "json=$OUTPUT" >> $GITHUB_OUTPUT
 
         shell: bash
         continue-on-error: false
@@ -62,7 +63,7 @@ runs:
 
       - name: Commit new file
         run: |
-          git add "${{ steps.run_python.outputs.file_path }}"
+          git add "${{ steps.run_python.outputs.json }}"
           git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
         shell: bash
