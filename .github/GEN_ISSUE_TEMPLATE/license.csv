@@ -1,5 +1,5 @@
 field_order,field_type,field_id,label,description,data_source,required,placeholder,options_type,default_value
-1,dropdown,modification,Modify,Create new or modify existing issue,issue_types,true,,list,
+1,dropdown,modification,Issue Type,Create new or modify existing issue,issue_types,true,,list,
 2,input,validation_key,Validation key,CMIP acronym,none,true,,,
 3,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
 4,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
