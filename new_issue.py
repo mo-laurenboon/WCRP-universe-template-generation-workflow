@@ -52,6 +52,7 @@ def main():
     print(f"============================SCRIPT NAME : {script_name}============================")
 
     parsed_issue = parse_issue_body(issue['body'])
+    print(parsed_issue)
     issue_type = parsed_issue.get('issue_type', '')
     print(json.dumps(parsed_issue,indent=4))
 
