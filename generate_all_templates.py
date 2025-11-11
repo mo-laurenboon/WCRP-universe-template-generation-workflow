@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import csv
 from tqdm import tqdm
+from jinja2 import Template
 
 
 def scan_directories():
@@ -161,12 +162,12 @@ def create_hardcoded_python_files(category_keys, out_directory):
         output_python = out_directory / output_python_filename
 
         #created hardcoded python structure, swap for cmipld at a later date
-        filecontent = f"""
+        filecontent = Template("""
 TEMPLATE_CONFIG = {
-    "name": "Add/Modify: {cat}",
-    "description": "Add or modify {cat} in WCRP Universe",
-    "title": "Add/Modify: {cat}: <Type activity name here>",
-    "labels": ["{cat}", "cv-submission"]
+    "name": "Add/Modify: {{ cat }}",
+    "description": "Add or modify {{ cat }} in WCRP Universe",
+    "title": "Add/Modify: {{ cat }}: <Type activity name here>",
+    "labels": ["{{ cat }}", "cv-submission"]
 }
 
 DATA = {
@@ -186,8 +187,11 @@ DATA = {
     "modifiers": ["new","modify"]
 }
 """
+        )
+                         
         with open(output_python, "w") as outfile:
             outfile.write(filecontent)
+        
 
 
 def main():
