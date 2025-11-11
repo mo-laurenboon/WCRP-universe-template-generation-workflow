@@ -24,7 +24,7 @@ jobs:
         run: |
           pip install tqdm
           pip install jinja2
-          pip install yaml
+          pip install pyyaml
       
       - name: Parse and process issue
         uses: mo-laurenboon/WCRP-universe-template-generation-workflow/actions/new-issue@main
