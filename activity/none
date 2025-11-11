@@ -1,0 +1,13 @@
+{
+    "validation_key": "none",
+    "ui_label": "",
+    "description": "'none' entry permissable only for the experiment parent id. ",
+    "url": "",
+    "@context": "_context",
+    "@type": [
+        "wcrp:activity",
+        "esgvoc:Activity",
+        "universal"
+    ],
+    "@id": "none"
+}
