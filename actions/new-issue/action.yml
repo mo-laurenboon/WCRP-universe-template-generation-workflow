@@ -47,8 +47,6 @@ runs:
           python new_issue.py
 
           OUTPUT=$(find . -type f -name "*.json" | sed -n '2p')
-          git add "$OUTPUT"
-          git stash push -m "Temp stash *.json"
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
           echo "THE OUTPUT JSON FILES PRESENT ARE $OUTPUT"
 
@@ -65,7 +63,6 @@ runs:
 
       - name: Commit new file
         run: |
-          git stash pop
           git add "${{ steps.run_python.outputs.json }}"
           git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
