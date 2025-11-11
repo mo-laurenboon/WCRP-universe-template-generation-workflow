@@ -1,6 +1,6 @@
 field_type,field_id,label,description,data_source,required,placeholder,options_type,default_value
 markdown,instructions,Instructions,"# Experiment Submission\n\nSubmit a new experiment definition.",none,false,"","",""
-dropdown,modification,Issue Type,"Create new or modify existing issue",issue_types,true,"",list,""
+dropdown,issue_type,Issue Type,"Create new or modify existing issue",issue_types,true,"",list,""
 input,validation_key,Validation key,"CMIP acronym",none,true,"","",""
 input,ui_label,Label,"Human-readable name",none,true,e.g. Historical,"",""
 textarea,description,Description,"Detailed scientific description",none,true,Provide comprehensive description,"",""
