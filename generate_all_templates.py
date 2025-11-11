@@ -89,6 +89,13 @@ def flatten_nested_dictionaries(dictionary, parent_key='', sep='_'):
     return dict(items)
 
 
+def clean_key(key):
+    if key in ["@type", "@id"]:
+        return key[1:]
+
+    return key
+
+
 def record_instances_of_keys(categories, keys): 
     """
     Prints a list of keys found within the JSON files of a given subdirectory 
@@ -108,11 +115,8 @@ def record_instances_of_keys(categories, keys):
                 data = flatten_nested_dictionaries(data)
                 #create a list of all unique keys within that subdirectory only
                 for key in data:
-                    if key == "@id":
-                        key == "id"
-                    if key == "@type":
-                        key == "type"
-                    if key not in found_keys:
+                    cleaned_key = clean_key(key)
+                    if cleaned_key not in found_keys:
                         found_keys.append(key)
         #save found keys under the asocaited category name
         category_keys[cat.name] = found_keys
