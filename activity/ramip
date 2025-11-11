@@ -1,0 +1,13 @@
+{
+    "validation_key": "RAMIP",
+    "ui_label": "",
+    "description": "Regional Aerosol Model Intercomparison Project",
+    "url": "https://ramip.ncas.ac.uk",
+    "@context": "_context",
+    "@type": [
+        "wcrp:activity",
+        "esgvoc:Activity",
+        "universal"
+    ],
+    "@id": "ramip"
+}
