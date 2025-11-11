@@ -53,6 +53,7 @@ jobs:
 
           OUTPUT=$(find . -type f -name ".github/ISSUE_TEMPLATE/*.yml" | paste -sd " " -)
           echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
+          echo "templates=$OUTPUT"
 
           git add .
           git commit -m "Issue form templates updated." || echo "No changes to commit."
@@ -65,6 +66,7 @@ jobs:
 
           OUTPUT=$(find . -type f -name ".github/ISSUE_SCRIPT/*.py" | paste -sd " " -)
           echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
+          echo "handlers=$OUTPUT"
 
           git add .
           git commit -m "Handler files updated." || echo "No changes to commit."
