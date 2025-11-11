@@ -1,0 +1,12 @@
+{
+    "validation_key": "OGCM",
+    "ui_label": "",
+    "description": "ocean general circulation model run uncoupled from an AGCM but, usually including a sea-ice model",
+    "@context": "_context",
+    "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+    ],
+    "@id": "ogcm"
+}
