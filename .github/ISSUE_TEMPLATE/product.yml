@@ -3,6 +3,17 @@ description: Add or modify product in WCRP Universe
 title: "Add/Modify: product: <Type activity name here>"
 labels: ['product', 'cv-submission']
 body:
+  - type: dropdown
+    id: modification
+    attributes:
+      label: Modify
+      description: Create new or modify existing issue
+      options:
+        - "New"
+        - "Modify"
+    validations:
+      required: true
+
   - type: input
     id: validation_key
     attributes:
@@ -26,5 +37,26 @@ body:
       label: Description
       description: Detailed scientific description
       placeholder: "Provide comprehensive description"
+    validations:
+      required: true
+
+  - type: input
+    id: id
+    attributes:
+      label: Experiment ID
+      description: Unique identifier (lowercase, hyphen-separated)
+      placeholder: "e.g. aera-mip"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Data type
+      options:
+        - "wcrp"
+        - "esgvoc"
+        - "universal"
     validations:
       required: true

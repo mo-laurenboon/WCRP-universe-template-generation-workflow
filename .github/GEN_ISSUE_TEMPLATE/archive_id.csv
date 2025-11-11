@@ -1,5 +1,8 @@
 field_order,field_type,field_id,label,description,data_source,required,placeholder,options_type,default_value
-1,input,validation_key,Validation key,CMIP acronym,none,true,,,
-2,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
-3,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
-4,textarea,url,URL,A link to the associated research paper,none,false,e.g. https://wcrp-cmip.org/,,
+1,dropdown,modification,Modify,Create new or modify existing issue,issue_types,true,,list,
+2,input,validation_key,Validation key,CMIP acronym,none,true,,,
+3,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
+4,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
+5,textarea,url,URL,A link to the associated research paper,none,false,e.g. https://wcrp-cmip.org/,,
+6,input,id,Experiment ID,"Unique identifier (lowercase, hyphen-separated)",none,true,e.g. aera-mip,,
+7,dropdown,type,Type,Data type,types,true,,dict_keys,
