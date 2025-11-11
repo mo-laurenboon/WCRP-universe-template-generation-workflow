@@ -51,7 +51,7 @@ jobs:
         run: |
           python template_generator.py
 
-          OUTPUT=$(find . -type f -name ".github/ISSUE_TEMPLATE/*.yml" | paste -sd " " -)
+          OUTPUT=$(find . -path "./.github/ISSUE_TEMPLATE/*.yml" | paste -sd " " -)
           echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
           echo "templates=$OUTPUT"
 
@@ -64,7 +64,7 @@ jobs:
         run: |
           python .github/ISSUE_SCRIPT/generate_handlers.py
 
-          OUTPUT=$(find . -type f -name ".github/ISSUE_SCRIPT/*.py" | paste -sd " " -)
+          OUTPUT=$(find . -path "./.github/ISSUE_SCRIPT/*.py" | paste -sd " " -)
           echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
           echo "handlers=$OUTPUT"
 
