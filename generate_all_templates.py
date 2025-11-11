@@ -117,7 +117,7 @@ def record_instances_of_keys(categories, keys):
                 found_keys.remove("@id")
             if "@type" in found_keys:
                 found_keys.remove("@type")
-            found_keys.extend(["id", "type"])
+            found_keys[:0] = ["modification","id", "type"]
         except Exception as e:
             print(f"Error updating keys: {e}")
 
@@ -195,7 +195,6 @@ DATA = {
         "ocnbgchem": {"id": "ocnbgchem", "label": "ocnbgchem"},
         "seaice": {"id": "seaice", "label": "seaice"}
     },
-    "modifiers": ["new","modify"]
 }
 """
         )

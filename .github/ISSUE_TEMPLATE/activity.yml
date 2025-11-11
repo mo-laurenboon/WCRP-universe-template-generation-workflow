@@ -1,20 +1,19 @@
-name: "Add/Modify: Activity"
-description: Add or modify an activity in WCRP Universe
-title: "Add/Modify: Activity: <Type activity name here>"
-labels: ['cv-submission']
+name: "Add/Modify: activity"
+description: Add or modify activity in WCRP Universe
+title: "Add/Modify: activity: <Type activity name here>"
+labels: ['activity', 'cv-submission']
 body:
   - type: dropdown
-    id: issue_kind
+    id: modification
     attributes:
-      label: Issue Type
-      description: New or modify existing
+      label: Modify
+      description: Create new or modify existing issue
       options:
         - "New"
         - "Modify"
-      default: 0
     validations:
       required: true
-      
+
   - type: input
     id: validation_key
     attributes:
@@ -47,3 +46,24 @@ body:
       label: URL
       description: A link to the associated research paper
       placeholder: "e.g. https://wcrp-cmip.org/"
+
+  - type: input
+    id: id
+    attributes:
+      label: Experiment ID
+      description: Unique identifier (lowercase, hyphen-separated)
+      placeholder: "e.g. aera-mip"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Data type
+      options:
+        - "wcrp"
+        - "esgvoc"
+        - "universal"
+    validations:
+      required: true
