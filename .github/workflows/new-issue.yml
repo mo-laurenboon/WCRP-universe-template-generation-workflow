@@ -32,20 +32,13 @@ jobs:
       - name: Switch to src-data branch
         run: git checkout src-data
       
-      - name: Trigger issue handler
+      - name: Commit New JSON file
         run: |
-          ISSUE_TITLE="${{ github.event.issue.title }}"
-          echo "ISSUE_TITLE DEFINED SUCCESSFULLY"
-          SCRIPT=$(echo "$ISSUE_TITLE" | cut -d':' -f2 | xargs | tr '[:upper:]' '[:lower:]').py
-          echo "SCRIPT DEFINED SUCCESSFULLY as $SCRIPT"
-          ls -l .github/ISSUE_SCRIPT/
+          cp **/*.json .
           
-          python .github/ISSUE_SCRIPT/$SCRIPT "${{ github.event.issue.body }}"
-
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
           git add **/*.json
-          ls -l .github/ISSUE_SCRIPT/*.json
           git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
       
