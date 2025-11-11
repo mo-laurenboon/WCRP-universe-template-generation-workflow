@@ -77,6 +77,8 @@ def main():
         print(f"Script {script_path} does not exist")
 
 
+if __name__ == "__main__":
+    main()
 '''
 # GitHub API URL for the issue
 url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/issues/{issue_number}'
