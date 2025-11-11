@@ -162,7 +162,7 @@ def create_hardcoded_python_files(category_keys, out_directory):
         output_python = out_directory / output_python_filename
 
         #created hardcoded python structure, swap for cmipld at a later date
-        filecontent = Template("""
+        template = Template("""
 TEMPLATE_CONFIG = {
     "name": "Add/Modify: {{ cat }}",
     "description": "Add or modify {{ cat }} in WCRP Universe",
@@ -189,6 +189,7 @@ DATA = {
 """
         )
                          
+        filecontent = template.render(cat=cat)                         
         with open(output_python, "w") as outfile:
             outfile.write(filecontent)
         
