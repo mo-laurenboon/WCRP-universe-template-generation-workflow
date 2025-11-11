@@ -1,0 +1,13 @@
+{
+    "validation_key": "WCRP",
+    "ui_label": "",
+    "description": "A collection of datasets from the AMIP and CMIP project phases, along with project supporting datasets from the input4MIPs (forcing datasets used to drive CMIP simulations) and obs4MIPs (observational datasets used to evaluate CMIP simulations, and numerous other supporting activities",
+    "url": "https://www.wcrp-climate.org/",
+    "@context": "_context",
+    "@type": [
+        "wcrp:archive_id",
+        "esgvoc:ArchiveId",
+        "universal"
+    ],
+    "@id": "wcrp"
+}
