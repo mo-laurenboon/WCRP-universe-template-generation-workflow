@@ -11,9 +11,9 @@ runs:
     using: 'composite'
     steps:
 
-      - name: cmip-ld library
-        id: install-cmipld
-        uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
+#      - name: cmip-ld library
+#        id: install-cmipld
+#        uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
       
 
       - name: Checkout repository
