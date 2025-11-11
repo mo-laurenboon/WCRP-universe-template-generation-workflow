@@ -39,13 +39,13 @@ def validate_{{ category_safe }}(data):
     errors = []
 
     #Required fields
-    required = ["validation_key", "ui_label", "description"]
+    required = ["validation_key", "label", "description", "experiment_id"]
     for field in required:
         if not data.get(field):
             errors.append(f"Missing required field: {field}")
     
     #ID format check
-    exp_id = data.get("id", "")
+    exp_id = data.get("experiment_id", "")
     if exp_id and not exp_id.islower():
         errors.append("Experiment ID must be lower case")
     if " " in exp_id:
