@@ -38,9 +38,9 @@ def parse_issue_body(issue_body):
         if issue_data[key] == "\"none\"":
             issue_data[key] = issue_data[key].replace("\"none\"", "none")
 
-    return issue_data
+   # return issue_data
 
-    # return json.dumps(issue_data, indent=4)
+    return json.dumps(issue_data, indent=4)
 
 
 def main():
@@ -53,7 +53,7 @@ def main():
 
     parsed_issue = parse_issue_body(issue['body'])
     issue_type = parsed_issue.get('issue-type', '')
-    # print(json.dumps(parsed_issue,indent=4))
+    print(json.dumps(parsed_issue,indent=4))
 
     if not issue_type:
         print(json.dumps(parsed_issue, indent=4))
