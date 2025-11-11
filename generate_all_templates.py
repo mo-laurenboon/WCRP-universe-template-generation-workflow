@@ -50,6 +50,8 @@ def get_all_json_keys(files):
             data = json.load(f)
             #append any key not already listed
             for key, _ in data.items():
+                if key == "@id":
+                    key == "id"
                 if key not in keys:
                     keys.append(key)
     if not keys:
