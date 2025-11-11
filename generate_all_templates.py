@@ -111,11 +111,16 @@ def record_instances_of_keys(categories, keys):
                     if key not in found_keys:
                         found_keys.append(key)
         #save found keys under the asocaited category name
+        
         try:
-            found_keys.remove("@id","@type")
-            found_keys.append("id", "type")
-        except:
-            pass
+            if "@id" in found_keys:
+                found_keys.remove("@id")
+            if "@type" in found_keys:
+                found_keys.remove("@type")
+            found_keys.extend(["id", "type"])
+        except Exception as e:
+            print(f"Error updating keys: {e}")
+
         category_keys[cat.name] = found_keys
         print(f" CATEGORY KEYS FOUND IN {cat} ARE: {found_keys}")
 
