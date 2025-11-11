@@ -25,7 +25,7 @@ def parse_issue_body(issue_body):
 
     for line in lines:
         if line.startswith('### '):
-            current_key = line[4:].strip().replace(' ', '-').lower()
+            current_key = line[4:].strip().replace(' ', '_').lower()
             issue_data[current_key] = ''
         elif current_key:
             issue_data[current_key] += line.strip() + ' '
