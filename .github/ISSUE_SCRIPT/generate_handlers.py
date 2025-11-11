@@ -12,8 +12,22 @@ HANDLER_TEMPLATE = '''#!/usr/bin/env python3
 Handler for {{ category }} submissions.
 """
 
+import argparse
 import json
 from pathlib import Path
+import os
+
+def set_arg_parser():
+    """
+    Creates an argument parser to take the submitted issue body as an argument.
+
+        :returns: Argument parser.
+    """
+    parser = argparse.ArgumentParser(description="Run arguments")
+    parser.add_argument("parsed_data", help="The field content parsed from the issue body.")
+    args = parser.parse_args()
+  
+    return args
 
 def validate_{{ category_safe }}(data):
     """
@@ -25,7 +39,7 @@ def validate_{{ category_safe }}(data):
     errors = []
 
     #Required fields
-    required = ["validation_key", "ui_label", "description", "id"]
+    required = ["validation_key", "ui_label", "description"]
     for field in required:
         if not data.get(field):
             errors.append(f"Missing required field: {field}")
@@ -58,12 +72,11 @@ def create_{{ category_safe }}_json(data):
 
     return result
 
-def run(parsed_data, issue_data):
+def run(parsed_data):
     """
     Main handler function.
 
         :param parsed_data: The field content parsed from the issue body.
-        :param issue_data: The issue form as structured data.
         :returns: Output file status, name, category and ID as a dictionary.
     """
     print("processing {{ category }} submission...")
@@ -96,6 +109,10 @@ def run(parsed_data, issue_data):
         "category": "{{ category }}",
         "id": entry_id
     }
+
+if __name__ == "__main__":
+     args = set_arg_parser()
+     run(args.parsed_data)
 '''
 
 def generate_handlers():
