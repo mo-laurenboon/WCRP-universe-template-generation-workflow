@@ -1,0 +1,10 @@
+{
+  "issue-type": "New",
+  "validation-key": "test",
+  "label": "test",
+  "description": "test",
+  "url": "_No response_",
+  "@id": "tests",
+  "@type": "wcrp",
+  "@context": "_context"
+}
