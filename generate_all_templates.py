@@ -50,8 +50,6 @@ def get_all_json_keys(files):
             data = json.load(f)
             #append any key not already listed
             for key, _ in data.items():
-                if key == "@id":
-                    key == "id"
                 if key not in keys:
                     keys.append(key)
     if not keys:
@@ -110,6 +108,10 @@ def record_instances_of_keys(categories, keys):
                 data = flatten_nested_dictionaries(data)
                 #create a list of all unique keys within that subdirectory only
                 for key in data:
+                    if key == "@id":
+                        key == "id"
+                    if key == "@type":
+                        key == "type"
                     if key not in found_keys:
                         found_keys.append(key)
         #save found keys under the asocaited category name
