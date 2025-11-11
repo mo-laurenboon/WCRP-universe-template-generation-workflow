@@ -57,10 +57,15 @@ def create_activity_json(data):
     #Map fields from the issue form to JSON structure
     for key, value in data.items():
         if key not in ["issue-type", "issue--kind"] and value:
+             if key == "type":
+                dictionary["@type"] = dictionary.pop("type")
+            if key == "id":
+                dictionary["@id"] = dictionary.pop("id")
             # Convert field names back to JSON format
             json_key = key.replace("_", "-")
             result[json_key]=value
-
+    result["@context"] = "_context"
+    
     return result
 
 def run(parsed_data):
