@@ -1,0 +1,13 @@
+{
+    "validation_key": "SP-MIP",
+    "ui_label": "Soil Parameter Model Intercomparison Project",
+    "description": "",
+    "url": "",
+    "@context": "_context",
+    "@type": [
+        "wcrp:activity",
+        "esgvoc:Activity",
+        "universal"
+    ],
+    "@id": "sp-mip"
+}
