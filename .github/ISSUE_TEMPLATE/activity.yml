@@ -50,7 +50,7 @@ body:
   - type: input
     id: id
     attributes:
-      label: Experiment ID
+      label: id
       description: Unique identifier (lowercase, hyphen-separated)
       placeholder: "e.g. aera-mip"
     validations:
