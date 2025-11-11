@@ -42,37 +42,30 @@ jobs:
           git push origin src-data
 
       - name: Generate issue templates
+        id: generate_templates
         run: |
           python template_generator.py
+
+          OUTPUT=$(find . -type f -name "*.yml" | paste -sd "," -)
+          echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
 
           git add .
           git commit -m "Issue form templates updated." || echo "No changes to commit."
           git push origin src-data
 
-#      - name: Generate issue form handler scripts
-#        run: |
-#          python .github/ISSUE_SCRIPT/generate_handlers.py
+      - name: Generate issue form handler scripts
+        run: |
+          python .github/ISSUE_SCRIPT/generate_handlers.py
 
-#          git add .
-#          git commit -m "Handler files updated." || echo "No changes to commit."
-#          git push origin src-data
+          git add .
+          git commit -m "Handler files updated." || echo "No changes to commit."
+          git push origin src-data
       
-#      - name: Checkout main
-#        run: git checkout main
+      - name: Checkout main
+        run: git checkout main
 
-#      - name: Commit templates back to main
-#        run: |
-#          cp .github/ISSUE_TEMPLATE/*.py .
-
-#          git add *.py
-#          git commit -m "Issue form templates updated." || echo "No changes to commit."
-#          git push origin main
-
-
-
-
-
-      
-
-
-      
+      - name: Commit issue templates back to main
+        run: |
+          git add "${{ steps.generate_templates.outputs.templates }}"
+          git commit -m "Issue form templates updated." || echo "No changes to commit."
+          git push origin main
