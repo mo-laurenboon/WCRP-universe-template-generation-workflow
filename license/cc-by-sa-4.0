@@ -1,0 +1,13 @@
+{
+    "validation_key": "CC BY-SA 4.0",
+    "ui_label": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "description": "",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "@context": "_context",
+    "@type": [
+        "wcrp:license",
+        "esgvoc:License",
+        "universal"
+    ],
+    "@id": "cc-by-sa-4.0"
+}
