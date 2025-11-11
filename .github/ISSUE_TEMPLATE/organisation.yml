@@ -1,7 +1,7 @@
-name: Experiment Submission
-description: Submit a new experiment definition
-title: "[EXPERIMENT] New Submission"
-labels: ['experiment', 'cv-submission']
+name: "Add/Modify: organisation"
+description: Add or modify organisation in WCRP Universe
+title: "Add/Modify: organisation: <Type activity name here>"
+labels: ['organisation', 'cv-submission']
 body:
   - type: input
     id: validation_key
