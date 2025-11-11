@@ -37,7 +37,7 @@ def parse_issue_body(issue_body):
         if issue_data[key] == "\"none\"":
             issue_data[key] = issue_data[key].replace("\"none\"", "none")
 
-    print(json.dump(issue_data, indent=2))
+    print(json.dumps(issue_data, indent=2))
 
     return issue_data
 
