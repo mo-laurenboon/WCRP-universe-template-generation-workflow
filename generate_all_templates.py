@@ -159,20 +159,18 @@ def create_hardcoded_python_files(category_keys, out_directory):
                      dynamic_ncols=True):
         output_python_filename = f"{cat}.py"
         output_python = out_directory / output_python_filename
-        #write uniquely named python file for each json file
-        with open(output_python, "w") as outfile:
-            #created hardcoded python structure, swap for cmipld at a later date
-            outfile.write(
-"""
+
+        #created hardcoded python structure, swap for cmipld at a later date
+        filecontent = f"""
 TEMPLATE_CONFIG = {
-    "name": "Experiment Submission",
-    "description": "Submit a new experiment definition",
-    "title": "[EXPERIMENT] New Submission",
-    "labels": ["cv-submission"]
+    "name": "Add/Modify: {cat}",
+    "description": "Add or modify {cat} in WCRP Universe",
+    "title": "Add/Modify: {cat}: <Type activity name here>",
+    "labels": ["{cat}", "cv-submission"]
 }
 
 DATA = {
-    "issue_types": ["new", "modify"],
+    "issue_types": ["New", "Modify"],
     "types": {
         "wcrp": {"id": "wcrp", "label": "wcrp"},
         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
@@ -188,7 +186,8 @@ DATA = {
     "modifiers": ["new","modify"]
 }
 """
-            )
+        with open(output_python, "w") as outfile:
+            outfile.write(filecontent)
 
 
 def main():
