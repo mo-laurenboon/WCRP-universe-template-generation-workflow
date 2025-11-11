@@ -116,6 +116,7 @@ def record_instances_of_keys(categories, keys):
                         found_keys.append(key)
         #save found keys under the asocaited category name
         category_keys[cat.name] = found_keys
+        print(f" CATEGORY KEYS FOUND IN {cat} ARE: {found_keys}")
 
     return category_keys
 
