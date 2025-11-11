@@ -1,13 +1,13 @@
 
 TEMPLATE_CONFIG = {
-    "name": "Experiment Submission",
-    "description": "Submit a new experiment definition",
-    "title": "[EXPERIMENT] New Submission",
-    "labels": ["experiment", "cv-submission"]
+    "name": "Add/Modify: native_horizontal_grid_temporal_refinement",
+    "description": "Add or modify native_horizontal_grid_temporal_refinement in WCRP Universe",
+    "title": "Add/Modify: native_horizontal_grid_temporal_refinement: <Type activity name here>",
+    "labels": ["native_horizontal_grid_temporal_refinement", "cv-submission"]
 }
 
 DATA = {
-    "issue_types": ["new", "modify", "delete"],
+    "issue_types": ["New", "Modify"],
     "types": {
         "wcrp": {"id": "wcrp", "label": "wcrp"},
         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
