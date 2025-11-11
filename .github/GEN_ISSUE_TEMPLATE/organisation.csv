@@ -4,7 +4,7 @@ field_order,field_type,field_id,label,description,data_source,required,placehold
 3,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
 4,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
 5,textarea,url,URL,A link to the associated research paper,none,false,e.g. https://wcrp-cmip.org/,,
-6,input,id,Experiment ID,"Unique identifier (lowercase, hyphen-separated)",none,true,e.g. aera-mip,,
+6,input,id,id,"Unique identifier (lowercase, hyphen-separated)",none,true,e.g. aera-mip,,
 7,input,acronyms,Acronyms,Organisation acronyms,none,false,e.g. AER,,
 8,input,aliases,Aliases,Organisation aliases,none,false,,list,
 9,input,established,Established,Year that organisation was established,none,true,e.g. 1977,,

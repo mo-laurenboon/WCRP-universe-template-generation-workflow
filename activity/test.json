@@ -4,7 +4,7 @@
   "label": "test",
   "description": "test",
   "url": "_No response_",
-  "experiment-id": "test-test",
+  "@id": "test",
   "@type": "wcrp",
   "@context": "_context"
 }
