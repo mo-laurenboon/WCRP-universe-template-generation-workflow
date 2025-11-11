@@ -46,7 +46,7 @@ runs:
         run: |
           python new_issue.py
 
-          OUTPUT=$(find . -type f -name "*.json"| head -n 2)
+          OUTPUT=$(find . -type f -name "*.json" | sed -n '2p')
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
           echo "THE OUTPUT JSON FILES PRESENT ARE $OUTPUT"
 
