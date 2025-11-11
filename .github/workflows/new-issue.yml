@@ -41,8 +41,7 @@ jobs:
         run: |
           python generate_all_templates.py
           
-          git add *.csv
-          git add *.py
+          git add .
           git commit -m "CSV and py templates updated." || echo "No changes to commit."
           git push origin src-data
 
