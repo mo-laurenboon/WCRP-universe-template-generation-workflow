@@ -59,8 +59,12 @@ jobs:
           git push origin src-data
 
       - name: Generate issue form handler scripts
+        id: generate_handlers
         run: |
           python .github/ISSUE_SCRIPT/generate_handlers.py
+
+          OUTPUT=$(find . -type f -name ".github/ISSUE_SCRIPT/*.py" | paste -sd " " -)
+          echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
 
           git add .
           git commit -m "Handler files updated." || echo "No changes to commit."
@@ -71,6 +75,6 @@ jobs:
 
       - name: Commit issue templates back to main
         run: |
-          git add ${{ steps.generate_templates.outputs.templates }}
-          git commit -m "Issue form templates updated." || echo "No changes to commit."
+          git add ${{ steps.generate_templates.outputs.templates }} ${{ steps.generate_handlers.outputs.handlers }}
+          git commit -m "Issue form templates and handlers updated." || echo "No changes to commit."
           git push origin main
