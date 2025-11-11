@@ -60,6 +60,322 @@
   "@id": "chem"
 }
     ,{
+  "@graph": [
+    {
+      "validation_key": "AER",
+      "ui_label": "",
+      "description": "aerosoltreatmentinanatmosphericmodelwhereconcentrationsarecalculatedbasedonemissions,transformation,andremovalprocesses(ratherthanbeingprescribedoromittedentirely)",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "aer"
+    },
+    {
+      "validation_key": "AGCM",
+      "ui_label": "",
+      "description": "atmosphericgeneralcirculationmodelrunwithprescribedoceansurfaceconditionsandusuallyamodelofthelandsurface",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "agcm"
+    },
+    {
+      "validation_key": "AOGCM",
+      "ui_label": "",
+      "description": "coupledatmosphere-oceanglobalclimatemodel,additionallyincludingexplicitrepresentationofatleastthelandandseaice",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "aogcm"
+    },
+    {
+      "validation_key": "BGC",
+      "ui_label": "",
+      "description": "biogeochemistrymodelcomponentthatattheveryleastaccountsforcarbonreservoirsandfluxesintheatmosphere,terrestrialbiosphere,andocean",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "bgc"
+    },
+    {
+      "validation_key": "CHEM",
+      "ui_label": "",
+      "description": "chemistrytreatmentinanatmosphericmodelthatcalculatesatmosphericoxidantconcentrations(includingatleastozone),ratherthanprescribingthem",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "chem"
+    },
+    {
+      "validation_key": "gridded_insitu",
+      "ui_label": "",
+      "description": "griddedproductbasedonmeasurementscollectedfromin-situinstruments",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "gridded-insitu"
+    },
+    {
+      "validation_key": "ISM",
+      "ui_label": "",
+      "description": "ice-sheetmodelthatincludesice-flow",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "ism"
+    },
+    {
+      "validation_key": "LAND",
+      "ui_label": "",
+      "description": "landmodelrununcoupledfromtheatmosphere",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "land"
+    },
+    {
+      "validation_key": "OGCM",
+      "ui_label": "",
+      "description": "oceangeneralcirculationmodelrununcoupledfromanAGCMbut,usuallyincludingasea-icemodel",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "ogcm"
+    },
+    {
+      "validation_key": "RAD",
+      "ui_label": "",
+      "description": "radiationcomponentofanatmosphericmodelrun'offline'",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "rad"
+    },
+    {
+      "validation_key": "reanalysis",
+      "ui_label": "",
+      "description": "griddedproductgeneratedfromamodelreanalysisbasedonin-situinstrumentsandpossiblysatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "reanalysis"
+    },
+    {
+      "validation_key": "satellite_blended",
+      "ui_label": "",
+      "description": "griddedproductbasedonbothin-situinstrumentsandsatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "satellite-blended"
+    },
+    {
+      "validation_key": "satellite_retrieval",
+      "ui_label": "",
+      "description": "griddedproductbasedonsatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "satellite-retrieval"
+    },
+    {
+      "validation_key": "SLAB",
+      "ui_label": "",
+      "description": "slab-oceanusedwithanAGCMinrepresentingtheatmosphere-oceancoupledsystem",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "slab"
+    }
+  ]
+}
+    ,{
+  "@graph": [
+    {
+      "validation_key": "AER",
+      "ui_label": "",
+      "description": "aerosoltreatmentinanatmosphericmodelwhereconcentrationsarecalculatedbasedonemissions,transformation,andremovalprocesses(ratherthanbeingprescribedoromittedentirely)",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "aer"
+    },
+    {
+      "validation_key": "AGCM",
+      "ui_label": "",
+      "description": "atmosphericgeneralcirculationmodelrunwithprescribedoceansurfaceconditionsandusuallyamodelofthelandsurface",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "agcm"
+    },
+    {
+      "validation_key": "AOGCM",
+      "ui_label": "",
+      "description": "coupledatmosphere-oceanglobalclimatemodel,additionallyincludingexplicitrepresentationofatleastthelandandseaice",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "aogcm"
+    },
+    {
+      "validation_key": "BGC",
+      "ui_label": "",
+      "description": "biogeochemistrymodelcomponentthatattheveryleastaccountsforcarbonreservoirsandfluxesintheatmosphere,terrestrialbiosphere,andocean",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "bgc"
+    },
+    {
+      "validation_key": "CHEM",
+      "ui_label": "",
+      "description": "chemistrytreatmentinanatmosphericmodelthatcalculatesatmosphericoxidantconcentrations(includingatleastozone),ratherthanprescribingthem",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "chem"
+    },
+    {
+      "validation_key": "gridded_insitu",
+      "ui_label": "",
+      "description": "griddedproductbasedonmeasurementscollectedfromin-situinstruments",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "gridded-insitu"
+    },
+    {
+      "validation_key": "ISM",
+      "ui_label": "",
+      "description": "ice-sheetmodelthatincludesice-flow",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "ism"
+    },
+    {
+      "validation_key": "LAND",
+      "ui_label": "",
+      "description": "landmodelrununcoupledfromtheatmosphere",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "land"
+    },
+    {
+      "validation_key": "OGCM",
+      "ui_label": "",
+      "description": "oceangeneralcirculationmodelrununcoupledfromanAGCMbut,usuallyincludingasea-icemodel",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "ogcm"
+    },
+    {
+      "validation_key": "RAD",
+      "ui_label": "",
+      "description": "radiationcomponentofanatmosphericmodelrun'offline'",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "rad"
+    },
+    {
+      "validation_key": "reanalysis",
+      "ui_label": "",
+      "description": "griddedproductgeneratedfromamodelreanalysisbasedonin-situinstrumentsandpossiblysatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "reanalysis"
+    },
+    {
+      "validation_key": "satellite_blended",
+      "ui_label": "",
+      "description": "griddedproductbasedonbothin-situinstrumentsandsatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "satellite-blended"
+    },
+    {
+      "validation_key": "satellite_retrieval",
+      "ui_label": "",
+      "description": "griddedproductbasedonsatellitemeasurements",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "satellite-retrieval"
+    },
+    {
+      "validation_key": "SLAB",
+      "ui_label": "",
+      "description": "slab-oceanusedwithanAGCMinrepresentingtheatmosphere-oceancoupledsystem",
+      "@type": [
+        "wcrp:source_type",
+        "esgvoc:SourceType",
+        "universal"
+      ],
+      "@id": "slab"
+    }
+  ]
+}
+    ,{
   "validation_key": "gridded_insitu",
   "ui_label": "",
   "description": "gridded product based on measurements collected from in-situ instruments",
