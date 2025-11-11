@@ -51,8 +51,18 @@ runs:
           OUTPUT=$(python new_issue.py | grep 'Created:' | awk '{print $2}')
           echo "file_path=$OUTPUT" >> $GITHUB_OUTPUT
 
-
         shell: bash
         continue-on-error: false
 
-          
+      - name: Switch to src-data branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git fetch origin src-data
+          git checkout src-data
+
+      - name: Commit new file
+        run: |
+          git add "${{ steps.create_json.outputs.file_path }}"
+          git commit -m "New JSON file added from issue form." || echo "No changes to commit."
+          git push origin src-data
