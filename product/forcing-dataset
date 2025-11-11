@@ -1,0 +1,12 @@
+{
+    "validation_key": "forcing-dataset",
+    "ui_label": "",
+    "description": "Data sets used to drive model simulations. These include external factors like greenhouse gas concentrations, solar radiation, and land use changes that influence the climate model outputs.",
+    "@context": "_context",
+    "@type": [
+        "wcrp:product",
+        "esgvoc:Product",
+        "universal"
+    ],
+    "@id": "forcing-dataset"
+}
