@@ -46,7 +46,7 @@ runs:
         run: |
           python new_issue.py
           
-          OUTPUT=$(find . -type f -name "*.json")
+          OUTPUT=$(find . -type f -name "*.json"| head -n 1)
           echo "file_path=$OUTPUT" >> $GITHUB_OUTPUT
 
         shell: bash
