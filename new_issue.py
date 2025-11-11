@@ -48,7 +48,7 @@ def main():
     
     parts = issue_title.split(":")
     if len(parts) > 2:
-        script_name = parts[2].strip().lower() + ".py"
+        script_name = parts[1].strip().lower() + ".py"
     print(f"============================SCRIPT NAME : {script_name}============================")
 
     parsed_issue = parse_issue_body(issue['body'])
