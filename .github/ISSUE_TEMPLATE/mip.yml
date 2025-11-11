@@ -3,6 +3,17 @@ description: Add or modify mip in WCRP Universe
 title: "Add/Modify: mip: <Type activity name here>"
 labels: ['mip', 'cv-submission']
 body:
+  - type: dropdown
+    id: modification
+    attributes:
+      label: Modify
+      description: Create new or modify existing issue
+      options:
+        - "New"
+        - "Modify"
+    validations:
+      required: true
+
   - type: input
     id: validation_key
     attributes:
@@ -37,6 +48,15 @@ body:
       placeholder: "e.g. https://wcrp-cmip.org/"
 
   - type: input
+    id: id
+    attributes:
+      label: Experiment ID
+      description: Unique identifier (lowercase, hyphen-separated)
+      placeholder: "e.g. aera-mip"
+    validations:
+      required: true
+
+  - type: input
     id: start
     attributes:
       label: Start
@@ -51,5 +71,17 @@ body:
       label: End
       description: The ending year
       placeholder: "e.g. 2023"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Data type
+      options:
+        - "wcrp"
+        - "esgvoc"
+        - "universal"
     validations:
       required: true

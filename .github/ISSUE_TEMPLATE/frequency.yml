@@ -3,6 +3,17 @@ description: Add or modify frequency in WCRP Universe
 title: "Add/Modify: frequency: <Type activity name here>"
 labels: ['frequency', 'cv-submission']
 body:
+  - type: dropdown
+    id: modification
+    attributes:
+      label: Modify
+      description: Create new or modify existing issue
+      options:
+        - "New"
+        - "Modify"
+    validations:
+      required: true
+
   - type: input
     id: validation_key
     attributes:
@@ -30,6 +41,15 @@ body:
       required: true
 
   - type: input
+    id: id
+    attributes:
+      label: Experiment ID
+      description: Unique identifier (lowercase, hyphen-separated)
+      placeholder: "e.g. aera-mip"
+    validations:
+      required: true
+
+  - type: input
     id: long_name
     attributes:
       label: Long Name
@@ -43,5 +63,17 @@ body:
       label: Unit
       description: The unit of measurement
       placeholder: "e.g. hour"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Data type
+      options:
+        - "wcrp"
+        - "esgvoc"
+        - "universal"
     validations:
       required: true
