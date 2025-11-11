@@ -71,7 +71,7 @@ def main():
         spec.loader.exec_module(module)
         print(f"Successfully loaded {script_path}")
         # run the processing script
-        module.run(parsed_issue, issue)
+        module.run(parsed_issue)
 
     else:
         print(f"Script {script_path} does not exist")
