@@ -1,0 +1,14 @@
+{
+    "validation_key": "2.5 km",
+    "ui_label": "",
+    "description": "Resolution of 2.5 km",
+    "unit": "km",
+    "value": "2.5",
+    "@context": "_context",
+    "@type": [
+        "wcrp:resolution",
+        "esgvoc:Resolution",
+        "universal"
+    ],
+    "@id": "2.5km"
+}
