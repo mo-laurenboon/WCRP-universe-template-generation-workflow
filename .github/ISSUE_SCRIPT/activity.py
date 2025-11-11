@@ -30,13 +30,13 @@ def validate_activity(data):
     errors = []
 
     #Required fields
-    required = ["validation_key", "label", "description"]
+    required = ["validation_key", "label", "description", "experiment_id"]
     for field in required:
         if not data.get(field):
             errors.append(f"Missing required field: {field}")
     
     #ID format check
-    exp_id = data.get("id", "")
+    exp_id = data.get("experiment_id", "")
     if exp_id and not exp_id.islower():
         errors.append("Experiment ID must be lower case")
     if " " in exp_id:
@@ -70,7 +70,6 @@ def run(parsed_data):
         :param parsed_data: The field content parsed from the issue body.
         :returns: Output file status, name, category and ID as a dictionary.
     """
-    print("Current working directory:", os.getcwd()) #DELETE ME =======================================================
     print("processing activity submission...")
 
     #Validate
@@ -94,8 +93,6 @@ def run(parsed_data):
     with open(output_file, "w") as f:
         json.dump(entry, f, indent=2, ensure_ascii=False)
     print(f"Created: {output_file}")
-
-    print("Output file path:", os.path.abspath(output_file)) #DELETE ME ===========================================
 
     return {
         "success": True,

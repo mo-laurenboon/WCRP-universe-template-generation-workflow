@@ -1,13 +1,13 @@
 
 TEMPLATE_CONFIG = {
-    "name": "Experiment Submission",
-    "description": "Submit a new experiment definition",
-    "title": "[EXPERIMENT] New Submission",
-    "labels": ["experiment", "cv-submission"]
+    "name": "Add/Modify: model_family",
+    "description": "Add or modify model_family in WCRP Universe",
+    "title": "Add/Modify: model_family: <Type activity name here>",
+    "labels": ["model_family", "cv-submission"]
 }
 
 DATA = {
-    "issue_types": ["new", "modify", "delete"],
+    "issue_types": ["New", "Modify"],
     "types": {
         "wcrp": {"id": "wcrp", "label": "wcrp"},
         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},

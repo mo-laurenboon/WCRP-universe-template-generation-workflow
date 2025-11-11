@@ -51,7 +51,7 @@ jobs:
         run: |
           python template_generator.py
 
-          OUTPUT=$(find . -type f -name "*.yml" | paste -sd "," -)
+          OUTPUT=$(find . -type f -name "*.yml" | paste -sd " " -)
           echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
 
           git add .

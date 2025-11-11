@@ -2,5 +2,6 @@ field_order,field_type,field_id,label,description,data_source,required,placehold
 1,input,validation_key,Validation key,CMIP acronym,none,true,,,
 2,input,ui_label,Label,Human-readable name,none,true,e.g. Historical,,
 3,textarea,description,Description,Detailed scientific description,none,true,Provide comprehensive description,,
-4,input,unit,Unit,The unit of measurement,none,true,e.g. hour,,
-5,input,value,Value,Resolution value in the context of the provided units,none,true,e.g. 25,,
+4,input,@id,Experiment ID,"Unique identifier (lowercase, hyphen-separated)",none,true,e.g. aera-mip,,
+5,input,unit,Unit,The unit of measurement,none,true,e.g. hour,,
+6,input,value,Value,Resolution value in the context of the provided units,none,true,e.g. 25,,

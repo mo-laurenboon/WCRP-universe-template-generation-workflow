@@ -1,13 +1,13 @@
 
 TEMPLATE_CONFIG = {
-    "name": "Experiment Submission",
-    "description": "Submit a new experiment definition",
-    "title": "[EXPERIMENT] New Submission",
-    "labels": ["experiment", "cv-submission"]
+    "name": "Add/Modify: native_vertical_grid_units",
+    "description": "Add or modify native_vertical_grid_units in WCRP Universe",
+    "title": "Add/Modify: native_vertical_grid_units: <Type activity name here>",
+    "labels": ["native_vertical_grid_units", "cv-submission"]
 }
 
 DATA = {
-    "issue_types": ["new", "modify", "delete"],
+    "issue_types": ["New", "Modify"],
     "types": {
         "wcrp": {"id": "wcrp", "label": "wcrp"},
         "esgvoc": {"id": "esgvoc", "label": "esgvoc"},
