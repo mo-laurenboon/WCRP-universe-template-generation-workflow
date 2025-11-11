@@ -75,6 +75,9 @@ def main():
     else:
         print(f"Script {script_path} does not exist")
 
+if __name__ == "__main__":
+    main()
+
 
 '''
 # GitHub API URL for the issue
