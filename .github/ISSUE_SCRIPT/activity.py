@@ -60,6 +60,11 @@ def create_activity_json(data):
             # Convert field names back to JSON format
             json_key = key.replace("_", "-")
             result[json_key]=value
+            if key == "type":
+                result["@type"] = result.pop("type")
+            if key == "id":
+                result["@id"] = result.pop("id")
+    result["@context"] = "_context"
 
     return result
 
