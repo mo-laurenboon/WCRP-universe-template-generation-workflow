@@ -4,9 +4,9 @@ title: "Add/Modify: activity: <Type activity name here>"
 labels: ['activity', 'cv-submission']
 body:
   - type: dropdown
-    id: modification
+    id: issue_type
     attributes:
-      label: issue_type
+      label: Issue Type
       description: Create new or modify existing issue
       options:
         - "New"
