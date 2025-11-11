@@ -71,6 +71,6 @@ jobs:
 
       - name: Commit issue templates back to main
         run: |
-          git add "${{ steps.generate_templates.outputs.templates }}"
+          git add ${{ steps.generate_templates.outputs.templates }}
           git commit -m "Issue form templates updated." || echo "No changes to commit."
           git push origin main
