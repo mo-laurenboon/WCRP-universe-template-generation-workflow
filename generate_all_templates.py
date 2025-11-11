@@ -92,8 +92,8 @@ def flatten_nested_dictionaries(dictionary, parent_key='', sep='_'):
 def clean_key(key):
     if key in ["@type", "@id"]:
         return key[1:]
-
-    return key
+    else:
+        return key
 
 
 def record_instances_of_keys(categories, keys): 
