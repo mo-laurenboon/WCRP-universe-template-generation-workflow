@@ -62,7 +62,7 @@ runs:
 
       - name: Commit new file
         run: |
-          git add "${{ steps.create_json.outputs.file_path }}"
+          git add "${{ steps.run_python.outputs.file_path }}"
           git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
         shell: bash
