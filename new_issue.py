@@ -37,9 +37,9 @@ def parse_issue_body(issue_body):
         if issue_data[key] == "\"none\"":
             issue_data[key] = issue_data[key].replace("\"none\"", "none")
 
-   # return issue_data
+    print(json.dump(issue_data, indent=2))
 
-    return json.dumps(issue_data, indent=4)
+    return issue_data
 
 
 def main():
@@ -49,6 +49,7 @@ def main():
     parts = issue_title.split(":")
     if len(parts) > 2:
         script_name = parts[2].strip().lower() + ".py"
+    print(f"============================SCRIPT NAME : {script_name}============================")
 
     parsed_issue = parse_issue_body(issue['body'])
     issue_type = parsed_issue.get('issue-type', '')
