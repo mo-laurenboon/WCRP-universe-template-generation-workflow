@@ -14,13 +14,11 @@ runs:
 #      - name: cmip-ld library
 #        id: install-cmipld
 #        uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
-      
 
       - name: Checkout repository
         uses: actions/checkout@v4       
         with:
           fetch-depth: 0
-
 
       - name: Configure Git for simple push
         run: git config --global push.default simple
@@ -60,9 +58,11 @@ runs:
           git config user.email "github-actions@users.noreply.github.com"
           git fetch origin src-data
           git checkout src-data
+        shell: bash
 
       - name: Commit new file
         run: |
           git add "${{ steps.create_json.outputs.file_path }}"
           git commit -m "New JSON file added from issue form." || echo "No changes to commit."
           git push origin src-data
+        shell: bash
