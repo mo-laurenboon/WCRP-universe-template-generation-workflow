@@ -46,7 +46,7 @@ runs:
         run: |
           python new_issue.py
           
-          OUTPUT=$(python new_issue.py | grep 'Created:' | awk '{print $2}')
+          OUTPUT=$(find . -type f -name "*.json" | paste -sd "," -)
           echo "file_path=$OUTPUT" >> $GITHUB_OUTPUT
 
         shell: bash
