@@ -185,7 +185,7 @@ def validate_yaml(content):
         print(f"    YAML Parse Error: {e}")
         return False
 
-def process_template_pair(template_name, csv_file, py_file, output_dir):
+def process_template_pair(template_name, csv_file, py_file, output_dir, output_files):
     """Process a single template pair."""
     
     print(f"Processing {template_name}...")
@@ -211,13 +211,15 @@ def process_template_pair(template_name, csv_file, py_file, output_dir):
         output_file = output_dir / f"{template_name}.yml"
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(yaml_content)
+        output_files.append(output_file)
         
         print(f"    Generated {template_name}.yml")
-        return True
+        return True, output_files
         
     except Exception as e:
         print(f"    Error: {e}")
         return False
+    
 
 def parse_arguments():
     """Parse command line arguments."""
@@ -238,6 +240,7 @@ def main():
     script_dir = Path.cwd()
     template_dir = args.template_dir or script_dir / ".github" / "GEN_ISSUE_TEMPLATE" 
     output_dir = args.output_dir or script_dir / ".github" / "ISSUE_TEMPLATE" 
+    output_files = []
 
     print(f"Template dir: {template_dir}")
     print(f"Output dir: {output_dir}")
@@ -269,10 +272,12 @@ def main():
         py_file = template_dir / f"{template_name}.py"
         
         if py_file.exists():
-            if process_template_pair(template_name, csv_file, py_file, output_dir):
+            if process_template_pair(template_name, csv_file, py_file, output_dir, output_files):
                 success_count += 1
     
     print(f"Results: {success_count}/{len(csv_files)} successful")
+    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files))
+    print(f"=====================THERE ARE {len(output_files)} OUTPUT FILES==========================")
     
     for i in range(len(failed)):
         print(f"\nFailed YAML {i+1}:\n")
