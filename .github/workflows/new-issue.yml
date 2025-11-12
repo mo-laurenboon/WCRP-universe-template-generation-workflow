@@ -55,6 +55,8 @@ jobs:
           mkdir -p /tmp/templates
           echo "$OUTPUT" | xargs cp -t /tmp/templates/
 
+          rm $OUTPUT
+
       - name: Generate issue form handler scripts
         id: generate_handlers
         run: |
@@ -63,6 +65,8 @@ jobs:
 
           mkdir -p /tmp/handlers
           echo "$OUTPUT" | xargs cp -t /tmp/handlers/
+
+          rm $OUTPUT
           
       - name: Checkout main
         run: git checkout main
