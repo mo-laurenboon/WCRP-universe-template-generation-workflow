@@ -27,6 +27,124 @@
   "@id": "glb"
 }
     ,{
+  "@graph": [
+    {
+      "validation_key": "ant",
+      "ui_label": "Antarctica",
+      "description": "locatedaroundtheSouthPole,separatedfromotherlandmassesbytheSouthernOcean,andalmostentirelysouthof60degreesSouthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "ant"
+    },
+    {
+      "validation_key": "glb",
+      "ui_label": "Global",
+      "description": "thecompleteEarthsurface,90degreesNorthto90degreesSouthlatitude,andalllongitudes",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "glb"
+    },
+    {
+      "validation_key": "gre",
+      "ui_label": "Greenland",
+      "description": "locatedintheNorthernAtlanticOcean,separatedfromotherlandmassesbytheLabradorSeaandStraits,andalmostentirelynorthof60degreesNorthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "gre"
+    },
+    {
+      "validation_key": "nhem",
+      "ui_label": "NorthernHemisphere",
+      "description": "thecompleteEarthsurfacefromtheequatortotheNorthPole,0to90degreesNorthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "nhem"
+    },
+    {
+      "validation_key": "shem",
+      "ui_label": "SouthernHemisphere",
+      "description": "thecompleteEarthsurfacefromtheequatortotheSouthPole,0to90degreesSouthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "shem"
+    }
+  ]
+}
+    ,{
+  "@graph": [
+    {
+      "validation_key": "ant",
+      "ui_label": "Antarctica",
+      "description": "locatedaroundtheSouthPole,separatedfromotherlandmassesbytheSouthernOcean,andalmostentirelysouthof60degreesSouthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "ant"
+    },
+    {
+      "validation_key": "glb",
+      "ui_label": "Global",
+      "description": "thecompleteEarthsurface,90degreesNorthto90degreesSouthlatitude,andalllongitudes",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "glb"
+    },
+    {
+      "validation_key": "gre",
+      "ui_label": "Greenland",
+      "description": "locatedintheNorthernAtlanticOcean,separatedfromotherlandmassesbytheLabradorSeaandStraits,andalmostentirelynorthof60degreesNorthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "gre"
+    },
+    {
+      "validation_key": "nhem",
+      "ui_label": "NorthernHemisphere",
+      "description": "thecompleteEarthsurfacefromtheequatortotheNorthPole,0to90degreesNorthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "nhem"
+    },
+    {
+      "validation_key": "shem",
+      "ui_label": "SouthernHemisphere",
+      "description": "thecompleteEarthsurfacefromtheequatortotheSouthPole,0to90degreesSouthlatitude",
+      "@type": [
+        "wcrp:region",
+        "esgvoc:Region",
+        "universal"
+      ],
+      "@id": "shem"
+    }
+  ]
+}
+    ,{
   "validation_key": "gre",
   "ui_label": "Greenland",
   "description": "located in the Northern Atlantic Ocean, separated from other land masses by the Labrador Sea and Straits, and almost entirely north of 60 degrees North latitude",
