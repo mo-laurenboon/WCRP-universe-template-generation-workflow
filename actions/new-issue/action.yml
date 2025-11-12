@@ -38,7 +38,6 @@ runs:
         #grab created json file and copy to outputs ready for commit to src-data branch
         run: |
           python scripts/new_issue.py
-          
           OUTPUT=$(find . -type f -name "*.json" | sed -n '2p')
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
           echo "THE OUTPUT JSON FILES PRESENT ARE $OUTPUT"
