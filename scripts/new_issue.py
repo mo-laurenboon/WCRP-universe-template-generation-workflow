@@ -1,7 +1,6 @@
+import os
 import json
 import sys
-import os
-import re
 import importlib.util
 
 
@@ -9,6 +8,11 @@ path = '.github/ISSUE_SCRIPT/'
 
 
 def get_issue():
+    """
+    Extracts information from the submitted issue.
+
+        :returns: Issue body, labels, number, title and author as a dictionary.
+    """
     return {
         'body': os.environ.get('ISSUE_BODY'),
         "labels_full": os.environ.get('ISSUE_LABELS'),
@@ -19,10 +23,17 @@ def get_issue():
 
 
 def parse_issue_body(issue_body):
+    """
+    Parses and cleans issue body contents to dictionary format.
+
+        :param issue_body: The body of the submitted issue form.
+        :returns: Issue body data in dictionary format.
+    """
     lines = issue_body.split('\n')
     issue_data = {}
     current_key = None
 
+    # Identify key-value pairs using markdown structure
     for line in lines:
         if line.startswith('### '):
             current_key = line[4:].strip().replace(' ', '_').lower()
@@ -43,24 +54,26 @@ def parse_issue_body(issue_body):
 
 
 def main():
+    """
+    Holds the main body of the script.
+    """
+    # Generate handler script name from issue title
     issue = get_issue()
     issue_title = issue['title']
-    
     parts = issue_title.split(":")
     if len(parts) > 2:
         script_name = parts[1].strip().lower()
-    print(f"============================SCRIPT NAME : {script_name}============================")
 
+    # Ensure an issue type is selected
     parsed_issue = parse_issue_body(issue['body'])
     print(parsed_issue)
     issue_type = parsed_issue.get('issue_type', '')
     print(json.dumps(parsed_issue,indent=4))
-
     if not issue_type:
         print(json.dumps(parsed_issue, indent=4))
-        sys.exit('No issue type selected. Exiting')
+        sys.exit('No issue type selected. Exiting.')
 
-    # Define the path to the script based on the issue_type
+    # Define the path to the script based on the script_name
     script_path = f"{path}{script_name}.py"
     print(script_path)
 
@@ -71,30 +84,11 @@ def main():
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         print(f"Successfully loaded {script_path}")
-        # run the processing script
+        # run the processing/handler script
         module.run(parsed_issue)
 
     else:
-        print(f"Script {script_path} does not exist")
+        sys.exit(f"Script: {script_path} does not exist. Exiting.")
 
 if __name__ == "__main__":
     main()
-
-
-'''
-# GitHub API URL for the issue
-url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/issues/{issue_number}'
-# https://github.com/WCRP-CMIP/WCRP-universe/issues/2
-# Headers for authentication
-headers = {
-    # 'Authorization': f'token {github_token}',
-    'Accept': 'application/vnd.github.v3+json'
-}
-
-# Fetch the issue content
-response = requests.get(url, headers=headers)
-content = response.json()
-issue = content.get('body', '')
-labels_full = content.get('labels','')
-
-'''
