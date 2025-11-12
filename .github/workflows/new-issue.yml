@@ -76,6 +76,12 @@ jobs:
 
       - name: Commit issue templates back to main
         run: |
-          git add ${{ steps.generate_templates.outputs.templates }} ${{ steps.generate_handlers.outputs.handlers }}
-          git commit -m "Issue form templates and handlers updated." || echo "No changes to commit."
+          git add ${{ steps.generate_templates.outputs.templates }}
+          git commit -m "Issue form templates updated." || echo "No changes to commit."
+          git push origin main
+
+      - name: Commit handlers back to main
+        run: |
+          git add ${{ steps.generate_handlers.outputs.handlers }}
+          git commit -m "Issue form handlers updated." || echo "No changes to commit."
           git push origin main
