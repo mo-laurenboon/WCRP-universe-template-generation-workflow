@@ -1,79 +1,43 @@
-name: "Add/Modify: frequency"
-description: Add or modify frequency in WCRP Universe
-title: "Add/Modify: frequency: <Type activity name here>"
-labels: ['frequency', 'cv-submission']
+name: "Add/Modify: Frequency"
+description: Add or modify a frequency in WCRP Universe
+title: "Add/Modify: Frequency: <Type frequency name here>"
+labels: ['delta', 'frequency', 'Review']
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # Add/Modify: Frequency
+
   - type: dropdown
-    id: modification
+    id: issue_kind
     attributes:
       label: Issue Type
-      description: Create new or modify existing issue
+      description: New or modify existing
       options:
         - "New"
         - "Modify"
+      default: 0
     validations:
       required: true
 
   - type: input
     id: validation_key
     attributes:
-      label: Validation key
-      description: CMIP acronym
+      label: Validation Key
+      description: Unique identifier (lowercase)
+      placeholder: "e.g. mon"
     validations:
       required: true
 
   - type: input
     id: ui_label
     attributes:
-      label: Label
-      description: Human-readable name
-      placeholder: "e.g. Historical"
-    validations:
-      required: true
+      label: UI Label
+      description: Full name
+      placeholder: "e.g. Monthly"
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Detailed scientific description
-      placeholder: "Provide comprehensive description"
-    validations:
-      required: true
-
-  - type: input
-    id: id
-    attributes:
-      label: id
-      description: Unique identifier (lowercase, hyphen-separated)
-      placeholder: "e.g. aera-mip"
-    validations:
-      required: true
-
-  - type: input
-    id: long_name
-    attributes:
-      label: Long Name
-      description: Longer human readable name
-    validations:
-      required: true
-
-  - type: input
-    id: unit
-    attributes:
-      label: Unit
-      description: The unit of measurement
-      placeholder: "e.g. hour"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      description: Data type
-      options:
-        - "wcrp"
-        - "esgvoc"
-        - "universal"
-    validations:
-      required: true
+      description: Detailed description

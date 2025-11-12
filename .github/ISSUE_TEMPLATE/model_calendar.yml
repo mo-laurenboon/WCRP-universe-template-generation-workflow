@@ -1,62 +1,43 @@
-name: "Add/Modify: model_calendar"
-description: Add or modify model_calendar in WCRP Universe
-title: "Add/Modify: model_calendar: <Type activity name here>"
-labels: ['model_calendar', 'cv-submission']
+name: "Add/Modify: Model Calendar"
+description: Add or modify a model calendar in WCRP Universe
+title: "Add/Modify: Model Calendar: <Type calendar name here>"
+labels: ['delta', 'model-calendar', 'Review']
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # Add/Modify: Model Calendar
+
   - type: dropdown
-    id: modification
+    id: issue_kind
     attributes:
       label: Issue Type
-      description: Create new or modify existing issue
+      description: New or modify existing
       options:
         - "New"
         - "Modify"
+      default: 0
     validations:
       required: true
 
   - type: input
     id: validation_key
     attributes:
-      label: Validation key
-      description: CMIP acronym
+      label: Validation Key
+      description: Unique identifier
+      placeholder: "e.g. gregorian"
     validations:
       required: true
 
   - type: input
     id: ui_label
     attributes:
-      label: Label
-      description: Human-readable name
-      placeholder: "e.g. Historical"
-    validations:
-      required: true
+      label: UI Label
+      description: Full name
+      placeholder: "e.g. Gregorian"
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Detailed scientific description
-      placeholder: "Provide comprehensive description"
-    validations:
-      required: true
-
-  - type: input
-    id: id
-    attributes:
-      label: id
-      description: Unique identifier (lowercase, hyphen-separated)
-      placeholder: "e.g. aera-mip"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      description: Data type
-      options:
-        - "wcrp"
-        - "esgvoc"
-        - "universal"
-    validations:
-      required: true
+      description: Detailed description

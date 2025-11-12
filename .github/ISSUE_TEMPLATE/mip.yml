@@ -1,87 +1,43 @@
-name: "Add/Modify: mip"
-description: Add or modify mip in WCRP Universe
-title: "Add/Modify: mip: <Type activity name here>"
-labels: ['mip', 'cv-submission']
+name: "Add/Modify: MIP"
+description: Add or modify a MIP in WCRP Universe
+title: "Add/Modify: MIP: <Type MIP name here>"
+labels: ['delta', 'mip', 'Review']
 body:
+  - type: markdown
+    attributes:
+      value: |
+        # Add/Modify: MIP
+
   - type: dropdown
-    id: modification
+    id: issue_kind
     attributes:
       label: Issue Type
-      description: Create new or modify existing issue
+      description: New or modify existing
       options:
         - "New"
         - "Modify"
+      default: 0
     validations:
       required: true
 
   - type: input
     id: validation_key
     attributes:
-      label: Validation key
-      description: CMIP acronym
+      label: Validation Key
+      description: Unique identifier (lowercase)
+      placeholder: "e.g. cmip7"
     validations:
       required: true
 
   - type: input
     id: ui_label
     attributes:
-      label: Label
-      description: Human-readable name
-      placeholder: "e.g. Historical"
-    validations:
-      required: true
+      label: UI Label
+      description: Full name
+      placeholder: "e.g. CMIP7"
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Detailed scientific description
-      placeholder: "Provide comprehensive description"
-    validations:
-      required: true
-
-  - type: textarea
-    id: url
-    attributes:
-      label: URL
-      description: A link to the associated research paper
-      placeholder: "e.g. https://wcrp-cmip.org/"
-
-  - type: input
-    id: id
-    attributes:
-      label: id
-      description: Unique identifier (lowercase, hyphen-separated)
-      placeholder: "e.g. aera-mip"
-    validations:
-      required: true
-
-  - type: input
-    id: start
-    attributes:
-      label: Start
-      description: The starting year
-      placeholder: "e.g. 2023"
-    validations:
-      required: true
-
-  - type: input
-    id: end
-    attributes:
-      label: End
-      description: The ending year
-      placeholder: "e.g. 2023"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: type
-    attributes:
-      label: Type
-      description: Data type
-      options:
-        - "wcrp"
-        - "esgvoc"
-        - "universal"
-    validations:
-      required: true
+      description: Detailed description
