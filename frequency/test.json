@@ -1,0 +1,11 @@
+{
+  "issue-type": "New",
+  "validation-key": "test",
+  "label": "test",
+  "description": "test",
+  "@id": "test",
+  "long-name": "test",
+  "unit": "hour",
+  "@type": "wcrp",
+  "@context": "_context"
+}
