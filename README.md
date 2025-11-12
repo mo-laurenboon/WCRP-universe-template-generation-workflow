@@ -3,9 +3,9 @@
 WCRP-universe repository used by CMIP and other WCRP activities. 
 
 
-[![Update Issue Templates](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/issue-templates.yml/badge.svg)](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/issue-templates.yml) [![∆ src-data](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/src-data-change.yml/badge.svg?branch=src-data)](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/src-data-change.yml)
+[![⇑ Update Issue Templates](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/issue-templates.yml/badge.svg)](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/issue-templates.yml)
+[![∆ src-data](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/src-data-change.yml/badge.svg?branch=src-data)](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/src-data-change.yml)
 [![→ workflows](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/sync-workflows.yml/badge.svg)](https://github.com/WCRP-CMIP/WCRP-universe/actions/workflows/sync-workflows.yml)
-
 -------
 
 > [!CAUTION]
