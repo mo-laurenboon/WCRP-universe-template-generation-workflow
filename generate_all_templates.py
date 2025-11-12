@@ -10,10 +10,10 @@ def scan_directories():
     Iterates through all top-level directories in the repository and lists all 
     json files.
 
-        :returns: A list of the paths of the form category/file.json for all 
-        json files in the repository.
-        :raises FileNotFoundError: If no JSON files are found.
+        :returns: A list of each subdirectory(category) and paths of the form 
+        category/file.json for all json files in the repository.
         :raises PermissionError: If directory access is denied.
+        :raises FileNotFoundError: If no JSON files are found.
     """
     try:
         #get all subdirectories within the root directory
@@ -81,21 +81,19 @@ def flatten_nested_dictionaries(dictionary, parent_key='', sep='_'):
         if isinstance(v, dict):
             #flatten nested dictionary to create a new parent key-value pair
             items.extend(flatten_nested_dictionaries(v, new_key, sep=sep).items())
-        elif isinstance(v, list):
-            items.append((new_key, ', '.join(map(str, v))))
         else:
             items.append((new_key, v))
 
     return dict(items)
 
 
-def record_instances_of_keys(categories, keys): 
+def record_instances_of_keys(categories): 
     """
-    Prints a list of keys found within the JSON files of a given subdirectory 
+    Gets a list of keys found within the JSON files of a given subdirectory 
     (category).
 
         :param categories: A list of subdirectories found in the repository.
-        :param keys: A list of all unique keys within the found JSON files.
+        :returns: A dictionary of the unique keys contained within each category.
     """
     category_keys = {}
     for cat in categories:
@@ -106,18 +104,18 @@ def record_instances_of_keys(categories, keys):
             with j.open("r", encoding="utf-8") as f:
                 data = json.load(f)
                 data = flatten_nested_dictionaries(data)
-                #create a list of all unique keys within that subdirectory only
+                #create a list of all unique keys within that subdirectory
                 for key in data:
                     if key not in found_keys:
                         found_keys.append(key)
-        #save found keys under the asocaited category name
-        
         try:
+            #remove entries starting with @ to avoid input issues
             if "@id" in found_keys:
                 found_keys.remove("@id")
             if "@type" in found_keys:
                 found_keys.remove("@type")
-            found_keys[:0] = ["modification","id", "type"]
+            #reintroduce necessary fields without @ prefix
+            found_keys[:0] = ["modification", "id", "type"]
         except Exception as e:
             print(f"Error updating keys: {e}")
 
@@ -131,7 +129,7 @@ def create_csv(category_keys, out_directory):
     """
     Creates a unique csv for each json file based off of its structure.
 
-        :param files: A list of the paths for all json files in the repository.
+        :param category_keys: A dictionary of the unique keys contained within each category.
         :param out_directory: The directory to output the created csv files.
     """
     headers = ["field_order","field_type","field_id","label","description",
@@ -144,6 +142,7 @@ def create_csv(category_keys, out_directory):
         keys = category_keys[cat]
         output_csv_filename = f"{cat}.csv"
         output_csv = out_directory / output_csv_filename
+        #copy master csv to copy across required content
         with open("master_csv_template.csv", mode="r", newline="") as infile:
             reader = csv.reader(infile)
             with open(output_csv, mode='w', newline='') as outfile:
@@ -163,7 +162,7 @@ def create_hardcoded_python_files(category_keys, out_directory):
     Creates a hard coded unique python for each json file based off of its 
     structure.
 
-        :param files: A list of the paths for all json files in the repository.
+        :param category_keys: A dictionary of the unique keys contained within each category.
         :param out_directory: The directory to output the created python files.
     """
     #open progress bar loop
@@ -172,7 +171,7 @@ def create_hardcoded_python_files(category_keys, out_directory):
         output_python_filename = f"{cat}.py"
         output_python = out_directory / output_python_filename
 
-        #created hardcoded python structure, swap for cmipld at a later date
+        #created hardcoded python structure: swap for dynamic cmipld allocation at a later date
         template = Template("""
 TEMPLATE_CONFIG = {
     "name": "Add/Modify: {{ cat }}",
@@ -198,12 +197,12 @@ DATA = {
 }
 """
         )
-                         
+
+        # Render template and save to output file.
         filecontent = template.render(cat=cat)                         
         with open(output_python, "w") as outfile:
             outfile.write(filecontent)
         
-
 
 def main():
     """
@@ -213,7 +212,6 @@ def main():
     categories, files = scan_directories()
     keys = get_all_json_keys(files)
     category_keys = record_instances_of_keys(categories, keys)
-    
     #Create required files
     out_directory = Path(".github") / "GEN_ISSUE_TEMPLATE"
     out_directory.mkdir(parents=True, exist_ok=True)

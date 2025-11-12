@@ -29,6 +29,7 @@ def set_arg_parser():
   
     return args
 
+    
 def validate_{{ category_safe }}(data):
     """
     Validate {{ category }} submission.
@@ -53,12 +54,13 @@ def validate_{{ category_safe }}(data):
 
     return errors
 
+    
 def create_{{ category_safe }}_json(data):
     """
     Create JSON file from parsed data.
 
         :param data: The field content of the issue body.
-        :returns: non metadata issue form content in the structure of a JSON 
+        :returns: Non metadata issue form content in the structure of a JSON 
         file. 
     """
     result = {}
@@ -77,6 +79,7 @@ def create_{{ category_safe }}_json(data):
 
     return result
 
+    
 def run(parsed_data):
     """
     Main handler function.
@@ -115,6 +118,7 @@ def run(parsed_data):
         "id": entry_id
     }
 
+    
 if __name__ == "__main__":
      args = set_arg_parser()
      run(args.parsed_data)
@@ -129,7 +133,7 @@ def generate_handlers():
     output_dir.mkdir(parents=True, exist_ok=True)
     output_files = []
 
-    #get all csv files (expected one per category)
+    # Get all csv files (expected one per category)
     csv_files = list(gen_template_dir.glob("*.csv"))
     template = Template(HANDLER_TEMPLATE)
 
@@ -152,7 +156,7 @@ def generate_handlers():
         output_files.append(output_file)
 
     print(f"\nCreated {len(csv_files)} handler scripts.")
-    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files))
+    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files)) # Vital for workflow functionality, DO NOT DELETE
 
 if __name__ == "__main__":
     generate_handlers()
