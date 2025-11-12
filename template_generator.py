@@ -6,7 +6,6 @@ Handles select fields properly without value attributes.
 """
 
 import csv
-import sys
 import yaml
 import argparse
 from pathlib import Path
@@ -14,17 +13,31 @@ from pathlib import Path
 failed = []
 
 def load_template_data(py_file):
-    """Load configuration and data from Python file."""
+    """
+    Load configuration and data from Python file.
+
+        :param py_file: The generated python file containing template 
+                        configuration and data information.
+        :returns: Configuration and data information.
+    """
     namespace = {}
     with open(py_file, 'r', encoding='utf-8') as f:
         exec(f.read(), namespace)
     
     config = namespace.get('TEMPLATE_CONFIG', {})
     data = namespace.get('DATA', {})
+
     return config, data
 
+
 def load_csv_fields(csv_file):
-    """Load field definitions from CSV."""
+    """
+    Load field definitions from CSV.
+
+        :param csv_file: The generated python file containing required fields 
+                         to format the issue template.
+        :returns: The fields to populate the issue template with.
+    """
     fields = []
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -32,10 +45,18 @@ def load_csv_fields(csv_file):
             fields.append(row)
     
     fields.sort(key=lambda x: int(x['field_order']))
+
     return fields
 
+
 def generate_field_yaml(field_def, data):
-    """Generate YAML for a single field."""
+    """
+    Generate YAML for a single field.
+
+        :param field_def: The defininton for each field.
+        :param data: The data information parsed in load_template_data().
+        :returns: The yaml field.
+    """
     
     field_type = field_def['field_type']
     field_id = field_def['field_id']
@@ -135,8 +156,6 @@ def generate_field_yaml(field_def, data):
         #         for option in data[hardcoded_key]:
         #             yaml_lines.append(f"        - \"{option}\"")
         
-
-    
     if default_value:
         yaml_lines.append(f"      default: {default_value}")
     
@@ -146,8 +165,17 @@ def generate_field_yaml(field_def, data):
     
     return '\n'.join(yaml_lines)
 
+
 def generate_template_yaml(config, fields, data):
-    """Generate complete YAML template."""
+    """
+    Generate complete YAML template.
+
+        :param config: The configuration information parsed in load_template_data().
+        :param fields: The fields to populate the issue template generated in 
+                       load_csv_fields()
+        :param data: The data information parsed in load_template_data().
+        :returns: Complete YAML template.
+    """
     
     # Properly format the name and description - quote if contains special chars
     name = config['name']
@@ -176,8 +204,14 @@ body:
     
     return yaml_content.rstrip() + "\n"
 
+
 def validate_yaml(content):
-    """Validate YAML syntax."""
+    """
+    Validate YAML syntax.
+
+        :param content: The content of the YAML file.
+        :raises Exception: If the YAML file could not be successfully parsed.
+    """
     try:
         parsed = yaml.safe_load(content)
         return isinstance(parsed, dict) and 'name' in parsed and 'body' in parsed
@@ -185,8 +219,20 @@ def validate_yaml(content):
         print(f"    YAML Parse Error: {e}")
         return False
 
+
 def process_template_pair(template_name, csv_file, py_file, output_dir, output_files):
-    """Process a single template pair."""
+    """
+    Process a single template pair.
+
+        :param template_name: The name of the template.
+        :param csv_file: The generated CSV file containing form fields.
+        :param py_file: The generated python file containing the template 
+                        configuration and data information.
+        :param output_dir: The output directory.
+        :param output_files: A list of all output files generated.
+        :returns: Boolean completion status and a list of all output files generated.
+        :raises Exception: If an error occurs.
+    """
     
     print(f"Processing {template_name}...")
     
@@ -222,20 +268,26 @@ def process_template_pair(template_name, csv_file, py_file, output_dir, output_f
     
 
 def parse_arguments():
-    """Parse command line arguments."""
+    """
+    Parse command line arguments.
+
+        :returns: Argument parser.
+    """
     parser = argparse.ArgumentParser(description='Generate GitHub issue templates')
     parser.add_argument('-t', '--template-dir', type=Path, help='Template directory')
     parser.add_argument('-o', '--output-dir', type=Path, help='Output directory')
     parser.add_argument('--template', type=str, help='Generate specific template')
+
     return parser.parse_args()
 
+
 def main():
-    """Main function."""
+    """
+    Main function.
+    """
     args = parse_arguments()
     
     print("Per-File Template Generator")
-    
-    # script_dir = Path(__file__).parent
     
     script_dir = Path.cwd()
     template_dir = args.template_dir or script_dir / ".github" / "GEN_ISSUE_TEMPLATE" 
@@ -246,7 +298,6 @@ def main():
     print(f"Output dir: {output_dir}")
     print(script_dir)
 
-
     if not template_dir.exists():
         import sys
         sys.exit(f"Template directory not found: {template_dir}")
@@ -255,7 +306,6 @@ def main():
     output_dir.mkdir(exist_ok=True)
     
     csv_files = list(template_dir.glob('*.csv'))
-    
     
     if args.template:
         csv_files = [f for f in csv_files if f.stem == args.template]
@@ -276,21 +326,14 @@ def main():
                 success_count += 1
     
     print(f"Results: {success_count}/{len(csv_files)} successful")
-    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files))
-    print(f"=====================THERE ARE {len(output_files)} OUTPUT FILES==========================")
+    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files)) # Vital for workflow functionality, DO NOT DELETE
     
     for i in range(len(failed)):
         print(f"\nFailed YAML {i+1}:\n")
         print(failed[i])
     
-    
-    
     return success_count > 0
-
-
 
 
 if __name__ == '__main__':
     success = main()
-    
-    # sys.exit(0 if success else 1)
