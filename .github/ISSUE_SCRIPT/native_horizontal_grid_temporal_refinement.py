@@ -76,6 +76,8 @@ def create_native_horizontal_grid_temporal_refinement_json(data):
         result["@type"] = result.pop("type")
     if "id" in result:
         result["@id"] = result.pop("id")
+    # Add @context back into JSON        
+    result["@context"] = "_context"
 
     # Recreate nested location dictionary
     for old_key, new_key in location_fields.items():
@@ -83,9 +85,6 @@ def create_native_horizontal_grid_temporal_refinement_json(data):
             location_dict[new_key] = result.pop(old_key)
     if location_dict:
         result["location"] = location_dict
-
-    # Add @context back into JSON        
-    result["@context"] = "_context"
 
     return result
 
