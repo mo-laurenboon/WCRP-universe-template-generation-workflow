@@ -44,7 +44,7 @@ runs:
           GITHUB_TOKEN: ${{ github.token }} # We need this to update the issue
 
         run: |
-          python new_issue.py
+          python scripts/new_issue.py
 
           OUTPUT=$(find . -type f -name "*.json" | sed -n '2p')
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
