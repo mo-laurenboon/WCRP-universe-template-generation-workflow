@@ -210,8 +210,8 @@ def main():
     """
     #Get information on repository and JSON file structure
     categories, files = scan_directories()
-    keys = get_all_json_keys(files)
-    category_keys = record_instances_of_keys(categories, keys)
+    get_all_json_keys(files)
+    category_keys = record_instances_of_keys(categories)
     #Create required files
     out_directory = Path(".github") / "GEN_ISSUE_TEMPLATE"
     out_directory.mkdir(parents=True, exist_ok=True)
