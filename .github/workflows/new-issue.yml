@@ -49,39 +49,29 @@ jobs:
       - name: Generate issue templates
         id: generate_templates
         run: |
-          
           OUTPUT=$(python template_generator.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
           echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
 
-          echo "templates=$OUTPUT"
-
-          git add .
-          git commit -m "Issue form templates updated." || echo "No changes to commit."
-          git push origin src-data
+          mkdir -p /tmp/templates
+          echo "$OUTPUT" | xargs cp -t /tmp/templates/
 
       - name: Generate issue form handler scripts
         id: generate_handlers
         run: |
           OUTPUT=$(python .github/ISSUE_SCRIPT/generate_handlers.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
-
           echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
-          echo "handlers=$OUTPUT"
 
-          git add .
-          git commit -m "Handler files updated." || echo "No changes to commit."
-          git push origin src-data
-      
+          mkdir -p /tmp/handlers
+          echo "$OUTPUT" | xargs cp -t /tmp/handlers/
+          
       - name: Checkout main
         run: git checkout main
 
-      - name: Commit issue templates back to main
+      - name: Commit issue templates and handlers back to main
         run: |
-          git add ${{ steps.generate_templates.outputs.templates }}
-          git commit -m "Issue form templates updated." || echo "No changes to commit."
-          git push origin main
-
-      - name: Commit handlers back to main
-        run: |
-          git add ${{ steps.generate_handlers.outputs.handlers }}
-          git commit -m "Issue form handlers updated." || echo "No changes to commit."
+          cp /tmp/templates/* .github/ISSUE_TEMPLATE/
+          cp /tmp/handlers/* .github/ISSUE_SCRIPT/
+          
+          git add .github/ISSUE_TEMPLATE/*.yml .github/ISSUE_SCRIPT/*.py
+          git commit -m "Issue form templates and ahndlers updated." || echo "No changes to commit."
           git push origin main
