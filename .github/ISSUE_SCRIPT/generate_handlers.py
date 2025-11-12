@@ -39,7 +39,7 @@ def validate_{{ category_safe }}(data):
     errors = []
 
     #Required fields
-    required = ["validation_key", "label", "description", "experiment_id"]
+    required = ["validation_key", "label", "description", "id"]
     for field in required:
         if not data.get(field):
             errors.append(f"Missing required field: {field}")
