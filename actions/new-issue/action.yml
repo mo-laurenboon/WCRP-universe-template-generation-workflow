@@ -1,19 +1,14 @@
 name: Read Issue Content and Labels
 description: Acton to process a new issue
-# the main calling action must have the following permissions as well. 
-
+# the main calling action must have the following permissions. 
 permissions:
   issues: write
   pull-requests: write
-  contents: write  # Allows creating branches, pushing changes to repositories
+  contents: write  
 
 runs:
     using: 'composite'
     steps:
-
-#      - name: cmip-ld library
-#        id: install-cmipld
-#        uses: WCRP-CMIP/CMIPLD/actions/cmipld@main
 
       - name: Checkout repository
         uses: actions/checkout@v4       
@@ -37,19 +32,16 @@ runs:
               ${{ github.event.issue.body }}
           # pipe should preseve newline properties for multilines
           ISSUE_SUBMITTER: ${{ github.event.issue.user.login }}
-          # ${{ github.actor }} 
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          # GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ github.token }} # We need this to update the issue
-
+        #grab created json file and copy to outputs ready for commit to src-data branch
         run: |
           python scripts/new_issue.py
-
+          
           OUTPUT=$(find . -type f -name "*.json" | sed -n '2p')
           echo "json=$OUTPUT" >> $GITHUB_OUTPUT
           echo "THE OUTPUT JSON FILES PRESENT ARE $OUTPUT"
-
         shell: bash
         continue-on-error: false
 
