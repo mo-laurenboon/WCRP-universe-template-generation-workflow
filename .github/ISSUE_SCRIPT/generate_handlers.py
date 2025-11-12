@@ -63,18 +63,37 @@ def create_{{ category_safe }}_json(data):
         :returns: Non metadata issue form content in the structure of a JSON 
         file. 
     """
+    
+    location_fields = {
+        "latitude": "lat",
+        "longitude": "lon",
+        "city": "city",
+        "country": "country"
+    }
+
+    location_dict = {}
     result = {}
 
     #Map fields from the issue form to JSON structure
     for key, value in data.items():
-        if key not in ["issue-type", "issue--kind"] and value:
+        #if key not in ["issue-type", "issue--kind"] and value:
             # Convert field names back to JSON format
-            json_key = key.replace("_", "-")
-            result[json_key]=value
-            if key == "type":
-                result["@type"] = result.pop("type")
-            if key == "id":
-                result["@id"] = result.pop("id")
+            # json_key = key.replace("_", "-")
+            result[key]=value
+            
+    if "type" in result:
+        result["@type"] = result.pop("type")
+    if "id" in result:
+        result["@id"] = result.pop("id")
+
+    # Recreate nested location dictionary
+    for old_key, new_key in location_fields.items():
+        if old_key in result:
+            location_dict[new_key] = result.pop(old_key)
+    if location_dict:
+        result["location"] = location_dict
+
+    # Add @context back into JSON        
     result["@context"] = "_context"
 
     return result

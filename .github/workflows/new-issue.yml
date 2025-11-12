@@ -2,9 +2,6 @@ name: Process New Issue
 on:
   issues:
     types: [opened, edited]
-  schedule:
-    - cron: 30 17 * * 5
-  workflow_dispatch:
 
 permissions:
   issues: write
@@ -27,7 +24,8 @@ jobs:
           pip install pyyaml
       
       - name: Parse and process issue
-        uses: mo-laurenboon/WCRP-universe-template-generation-workflow/actions/new-issue@main
+        uses: mo-laurenboon/WCRP-universe-template-generation-workflow/actions/new-issue@main #CHANGE TO BELOW AFTER PR MERGE
+#        uses: WCRP-CMIP/WCRP-universe/actions/new-issue@main
         
       - name: Checkout Repository
         uses: actions/checkout@v3
