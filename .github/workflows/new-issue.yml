@@ -49,10 +49,10 @@ jobs:
       - name: Generate issue templates
         id: generate_templates
         run: |
-          python template_generator.py
-
-          OUTPUT=$(find . -path "./.github/ISSUE_TEMPLATE/*.yml" | paste -sd " " -)
+          
+          OUTPUT=$(python template_generator.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
           echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
+
           echo "templates=$OUTPUT"
 
           git add .
@@ -62,9 +62,8 @@ jobs:
       - name: Generate issue form handler scripts
         id: generate_handlers
         run: |
-          python .github/ISSUE_SCRIPT/generate_handlers.py
+          OUTPUT=$(python .github/ISSUE_SCRIPT/generate_handlers.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
 
-          OUTPUT=$(find . -path "./.github/ISSUE_SCRIPT/*.py" | paste -sd " " -)
           echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
           echo "handlers=$OUTPUT"
 

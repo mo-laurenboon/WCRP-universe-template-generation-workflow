@@ -127,6 +127,7 @@ def generate_handlers():
     gen_template_dir = Path(".github/GEN_ISSUE_TEMPLATE")
     output_dir = Path(".github/ISSUE_SCRIPT")
     output_dir.mkdir(parents=True, exist_ok=True)
+    output_files = []
 
     #get all csv files (expected one per category)
     csv_files = list(gen_template_dir.glob("*.csv"))
@@ -145,11 +146,13 @@ def generate_handlers():
         output_file = output_dir / f"{category}.py"
         with open(output_file, "w") as f:
             f.write(handler_content)
-        
+
         output_file.chmod(0o755)
         tqdm.write(f"Generated: {output_file}")
+        output_files.append(output_file)
 
     print(f"\nCreated {len(csv_files)} handler scripts.")
+    print("OUTPUT_FILES =", " ".join(str(p) for p in output_files))
 
 if __name__ == "__main__":
     generate_handlers()
