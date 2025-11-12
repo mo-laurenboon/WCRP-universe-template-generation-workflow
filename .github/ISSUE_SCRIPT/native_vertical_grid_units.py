@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Handler for activity submissions.
+Handler for native_vertical_grid_units submissions.
 """
 
 import argparse
@@ -20,9 +20,9 @@ def set_arg_parser():
   
     return args
 
-def validate_activity(data):
+def validate_native_vertical_grid_units(data):
     """
-    Validate activity submission.
+    Validate native_vertical_grid_units submission.
 
         :param data: The field content of the issue body.
         :returns: Errors caused by missing or incorrectly formatted fields.
@@ -44,7 +44,7 @@ def validate_activity(data):
 
     return errors
 
-def create_activity_json(data):
+def create_native_vertical_grid_units_json(data):
     """
     Create JSON file from parsed data.
 
@@ -75,10 +75,10 @@ def run(parsed_data):
         :param parsed_data: The field content parsed from the issue body.
         :returns: Output file status, name, category and ID as a dictionary.
     """
-    print("processing activity submission...")
+    print("processing native_vertical_grid_units submission...")
 
     #Validate
-    errors = validate_activity(parsed_data)
+    errors = validate_native_vertical_grid_units(parsed_data)
     if errors:
         print("Validation errors:")
         for error in errors:
@@ -86,10 +86,10 @@ def run(parsed_data):
         return {"success":False, "errors":errors}
     
     #Create JSON
-    entry = create_activity_json(parsed_data)
+    entry = create_native_vertical_grid_units_json(parsed_data)
 
     #Write file
-    output_dir = Path("activity")
+    output_dir = Path("native_vertical_grid_units")
     output_dir.mkdir(exist_ok=True)
 
     entry_id = parsed_data.get("id", "unknown")
@@ -102,7 +102,7 @@ def run(parsed_data):
     return {
         "success": True,
         "file": str(output_file),
-        "category": "activity",
+        "category": "native_vertical_grid_units",
         "id": entry_id
     }
 

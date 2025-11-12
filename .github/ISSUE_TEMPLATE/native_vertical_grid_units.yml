@@ -1,43 +1,62 @@
-name: "Add/Modify: Native Vertical Grid Units"
-description: Add or modify vertical grid units in WCRP Universe
-title: "Add/Modify: Vertical Units: <Type units here>"
-labels: ['delta', 'vertical-units', 'Review']
+name: "Add/Modify: native_vertical_grid_units"
+description: Add or modify native_vertical_grid_units in WCRP Universe
+title: "Add/Modify: native_vertical_grid_units: <Type activity name here>"
+labels: ['native_vertical_grid_units', 'cv-submission']
 body:
-  - type: markdown
-    attributes:
-      value: |
-        # Add/Modify: Native Vertical Grid Units
-
   - type: dropdown
-    id: issue_kind
+    id: modification
     attributes:
       label: Issue Type
-      description: New or modify existing
+      description: Create new or modify existing issue
       options:
         - "New"
         - "Modify"
-      default: 0
     validations:
       required: true
 
   - type: input
     id: validation_key
     attributes:
-      label: Validation Key
-      description: Unique identifier
-      placeholder: "e.g. meters"
+      label: Validation key
+      description: CMIP acronym
     validations:
       required: true
 
   - type: input
     id: ui_label
     attributes:
-      label: UI Label
-      description: Full name
-      placeholder: "e.g. Meters"
+      label: Label
+      description: Human-readable name
+      placeholder: "e.g. Historical"
+    validations:
+      required: true
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Detailed description
+      description: Detailed scientific description
+      placeholder: "Provide comprehensive description"
+    validations:
+      required: true
+
+  - type: input
+    id: id
+    attributes:
+      label: id
+      description: Unique identifier (lowercase, hyphen-separated)
+      placeholder: "e.g. aera-mip"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: Data type
+      options:
+        - "wcrp"
+        - "esgvoc"
+        - "universal"
+    validations:
+      required: true
