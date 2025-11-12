@@ -1,38 +1,41 @@
 {
   "@context": {
-    "@base": "https://wcrp-cmip.github.io/WCRP-universe/native_horizontal_grid_temporal_refinement/",
-    "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.NativeHorizontalGridTemporalRefinement"
-  },
+  "@base": "https://wcrp-cmip.github.io/WCRP-universe/native_horizontal_grid_temporal_refinement/",
+  "@vocab": "https://esgf.github.io/esgf-vocab/api_documentation/data_descriptors.html#esgvoc.api.data_descriptors.NativeHorizontalGridTemporalRefinement."
+},
   "@graph": [
     {
-      "@id": "adaptive",
-      "validation-key": "adaptive",
-      "ui-label": "Adaptive",
-      "description": "the total number of grid points varies during the model run",
-      "@type": [
-        "esgf:native-horizontal-grid-temporal-refinement",
-        "universal"
-      ]
-    },
-    {
-      "@id": "dynamically-stretched",
-      "validation-key": "dynamically-stretched",
-      "ui-label": "Dynamically stretched",
-      "description": "the total number of grid points stays constant, but grid points can be dynamically relocated",
-      "@type": [
-        "esgf:native-horizontal-grid-temporal-refinement",
-        "universal"
-      ]
-    },
-    {
-      "@id": "static",
-      "validation-key": "static",
-      "ui-label": "Static",
-      "description": "the total number of grid points stays constant during the model run and there is no grid refinement, i",
-      "@type": [
-        "esgf:native-horizontal-grid-temporal-refinement",
-        "universal"
-      ]
-    }
+  "validation_key": "adaptive",
+  "ui_label": "Adaptive",
+  "description": "the total number of grid points varies during the model run",
+  "@type": [
+    "wcrp:native_horizontal_grid_temporal_refinement",
+    "esgvoc:NativeHorizontalGridTemporalRefinement",
+    "universal"
+  ],
+  "@id": "adaptive"
+}
+    ,{
+  "validation_key": "dynamically-stretched",
+  "ui_label": "Dynamically stretched",
+  "description": "the total number of grid points stays constant, but grid points can be dynamically relocated",
+  "@type": [
+    "wcrp:native_horizontal_grid_temporal_refinement",
+    "esgvoc:NativeHorizontalGridTemporalRefinement",
+    "universal"
+  ],
+  "@id": "dynamically-stretched"
+}
+    ,{
+  "validation_key": "static",
+  "ui_label": "Static",
+  "description": "the total number of grid points stays constant during the model run and there is no grid refinement, i",
+  "@type": [
+    "wcrp:native_horizontal_grid_temporal_refinement",
+    "esgvoc:NativeHorizontalGridTemporalRefinement",
+    "universal"
+  ],
+  "@id": "static"
+}
   ]
 }
