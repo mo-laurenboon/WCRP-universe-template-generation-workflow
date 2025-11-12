@@ -1,0 +1,75 @@
+name: Scheduled update of issue templates
+on:
+  schedule:
+    - cron: 30 17 * * 5
+
+permissions:
+  issues: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  process-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: install dependencies
+        run: |
+          pip install tqdm
+          pip install jinja2
+          pip install pyyaml
+        
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: src-data
+
+      - name: Switch to src-data branch
+        run: git checkout src-data
+   
+      - name: Generate all csv and py files
+        run: |
+          python generate_all_templates.py
+          
+          git add .
+          git commit -m "CSV and py templates updated." || echo "No changes to commit."
+          git push origin src-data
+
+      - name: Generate issue templates
+        id: generate_templates
+        run: |
+          OUTPUT=$(python template_generator.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
+          echo "templates=$OUTPUT" >> $GITHUB_OUTPUT
+
+          mkdir -p /tmp/templates
+          echo "$OUTPUT" | xargs cp -t /tmp/templates/
+
+          rm $OUTPUT
+
+      - name: Generate issue form handler scripts
+        id: generate_handlers
+        run: |
+          OUTPUT=$(python .github/ISSUE_SCRIPT/generate_handlers.py | grep '^OUTPUT_FILES =' | sed 's/^OUTPUT_FILES = //')
+          echo "handlers=$OUTPUT" >> $GITHUB_OUTPUT
+
+          mkdir -p /tmp/handlers
+          echo "$OUTPUT" | xargs cp -t /tmp/handlers/
+
+          rm $OUTPUT
+          
+      - name: Checkout main
+        run: git checkout main
+
+      - name: Commit issue templates and handlers back to main
+        run: |
+          cp /tmp/templates/* .github/ISSUE_TEMPLATE/
+          cp /tmp/handlers/* .github/ISSUE_SCRIPT/
+          
+          git add .github/ISSUE_TEMPLATE/*.yml .github/ISSUE_SCRIPT/*.py
+          git commit -m "Issue form templates and ahndlers updated." || echo "No changes to commit."
+          git push origin main
